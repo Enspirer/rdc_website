@@ -1,0 +1,346 @@
+/*slider*/
+.classic {
+    font-family:Monotype Corsiva;
+    font-size: 30px;
+    color:#1F1504;
+    font-weight: bold;
+}
+.slider-section .carousel-indicators {
+    top: 80%;
+}
+/* .slider-section .carousel-item {
+    max-height: 1000px;
+} */
+.slider-section .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+
+/*aubowan-card */
+.ayubowan-card {
+    margin-top: -5%;
+}
+.ayubowan-card-body {
+    padding: 30px 100px;
+}
+
+
+/* projects */
+.project-section .carousel-indicators {
+    bottom: -50px;
+}
+.project-section .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+.project-section .carousel-indicators .active {
+    background-color: black;
+}
+.project-section .carousel-item .item1:hover img,
+.project-section .carousel-item .item2:hover img,
+.project-section .carousel-item .item3:hover img,
+.project-section .carousel-item .item4:hover img,
+.project-section .carousel-item .item5:hover img,
+.project-section .carousel-item .item6:hover img {
+    -webkit-filter: none;
+    filter: none;
+    -webkit-filter: brightness(60%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.project-section .carousel-item .item1 div {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+.project-section .carousel-item .item1:hover .carousel-caption,
+.project-section .carousel-item .item2:hover .carousel-caption,
+.project-section .carousel-item .item3:hover .carousel-caption,
+.project-section .carousel-item .item4:hover .carousel-caption,
+.project-section .carousel-item .item5:hover .carousel-caption,
+.project-section .carousel-item .item6:hover .carousel-caption {
+    bottom: 0px;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+/* .project-section .carousel-item .item1:hover p,
+.project-section .carousel-item .item2:hover p {
+    margin-top: 1.5rem;
+    transition: 0.4s;
+} */
+.project-section .carousel-item .carousel-caption {
+    transition: all 0.4s;
+    bottom: -50px;
+}
+.project-section .carousel-item .carousel-caption i {
+    color: #fff;
+    font-size: 20px;
+}
+.project-section .carousel-item .carousel-caption i:hover {
+    color: #b19777;
+}
+.project-section .carousel-item .line {
+    text-align: center;
+    height: 1px;
+    width: 70px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    margin: 0 auto 30px;
+}
+.project-section .carousel-item .item1:hover .line,
+.project-section .carousel-item .item2:hover .line,
+.project-section .carousel-item .item3:hover .line,
+.project-section .carousel-item .item4:hover .line,
+.project-section .carousel-item .item5:hover .line,
+.project-section .carousel-item .item6:hover .line {
+    width: 100%;
+    transition-property: width;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+/* about us */
+.about-image:hover img{
+    transform: scale(0.95);
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+.about-image img{
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+
+
+/*services*/
+.bg-img-services {
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
+}
+.service-card {
+    margin-top: -7%;
+}
+.service-card-body {
+    margin-top: -33%;
+}
+.top-left {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+/* .service-container {
+    position: relative;
+    text-align: left;
+} */
+
+
+/*testimentional*/
+.testimonial-section .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: #707070;
+}
+.testimonial-section .carousel-indicators .active {
+    background-color: black;
+}
+.testimonial-section .carousel-item .carousel-caption {
+    bottom: 5rem;
+}
+
+
+/*media quaries*/
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+@media (min-width: 1400px) {
+    .testimonial-section .testi-image {
+        height: 750px!important;
+    }
+}
+
+@media (max-width: 1400px) {
+    .testimonial-section .testi-image {
+        height: 600px!important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .testimonial-section .testi-image {
+        height: 500px!important;
+    }
+}
+
+@media (max-width: 992px) {
+    .testimonial-section .testi-image {
+        height: 400px!important;
+    }
+    .project-section .carousel-item .carousel-caption {
+        bottom: -50px;
+    }
+    .project-section .carousel-item .carousel-caption h5 {
+        font-size: 16px!important;
+    }
+    .project-section .carousel-item .carousel-caption p {
+        margin-bottom: 0.5rem!important;
+    }
+    .project-section .carousel-item .carousel-caption i {
+        color: #fff;
+        font-size: 15px;
+    }
+    .project-section .carousel-item .item1:hover .carousel-caption,
+    .project-section .carousel-item .item2:hover .carousel-caption,
+    .project-section .carousel-item .item3:hover .carousel-caption,
+    .project-section .carousel-item .item4:hover .carousel-caption,
+    .project-section .carousel-item .item5:hover .carousel-caption,
+    .project-section .carousel-item .item6:hover .carousel-caption {
+        bottom: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aubowan-card-body {
+        padding: 30px!important;
+    }
+    .project-section {
+        margin-top: 4rem!important;
+    }
+    .project-section .carousel-item .carousel-caption h5 {
+        font-size: 15px!important;
+    }
+    .project-section .carousel-item .carousel-caption p {
+        font-size: 18px!important;
+        margin-bottom: 0!important;
+    }
+    .project-section .carousel-item .item1:hover .carousel-caption,
+    .project-section .carousel-item .item2:hover .carousel-caption,
+    .project-section .carousel-item .item3:hover .carousel-caption,
+    .project-section .carousel-item .item4:hover .carousel-caption,
+    .project-section .carousel-item .item5:hover .carousel-caption,
+    .project-section .carousel-item .item6:hover .carousel-caption {
+        bottom: -10px;
+    }
+    .project-section .carousel-item .line {
+        margin: 0 auto 0px;
+    }
+    .about-section {
+        margin-top: 4rem!important;
+    }
+    .about-section button {
+        display: block;
+        margin: auto;
+    }
+    .about-section img{
+        margin-top: 3rem!important;
+    }
+
+    .service-card {
+        margin-top: 4%;
+    }
+    .top-left {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .top-left .container h5, h2{
+        font-size: 20px;
+    }
+    .download-section {
+        margin-top: 4rem!important;
+    }
+    .testimonial-section .testi-image {
+        height: 300px!important;
+    }
+    .testimonial-section .carousel-item .carousel-caption {
+        bottom: 1rem;
+    }
+    .contact-section {
+        margin-top: 4rem!important;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .ayubowan-image {
+        height: 45px!important;
+    }
+    .project-section .carousel-item .carousel-caption {
+        bottom: 0px;
+    }
+    .download-section {
+        margin-bottom: 2rem!important;
+    }
+    .testimonial-section .testi-image {
+        height: 250px!important;
+    }
+}
+
+/* @media (min-width: 768px) {
+    .p-remove {
+        padding-right: 0;
+        padding-left: 0;
+    }
+} */
+
+
+
+
+/* @media (max-width: 768px) {
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+    nav ul {
+        max-height: 0px;
+        background: #000;
+    }
+    nav.black ul {
+        background: #000;
+    }
+    .showing {
+        max-height: 34em;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+    .menu-icon {
+        display: block;
+    }
+
+    .footer-left {
+        text-align: center;
+    }
+    .footer-right {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .download-section .btn {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+} */

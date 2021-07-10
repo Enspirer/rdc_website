@@ -1,0 +1,41 @@
+/* .banner {
+    background: url('../img/press-banner.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 22rem;
+} */
+
+
+
+/* media queries */
+@media screen and (max-width: 992px) {
+    .overview {
+        padding: 0 3rem!important;
+        margin-top: 3rem!important;
+    }
+    .overview .details {
+        margin-top: 3rem!important;
+    }
+    .overview .details .col-lg-6 button {
+        margin:auto!important;
+        display:block!important;
+    }
+    .overview .details .carousel {
+        margin-top: 3rem!important;
+    }
+    .articles {
+        padding: 0 3rem!important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .overview {
+        padding: 0 0.75rem!important;
+    }
+    .articles {
+        padding: 0 0.75rem!important;
+        margin-top: 4rem!important;
+    }
+}

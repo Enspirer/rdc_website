@@ -1,0 +1,70 @@
+.swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+/* .swiper-slide {
+    background-size: cover;
+    background-position: center;
+} */
+/* .mySwiper2 img {
+      width: 100%;
+      height: 100%;
+} */
+/* .swiper-container {
+    width: 100%;
+    height: 700px;
+} */
+
+.mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='orange' class='bi bi-plus-lg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z'/></svg>");
+    color: red;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='orange' class='bi bi-dash-lg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z'/></svg>");
+}
+
+
+
+
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .project-details {
+        padding: 0 3rem!important;
+        margin-top: 3rem!important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .project-details {
+        padding: 0 0.75rem!important;
+    }
+}

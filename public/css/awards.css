@@ -1,0 +1,27 @@
+/* .banner {
+    background: url('../img/awards-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    padding: 23rem;
+} */
+
+
+.award-click {
+    cursor: pointer;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .awards {
+        padding: 0 3rem!important;
+        margin-top: 3rem!important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .awards {
+        padding: 0 0.75rem!important;
+    }
+}

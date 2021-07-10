@@ -1,0 +1,41 @@
+/* .banner {
+    background: url('../img/life-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    padding: 30rem;
+} */
+
+
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .life {
+        padding: 0 3rem!important;
+        margin-top: 3rem!important;
+    }
+    .life button {
+        margin:auto!important;
+        display:block!important;
+        float: none!important;
+    }
+    .life img {
+        margin-top: 3rem!important;
+    }
+    .life .center-image {
+        margin-top: 0rem!important;
+    }
+    .life .center-image-title {
+        margin-top: 2rem!important;
+    }
+    .life .center-image {
+        margin-top: 0rem!important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .life {
+        padding: 0 0.75rem!important;
+    }
+}

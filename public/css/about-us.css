@@ -1,0 +1,45 @@
+/* .banner {
+    background: url('../img/about-banner.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 600px;
+    width: 100%;
+  } */
+
+
+
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .about-us {
+    padding: 0 3rem!important;
+    margin-top: 3rem!important;
+  }
+  .vision-mission {
+    margin-top: 3rem!important;
+    padding: 0 3rem!important;
+  }
+  .vision-mission .details {
+    margin-top: 3rem!important;
+  }
+  .our-goals {
+    margin-top: 4rem!important;
+    padding: 0 3rem!important;
+  }
+  .our-goals .image {
+    margin-top: 2.5rem!important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-us {
+    padding: 0 0.75rem!important;
+  }
+  .vision-mission {
+    padding: 0 0.75rem!important;
+  }
+  .our-goals {
+    padding: 0 0.75rem!important;
+  }
+}

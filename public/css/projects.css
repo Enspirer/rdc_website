@@ -1,0 +1,62 @@
+.banner-section .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: #707070;
+}
+.banner-section .carousel-indicators .active {
+    background-color: white;
+}
+.banner-section .carousel-indicators {
+    padding-bottom: 1.5rem;
+}
+
+
+
+
+.project-details {
+    visibility: hidden;
+    position: relative;
+    top: 12.5rem;
+    color: white;
+    transition: all 0.8s;
+}
+.transition {
+    filter: brightness(70%);
+    transition: all 0.8s;
+}
+.our-projects .col-4 div {
+    transition: all 0.8s;
+}
+.project-item a {
+    color: #212529;
+    border: none;
+}
+.project-item a:hover {
+    border-bottom: 1px solid black;
+    font-weight: 600;
+    color: #212529;
+}
+.project-item .active {
+    border-bottom: 1px solid black!important;
+}
+
+
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .our-projects {
+        padding: 0 3rem!important;
+        margin-top: 3rem!important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .our-projects {
+        padding: 0 0.75rem!important;
+    }
+    .our-projects .project {
+        padding: 0 0.75!important;
+    }
+}
