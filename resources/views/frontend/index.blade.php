@@ -165,8 +165,8 @@
     </div>
 
     <!--services section-->
-    <div class="service-container text-left position-relative" style="margin-top: 7rem;">
-        <img src="{{ asset('img/services-banner.jpg') }}" class="img-fluid">
+    <div class="service-container container-fluid p-0 text-left position-relative" style="margin-top: 7rem;">
+        <img src="{{ asset('img/services-banner.jpg') }}" class="img-fluid w-100">
         <div class="top-left text-white">
             <div class="container">
                 <h5>SERVICES</h5>
