@@ -8,10 +8,6 @@
 } */
 
 
-.award-click {
-    cursor: pointer;
-}
-
 /* media queries */
 @media screen and (max-width: 768px) {
     .awards {

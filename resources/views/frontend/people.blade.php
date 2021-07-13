@@ -13,6 +13,22 @@
     </section>
 
 
+    <!-- scroll indicator icon -->
+    <div class="mouse_scroll">
+
+      <div class="mouse">
+          <div class="wheel"></div>
+      </div>
+      <div>
+          <span class="m_scroll_arrows unu"></span>
+          <span class="m_scroll_arrows doi"></span>
+          <span class="m_scroll_arrows trei"></span>
+      </div>
+
+    </div>
+    
+
+
     <!--path-->
     <section id="path">
       <div class="container mt-3 path">
@@ -29,15 +45,14 @@
             <p class="mt-4" style="font-size: 0.9rem; line-height: 1.7rem; text-align: justify;" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, voluptas ea accusamus et quaerat adipisci recusandae impedit! Repellendus blanditiis quis earum! Doloremque id tempore facere!</p>
 
             <div class="principal" style="margin-top: 5.5rem;">
-                <h4 class="fw-bold mb-4" data-aos="fade-right" data-aos-duration="500">Principal Architects</h4>
+                <h4 class="fw-bold mb-4" data-aos="fade-right" data-aos-duration="500">Principal Architect</h4>
 
                 <div class="row justify-content-between">
                     <div class="col-md-5" data-aos="zoom-in" data-aos-duration="600">
                         <img src="{{ asset('img/people-principal.png') }}" alt="" class="img-fluid" >
                     </div>
                     <div class="col-md-6 details">
-                        <h2 class="fw-bold" data-aos="fade-up" data-aos-duration="500">Archt.</h2>
-                        <h2 class="fw-bold mb-0" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">Russel Dandeniya</h2>
+                        <h2 class="fw-bold" data-aos="fade-up" data-aos-duration="500">Archt. Russel Dandeniya</h2>
                         <small class="fs-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">BSc.(B.E.), P.G. Dip (PM), MSc. (Arch), RIBA , Int.Asso.AIA , FIA (SL)</small>
 
                         <p class="mt-3" style="font-size: 0.9rem; line-height: 1.7rem;" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">

@@ -9,11 +9,6 @@
     <!--slider section-->
     <div class="slider-section">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="{{ asset('img/banner-1.jpg') }}" alt="First slide">
@@ -33,6 +28,17 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+        </div>
+        <div class="mouse_scroll">
+
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div>
+                <span class="m_scroll_arrows unu"></span>
+                <span class="m_scroll_arrows doi"></span>
+                <span class="m_scroll_arrows trei"></span>
+            </div>
         </div>
 
         <div class="container justify-content-center ayubowan-card" data-aos="zoom-in" data-aos-duration="900">
@@ -80,7 +86,7 @@
                                     <h5 style="color: #B49977;">GARDEN HOUSE</h5>
                                     <p style="font-size: 20px;">HABARADUWA</p>
                                     <div class="line"></div>
-                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                    <a href="{{ url('individual') }}"><i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                             <div class="col-sm-4 p-2 item2">
@@ -89,7 +95,7 @@
                                     <h5 style="color: #B49977;">JIFFY OFFICE</h5>
                                     <p style="font-size: 20px;">MIRIGAMA</p>
                                     <div class="line"></div>
-                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                    <a href="{{ url('individual') }}"><i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                             <div class="col-sm-4 p-2 item3">
@@ -98,7 +104,7 @@
                                     <h5 style="color: #B49977;">JUNGLE BEACH HOTEL</h5>
                                     <p style="font-size: 20px;">YALA</p>
                                     <div class="line"></div>
-                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                    <a href="{{ url('individual') }}"><i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                             
@@ -112,7 +118,7 @@
                                     <h5 style="color: #B49977;">NWSDB TRAINING CENTER</h5>
                                     <p style="font-size: 20px;">RATMALANA</p>
                                     <div class="line"></div>
-                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                    <a href="{{ url('individual') }}"><i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                             <div class="col-sm-4 p-2 item5">
@@ -121,7 +127,7 @@
                                     <h5 style="color: #B49977;">PANAROMIC SEA BREEZE HOTEL</h5>
                                     <p style="font-size: 20px;">BROWNS HILL</p>
                                     <div class="line"></div>
-                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                    <a href="{{ url('individual') }}"><i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                             <div class="col-sm-4 p-2 item6">
@@ -130,7 +136,7 @@
                                     <h5 style="color: #B49977;">THE FAB</h5>
                                     <p style="font-size: 20px;">RATMALANA</p>
                                     <div class="line"></div>
-                                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                    <a href="{{ url('individual') }}"><i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +162,7 @@
                         recent years.
                     </p>
                 </div>
-                <button class="btn default mb-3 mb-md-0" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400">READ MORE <i class="fas fa-angle-double-right"></i></button>
+                <a href="{{ url('about-us') }}" class="btn default mb-3 mb-md-0" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400">READ MORE <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div class="col-md-6 about-image" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                 <img src="{{ asset('img/abouts.png') }}" class="img-fluid shadow">
@@ -166,7 +172,7 @@
 
     <!--services section-->
     <div class="service-container container-fluid p-0 text-left position-relative" style="margin-top: 7rem;">
-        <img src="{{ asset('img/services-banner.jpg') }}" class="img-fluid w-100">
+        <img src="{{ asset('img/services-banner.jpg') }}" class="img-fluid w-100" style="height: 850px!important">
         <div class="top-left text-white">
             <div class="container">
                 <h5>SERVICES</h5>
@@ -182,7 +188,7 @@
                     <div class="card shadow mt-3 mb-3 p-2 p-lg-3" data-aos="zoom-in" data-aos-duration="600">
                         <div class="container p-3 text-center">
                             <i class="fas fa-home fa-2x"></i> <br><br>
-                            <h5><b>Planing</b></h5> <br>
+                            <h5><b>Architecture</b></h5> <br>
                             <p class="pt-2 pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting</p> <br>
                             <button class="btn default">READ <i class="fas fa-angle-double-right"></i></button>
                         </div>
@@ -192,7 +198,7 @@
                     <div class="card shadow mt-3 mb-3 p-2 p-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
                         <div class="container p-3 text-center">
                             <i class="fas fa-hotel fa-2x"></i><br><br>
-                            <h5><b>Interior</b></h5><br>
+                            <h5><b>Engineering Services</b></h5><br>
                             <p class="pt-2 pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting</p><br>
                             <button class="btn default">READ <i class="fas fa-angle-double-right"></i></button>
                         </div>
@@ -202,7 +208,7 @@
                     <div class="card shadow mt-3 mb-3 p-2 p-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
                         <div class="container p-3 text-center">
                             <i class="fas fa-edit fa-2x"></i><br><br>
-                            <h5><b>Exterior</b></h5><br>
+                            <h5><b>Landscape</b></h5><br>
                             <p class="pt-2 pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting</p><br>
                             <button class="btn default">READ <i class="fas fa-angle-double-right"></i></button>
                         </div>
@@ -269,22 +275,21 @@
                     <li data-target="#carousel-testimonial" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
+                    <img class="d-block w-100 testi-image img-fluid" src="{{ asset('img/testimentional.jpg') }}" alt="First slide">
+
                     <div class="carousel-item active">
-                        <img class="d-block w-100 testi-image" src="{{ asset('img/testimentionals-1.jpg') }}" alt="First slide">
                         <div class="carousel-caption">
                             <h5 class="text-white testimonial-text">I’ve said Goodbye to the <span class="h3">“over Worked notion”</span> that <br> Architecture has to save the world.</h5>
                             <p class="lead text">- Peter Zumthor -</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100 testi-image" src="{{ asset('img/testimentionals-2.jpg') }}" alt="Second slide">
                         <div class="carousel-caption">
                             <h5 class="text-white testimonial-text">I’ve said Goodbye to the <span class="h3">“over Worked notion”</span> that <br> Architecture has to save the world.</h5>
                             <p class="lead text">- Peter Zumthor -</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100 testi-image" src="{{ asset('img/testimentionals-3.jpg') }}" alt="Third slide">
                         <div class="carousel-caption">
                             <h5 class="text-white testimonial-text">I’ve said Goodbye to the <span class="h3">“over Worked notion”</span> that <br> Architecture has to save the world.</h5>
                             <p class="lead text">- Peter Zumthor -</p>
@@ -307,8 +312,7 @@
     <div class="container contact-section mb-5" style="margin-top: 6rem;">
         <div class="row">
             <div class="col-md-6">
-                <h4 data-aos="fade-up" data-aos-duration="500">CONTACT US</h4>
-                <h1 data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">Let's start new project.</h1>
+                <h1 data-aos="fade-up" data-aos-duration="500">Let's start a new project.</h1>
 
                 <div class="content" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                     <p>

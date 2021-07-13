@@ -8,9 +8,11 @@
 .slider-section .carousel-indicators {
     top: 80%;
 }
-/* .slider-section .carousel-item {
-    max-height: 1000px;
-} */
+.slider-section .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 35px!important;
+    height: 35px!important;
+}
+
 .slider-section .carousel-indicators li {
     width: 10px;
     height: 10px;
@@ -25,6 +27,11 @@
 .ayubowan-card-body {
     padding: 30px 100px;
 }
+
+/* @font-face {
+    font-family:"bindhumathi";
+    src: url("fonts/bindhumathi.ttf") format("truetype");
+} */
 
 
 /* projects */
@@ -155,9 +162,9 @@
 .testimonial-section .carousel-indicators .active {
     background-color: black;
 }
-.testimonial-section .carousel-item .carousel-caption {
+/* .testimonial-section .carousel-item .carousel-caption {
     bottom: 5rem;
-}
+} */
 
 
 /*media quaries*/
@@ -167,28 +174,28 @@
 
 @media (min-width: 1400px) {
     .testimonial-section .testi-image {
-        height: 750px!important;
+        height: 500px!important;
     }
 }
 
 @media (max-width: 1400px) {
     .testimonial-section .testi-image {
-        height: 600px!important;
+        height: 400px!important;
     }
 }
 
 @media (max-width: 1200px) {
     .testimonial-section .testi-image {
-        height: 500px!important;
+        height: 300px!important;
     }
 }
 
 @media (max-width: 992px) {
     .testimonial-section .testi-image {
-        height: 400px!important;
+        height: 200px!important;
     }
     .project-section .carousel-item .carousel-caption {
-        bottom: -50px;
+        bottom: -20px;
     }
     .project-section .carousel-item .carousel-caption h5 {
         font-size: 16px!important;
@@ -261,7 +268,7 @@
         margin-top: 4rem!important;
     }
     .testimonial-section .testi-image {
-        height: 300px!important;
+        height: 200px!important;
     }
     .testimonial-section .carousel-item .carousel-caption {
         bottom: 1rem;
@@ -283,7 +290,7 @@
         margin-bottom: 2rem!important;
     }
     .testimonial-section .testi-image {
-        height: 250px!important;
+        height: 200px!important;
     }
 }
 

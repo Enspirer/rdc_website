@@ -11,6 +11,7 @@ use App\Http\Controllers\Frontend\PeopleController;
 use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\PressController;
 use App\Http\Controllers\Frontend\ProjectsController;
+use App\Http\Controllers\Frontend\TripController;
 
 
 
@@ -93,6 +94,13 @@ Route::get('press', [PressController::class, 'index'])
 
 Route::get('projects', [ProjectsController::class, 'index'])
 ->name('projects')
+// ->breadcrumbs(function (Trail $trail) {
+//     $trail->push(__('Home'), route('frontend.index'));
+// })
+;
+
+Route::get('trip-individual', [TripController::class, 'index'])
+->name('trip-individual')
 // ->breadcrumbs(function (Trail $trail) {
 //     $trail->push(__('Home'), route('frontend.index'));
 // })

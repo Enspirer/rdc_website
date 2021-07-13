@@ -52,4 +52,11 @@ jQuery(function(){
         $(".modal-body img").attr("src", "img/awards/" + arg + ".jpg");
     });
 
+
+    // trip modal
+    $('.trip img').on('click', function(){
+        var arg = $(this).attr('src');
+        
+        $(".modal-body img").attr("src", arg);
+    });
 });

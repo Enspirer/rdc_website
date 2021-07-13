@@ -13,6 +13,22 @@
     </section>
 
 
+    <!-- scroll indicator icon -->
+    <div class="mouse_scroll">
+
+      <div class="mouse">
+          <div class="wheel"></div>
+      </div>
+      <div>
+          <span class="m_scroll_arrows unu"></span>
+          <span class="m_scroll_arrows doi"></span>
+          <span class="m_scroll_arrows trei"></span>
+      </div>
+
+    </div>
+    
+
+
     <!--path-->
     <section id="path">
       <div class="container mt-3 path">
@@ -34,7 +50,7 @@
 
                     <p class="mt-4" style="font-size: 0.9rem; line-height: 1.7rem; text-align: justify;" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo placeat ex reprehenderit dolores labore aperiam ratione! Non natus nobis suscipit molestias vel maxime voluptate eum, consequuntur earum perspiciatis odit veritatis?</p>
 
-                    <button class="btn rounded-0 mt-3 px-4" style="border: 1px solid #1F1504; color: #1F1504;" data-aos="flip-up" data-aos-duration="500" data-aos-delay="100">SHOW MORE<i class="bi bi-chevron-double-right ms-2"></i></button>
+                    <a href="{{ url('trip-individual') }}" class="btn rounded-0 mt-3 px-4" style="border: 1px solid #1F1504; color: #1F1504;" data-aos="flip-up" data-aos-duration="500" data-aos-delay="100">SHOW MORE<i class="bi bi-chevron-double-right ms-2"></i></a>
 
                 </div>
 

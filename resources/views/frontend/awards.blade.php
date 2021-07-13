@@ -12,6 +12,22 @@
     </section>
 
 
+
+    <!-- scroll indicator icon -->
+    <div class="mouse_scroll">
+
+      <div class="mouse">
+          <div class="wheel"></div>
+      </div>
+      <div>
+          <span class="m_scroll_arrows unu"></span>
+          <span class="m_scroll_arrows doi"></span>
+          <span class="m_scroll_arrows trei"></span>
+      </div>
+
+    </div>
+    
+    
     <!--path-->
     <section id="path">
       <div class="container mt-3 path">
@@ -34,9 +50,6 @@
                 <div class="col-9 p-0">
                     <p style="font-size: 0.9rem; line-height: 1.7rem;"><span class="fw-bold">"Young Architect of the year 2009",</span> by Sri Lanka Institute of Architects.</p>
                 </div>
-                <div class="col-2">
-                    <img src="{{ asset('img/click.jpg') }}" alt="" class="img-fluid">
-                </div>
             </div>
 
             <div class="row mb-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
@@ -45,9 +58,6 @@
                 </div>
                 <div class="col-9 p-0">
                     <p style="font-size: 0.9rem; line-height: 1.7rem;">Rotary International Wilf Wilkinsom Commemorative - RIBI Award by Great Britain & Ireland for Thambaddai GTM School @ Akkaraipattu in 2007.</p>
-                </div>
-                <div class="col-2">
-                    <img src="{{ asset('img/click.jpg') }}" alt="" class="img-fluid">
                 </div>
             </div>
 
@@ -59,7 +69,7 @@
                     <p style="font-size: 0.9rem; line-height: 1.7rem;"><span class="fw-bold">"Best Personalized House of the year in 2008"</span> for The "Garden House @ Habaraduwa, by Sri Lanka Institute of Architects.</p>
                 </div>
                 <div class="col-2">
-                    <img src="{{ asset('img/click.jpg') }}" alt="" class="img-fluid award-click" data-bs-toggle="modal" data-bs-target="#exampleModal" data-arg="3">
+                    <button class="btn default mb-3 mb-md-0 award-click" data-bs-toggle="modal" data-bs-target="#exampleModal" data-arg="3" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400">CLICK HERE</button>
                 </div>
             </div>
 
@@ -71,7 +81,7 @@
                     <p style="font-size: 0.9rem; line-height: 1.7rem;"><span class="fw-bold">Best CSR Project 2018</span> in Sri Lanka by Japan Sri Lanka Technical & Cultural Association – JASTECA</p>
                 </div>
                 <div class="col-2">
-                    <img src="{{ asset('img/click.jpg') }}" alt="" class="img-fluid award-click" class="img-fluid award-click" data-bs-toggle="modal" data-bs-target="#exampleModal" data-arg="4">
+                    <button class="btn default mb-3 mb-md-0 award-click" data-bs-toggle="modal" data-bs-target="#exampleModal" data-arg="4" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400">CLICK HERE</button>
                 </div>
             </div>
 
@@ -83,7 +93,7 @@
                     <p style="font-size: 0.9rem; line-height: 1.7rem;"><span class="fw-bold">Best Sustainability Project 2018</span> by Japan Sri Lanka Technical & Cultural Association - JASTECA</p>
                 </div>
                 <div class="col-2">
-                    <img src="{{ asset('img/click.jpg') }}" alt="" class="img-fluid award-click" class="img-fluid award-click" data-bs-toggle="modal" data-bs-target="#exampleModal" data-arg="5">
+                    <button class="btn default mb-3 mb-md-0 award-click" data-bs-toggle="modal" data-bs-target="#exampleModal" data-arg="5" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400">CLICK HERE</button>
                 </div>
             </div>
 
@@ -95,7 +105,7 @@
                     <p style="font-size: 0.9rem; line-height: 1.7rem;"><span class="fw-bold">Merit Award 2018 for Office Building Category</span> – Jiffy Products (Pvt) Ltd office building @ Mirigama & was recognized as the <span class="fw-bold">Best Office Building in Sri Lanka for 2018</span></p>
                 </div>
                 <div class="col-2">
-                    <img src="{{ asset('img/click.jpg') }}" alt="" class="img-fluid award-click" class="img-fluid award-click" data-bs-toggle="modal" data-bs-target="#exampleModal" data-arg="6">
+                    <button class="btn default mb-3 mb-md-0 award-click" data-bs-toggle="modal" data-bs-target="#exampleModal" data-arg="6" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400">CLICK HERE</button>
                 </div>
             </div>
 
@@ -107,7 +117,7 @@
                     <p style="font-size: 0.9rem; line-height: 1.7rem;"><span class="fw-bold">"AIA, Honor" Award for Open International Architecture 2019</span> and Jury Special Award <span class="fw-bold">'AIA, Sustainable Future Award for Architecture 2019'</span> for Jiffy Products SL Office Building @ Mirigama by <span class="fw-bold">American Institute of Architects.</span></p>
                 </div>
                 <div class="col-2">
-                    <img src="{{ asset('img/click.jpg') }}" alt="" class="img-fluid award-click" class="img-fluid award-click" data-bs-toggle="modal" data-bs-target="#exampleModal" data-arg="7">
+                    <button class="btn default mb-3 mb-md-0 award-click" data-bs-toggle="modal" data-bs-target="#exampleModal" data-arg="7" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400">CLICK HERE</button>
                 </div>
             </div>
 
