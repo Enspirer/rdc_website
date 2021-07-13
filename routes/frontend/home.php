@@ -78,12 +78,8 @@ Route::get('people', [PeopleController::class, 'index'])
 // })
 ;
 
-Route::get('contact-us', [ContactController::class, 'index'])
-->name('contact')
-// ->breadcrumbs(function (Trail $trail) {
-//     $trail->push(__('Home'), route('frontend.index'));
-// })
-;
+Route::get('contact-us', [ContactController::class, 'index'])->name('contact');
+Route::post('contact-us/insert', [ContactController::class, 'store'])->name('contact.store');
 
 Route::get('press', [PressController::class, 'index'])
 ->name('press')

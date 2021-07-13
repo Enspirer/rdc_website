@@ -2,6 +2,26 @@
 
 @section('content')
 
+
+@if ( session()->has('message') )
+   
+    <body style="text-align:center; background-color: #C0C0C0">
+
+        <!-- <div style="text-align:center; background-color: grey"> -->
+
+        <h1 style="margin-top:150px;" class="display-3">Thank You!</h1><br>
+        <p class="lead"><h3>We appreciate you contacting us. One of our member will get back in touch with you soon!<br><br> Have a great day!</h3></p>
+        <hr><br>    
+        <p class="lead">
+            <a class="btn btn-success btn-md" href="{{url('contact-us')}}" role="button">Go Back to Contact Us Page</a>
+        </p>
+        <!-- </div> -->
+        
+    </body>
+
+@else 
+
+
     <link rel="stylesheet" href="{{ asset('css/contact-us.css') }}">
 
     <!--banner section-->
@@ -112,25 +132,26 @@
                 </div>
 
                 <div class="col-md-6 form">
-                    <form>
+                    <form action="{{route('frontend.contact.store')}}" method="post" enctype="multipart/form-data">
+                        {{csrf_field()}}
                         <div class="mb-4">
                             <div class="row">
                                 <div class="col" data-aos="fade-up" data-aos-duration="500">
-                                    <input type="text" class="form-control" id="name" placeholder="Name" aria-describedby="name">
+                                    <input type="text" class="form-control" name="name" placeholder="Name" aria-describedby="name" required>
                                 </div>
                                 <div class="col" data-aos="fade-up" data-aos-duration="500">
-                                    <input type="text" class="form-control" id="phone" placeholder="Phone" aria-describedby="phone">
+                                    <input type="text" class="form-control" name="phone" placeholder="Phone" aria-describedby="phone" required>
                                 </div>
                             </div>
                         </div>
                         <div class="mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
-                            <input type="email" class="form-control" id="email" placeholder="Email" aria-describedby="email">
+                            <input type="email" class="form-control" name="email" placeholder="Email" aria-describedby="email" required>
                         </div>
                         <div class="mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
-                          <textarea class="form-control" name="message" id="message" cols="60" rows="3" placeholder="Message"></textarea>
+                          <textarea class="form-control" name="message" name="message" cols="60" rows="3" placeholder="Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn rounded-0 fw-bold" style="border: 2px solid black; width:100%;" data-aos="flip-up" data-aos-duration="500" data-aos-delay="300">SEND</button>
-                      </form>
+                        <input type="submit" value="SEND" class="btn rounded-0 fw-bold" style="border: 2px solid black; width:100%;" data-aos="flip-up" data-aos-duration="500" data-aos-delay="300">
+                    </form>
                 </div>
             </div>
         </div>
@@ -147,5 +168,8 @@
             </div>
         </div>
     </section>
+
+       
+@endif   
 
 @endsection
