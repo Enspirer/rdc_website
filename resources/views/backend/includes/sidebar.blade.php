@@ -18,6 +18,31 @@
                 :text="__('Dashboard')" />
         </li>
 
+        <li class="c-sidebar-nav-dropdown ">
+                <x-utils.link
+                    href="#"
+                    icon="c-sidebar-nav-icon fas fa-tasks"
+                    class="c-sidebar-nav-dropdown-toggle"
+                    :text="__('Projects')" />
+
+            <ul class="c-sidebar-nav-dropdown-items">                   
+                    <li class="c-sidebar-nav-item">
+                        <x-utils.link
+                            :href="route('admin.category.index')"
+                            class="c-sidebar-nav-link"
+                            :text="__('Category')"
+                            :active="activeClass(Route::is('admin.category'), 'c-active')" />
+                    </li>                    
+                    <li class="c-sidebar-nav-item">
+                        <x-utils.link
+                            :href="route('admin.projects.index')"
+                            class="c-sidebar-nav-link"
+                            :text="__('Project')"
+                            :active="activeClass(Route::is('admin.projects'), 'c-active')" />
+                    </li>                   
+            </ul>
+        </li>   
+
         <li class="c-sidebar-nav-item">
             <x-utils.link
                 class="c-sidebar-nav-link"
@@ -27,33 +52,7 @@
                 :text="__('Contact Us')" />
         </li>
 
-
-
-        <!-- <li class="c-sidebar-nav-dropdown {{ activeClass(Route::is('admin.auth.user.*') || Route::is('admin.auth.role.*'), 'c-open c-show') }}">
-                <x-utils.link
-                    href="#"
-                    icon="c-sidebar-nav-icon cil-user"
-                    class="c-sidebar-nav-dropdown-toggle"
-                    :text="__('Access')" />
-
-            <ul class="c-sidebar-nav-dropdown-items">                   
-                    <li class="c-sidebar-nav-item">
-                        <x-utils.link
-                            :href="route('admin.auth.user.index')"
-                            class="c-sidebar-nav-link"
-                            :text="__('User Management')"
-                            :active="activeClass(Route::is('admin.auth.user.*'), 'c-active')" />
-                    </li>
-                    
-                    <li class="c-sidebar-nav-item">
-                        <x-utils.link
-                            :href="route('admin.auth.role.index')"
-                            class="c-sidebar-nav-link"
-                            :text="__('Role Management')"
-                            :active="activeClass(Route::is('admin.auth.role.*'), 'c-active')" />
-                    </li>                   
-            </ul>
-        </li> -->
+        
 
 
 
