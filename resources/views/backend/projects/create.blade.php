@@ -46,11 +46,12 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <div class="" style="border-style: dashed;border-width: 1px;padding: 10px;">
+                        <div class="" style="border-style: ridge;border-width: 3px;padding: 20px;">
                             <div class="form-group">
                                 <label>Feature Image </label>
                                 <input type="file" class="form-control-file" name="feature_image" required>
                             </div>
+                            <br>
                             
                             <div class="form-group">
                                 <label>Add Image and Order</label>
@@ -89,16 +90,16 @@ $(document).ready(function(){
     function dynamic_field(number)
     {
     html = '<tr>';
-            html += '<td width="90%"><input type="file" name="image[]" class="form-control mb-2" required/><input type="text" class="form-control" name="image_order[]" placeholder="order number" required></td>';
+            html += '<td width="90%"><input type="file" name="image[]" class="mb-2" required/><input type="text" class="form-control" name="image_order[]" placeholder="order number" required></td>';
         
             if(number > 1)
             {
-                html += '<td><button type="button" name="remove" id="" class="btn btn-danger remove">-</button></td></tr>';
+                html += '<td><button type="button" name="remove" id="" class="btn btn-warning remove"><i class="fas fa-minus"></i></button></td></tr>';
                 $('tbody').append(html);
             }
             else
             {   
-                html += '<td><button type="button" name="add" id="add" class="btn btn-success">+</button></td></tr>';
+                html += '<td><button type="button" name="add" id="add" class="btn btn-success"><i class="fas fa-plus"></i></button></td></tr>';
                 $('tbody').html(html);
             }
     }

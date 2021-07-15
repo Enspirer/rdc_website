@@ -5,6 +5,7 @@ use Tabuna\Breadcrumbs\Trail;
 use App\Http\Controllers\Backend\ContactUsController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\ProjectsController;
+use App\Http\Controllers\Backend\AwardsController;
 
 // All route names are prefixed with 'admin.'.
 Route::redirect('/', '/admin/dashboard', 301);
@@ -48,6 +49,23 @@ Route::get('projects/create', [ProjectsController::class, 'create'])->name('proj
 });    
 Route::post('projects/store', [ProjectsController::class, 'store'])->name('projects.store');
 Route::get('projects/getdetails', [ProjectsController::class, 'GetTableDetails'])->name('projects.GetTableDetails');
-// Route::get('projects/edit/{id}', [ProjectsController::class, 'edit'])->name('projects.edit');
-// Route::post('projects/update', [ProjectsController::class, 'update'])->name('projects.update');
+Route::get('projects/edit/{id}', [ProjectsController::class, 'edit'])->name('projects.edit')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Edit Projects'), route('admin.projects.edit',1));
+});  
+Route::get('projects/editimage/{id}', [ProjectsController::class, 'editimage'])->name('projects.editimage')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Edit Images'), route('admin.projects.editimage',1));
+}); 
+Route::post('projects/update', [ProjectsController::class, 'update'])->name('projects.update');
+Route::post('projects/updateimage', [ProjectsController::class, 'updateimage'])->name('projects.updateimage');
 Route::get('projects/delete/{id}', [ProjectsController::class, 'destroy'])->name('projects.destroy');
+Route::get('projects/editimage/projectsimage/delete/{id}', [ProjectsController::class, 'delete'])->name('projects.delete');
+
+// ***********************************************************************************************
+Route::get('awards', [AwardsController::class, 'index'])->name('awards.index')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Awards'), route('admin.awards.index'));
+});  
+Route::post('awards/store', [AwardsController::class, 'store'])->name('awards.store');
+Route::get('awards/getdetails', [AwardsController::class, 'GetTableDetails'])->name('awards.GetTableDetails');

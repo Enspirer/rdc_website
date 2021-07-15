@@ -95,7 +95,14 @@
                 <li class="nav-item project-item" role="presentation" style="border-bottom: 2px solid white;">
                   <a class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</a>
                 </li>
+
+                @foreach($category as $key => $cat)
                 <li class="nav-item project-item" role="presentation" style="border-bottom: 2px solid white;">
+                  <a class="nav-link" id="pills-leisure-tab" data-bs-toggle="pill" data-bs-target="#pills-leisure" type="button" role="tab" aria-controls="pills-leisure" aria-selected="false">{!!$cat->name!!}</a>
+                </li>
+                @endforeach 
+
+                <!-- <li class="nav-item project-item" role="presentation" style="border-bottom: 2px solid white;">
                   <a class="nav-link" id="pills-leisure-tab" data-bs-toggle="pill" data-bs-target="#pills-leisure" type="button" role="tab" aria-controls="pills-leisure" aria-selected="false">Leisure</a>
                 </li>
                 <li class="nav-item project-item" role="presentation" style="border-bottom: 2px solid white;">
@@ -115,7 +122,7 @@
                 </li>
                 <li class="nav-item project-item" role="presentation" style="border-bottom: 2px solid white;">
                     <a class="nav-link" id="pills-institutional-tab" data-bs-toggle="pill" data-bs-target="#pills-institutional" type="button" role="tab" aria-controls="pills-institutional" aria-selected="false">Institutional</a>
-                </li>
+                </li> -->
             </ul>
 
             <div class="tab-content mt-5" id="pills-tabContent">

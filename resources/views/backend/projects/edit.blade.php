@@ -1,0 +1,62 @@
+@extends('backend.layouts.app')
+
+@section('title', __('Dashboard'))
+
+@section('content')
+    <form action="{{route('admin.projects.update')}}" method="post" enctype="multipart/form-data">
+        {{csrf_field()}}
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text" class="form-control" name="title" value="{{ $projects->title }}" required>
+                        </div>
+                        <div class="form-group">
+                                <label>Category</label>
+                                <select class="form-control" name="category" required>
+                                    @foreach($category as $cat)
+                                        <option value="{{$cat->name}}" {{ $projects->category == $cat->name ? "selected" : "" }}> {{$cat->name}} </option>
+                                    @endforeach
+                                    
+                                </select>
+                            </div>
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea type="text" class="form-control" name="description" rows="8" required> {{ $projects->description }} </textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Status</label>
+                            <select class="form-control" name="status" required>
+                                <option value="Enabled" {{ $projects->status == 'Enabled' ? "selected" : "" }}>Enable</option>   
+                                <option value="Disabled" {{ $projects->status == 'Disabled' ? "selected" : "" }}>Disable</option>                                
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Order</label>
+                            <input type="text" class="form-control" name="order" value="{{ $projects->order }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Feature Image </label>
+                            <input type="file" class="form-control-file" name="feature_image">
+                            <br>
+                            <img src="{{url('files/projects/',$projects->feature_image)}}" style="width: 40%;" alt="" >
+                        </div>
+                        
+                    </div>
+                </div>
+                <input type="hidden" name="hidden_id" value="{{ $projects->id }}"/>
+                <button type="submit" class="btn btn-success pull-right">Update Project</button>&nbsp;&nbsp;&nbsp;
+                <a href="{{route('admin.projects.index')}}" class="btn btn-primary pull-right ml-4">Back to Projects</a><br>
+            </div><br>
+            
+            
+
+        </div>
+
+    </form>
+
+
+<br><br>
+@endsection

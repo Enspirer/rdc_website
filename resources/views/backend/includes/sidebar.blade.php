@@ -41,8 +41,8 @@
                             :active="activeClass(Route::is('admin.projects'), 'c-active')" />
                     </li>                   
             </ul>
-        </li>   
-
+        </li>
+        
         <li class="c-sidebar-nav-item">
             <x-utils.link
                 class="c-sidebar-nav-link"
@@ -50,6 +50,15 @@
                 :active="activeClass(Route::is('admin.contactus'), 'c-active')"
                 icon="c-sidebar-nav-icon fas fa-comments"
                 :text="__('Contact Us')" />
+        </li>
+
+        <li class="c-sidebar-nav-item">
+            <x-utils.link
+                class="c-sidebar-nav-link"
+                :href="route('admin.awards.index')"
+                :active="activeClass(Route::is('admin.awards'), 'c-active')"
+                icon="c-sidebar-nav-icon fas fa-award"
+                :text="__('Awards')" />
         </li>
 
         

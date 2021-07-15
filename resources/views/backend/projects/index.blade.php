@@ -16,12 +16,13 @@
                    
                 </div><!--card-header-->
 
-                <!-- <div class="card-body">
+                <div class="card-body">
                     <table class="table table-striped table-bordered" id="villadatatable" style="width:100%">
                         <thead>
                             <tr>
                                 <th scope="col">#ID</th>
                                 <th scope="col">Project Title</th>
+                                <th scope="col">Category</th>
                                 <th scope="col">Status</th>
                                 <th scope="col">Order</th>
                                 <th scope="col">Option</th>
@@ -31,7 +32,7 @@
 
                         </tbody>
                     </table>
-                </div> -->
+                </div>
             </div><!--card-->
         </div><!--col-->
     </div><!--row-->
@@ -69,19 +70,20 @@
 
     <script type="text/javascript">
         $(function () {
-            // var table = $('#villadatatable').DataTable({
-            //     processing: true,
-            //     ajax: "{{route('admin.projects.GetTableDetails')}}",
-            //     serverSide: true,
-            //     order: [[0, "desc"]],
-            //     columns: [
-            //         {data: 'id', name: 'id'},
-            //         {data: 'name', name: 'name'},
-            //         {data: 'status', name: 'status'},
-            //         {data: 'order', name: 'order'},
-            //         {data: 'action', name: 'action', orderable: false, searchable: false},
-            //     ]
-            // });
+            var table = $('#villadatatable').DataTable({
+                processing: true,
+                ajax: "{{route('admin.projects.GetTableDetails')}}",
+                serverSide: true,
+                order: [[0, "desc"]],
+                columns: [
+                    {data: 'id', name: 'id'},
+                    {data: 'title', name: 'title'},
+                    {data: 'category', name: 'category'},
+                    {data: 'status', name: 'status'},
+                    {data: 'order', name: 'order'},
+                    {data: 'action', name: 'action', orderable: false, searchable: false},
+                ]
+            });
  
 
             var user_id;

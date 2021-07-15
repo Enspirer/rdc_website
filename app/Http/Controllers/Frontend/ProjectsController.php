@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Models\Category;
+use DB;
 /**
  * Class HomeController.
  */
@@ -12,6 +16,10 @@ class ProjectsController
      */
     public function index()
     {
-        return view('frontend.projects');
+        $category = DB::table('categories')->orderBy('order', 'ASC')->where('status', '=', 'Enabled')->get();
+        // dd($category);
+        return view('frontend.projects',[
+            'category' => $category
+        ]);
     }
 }
