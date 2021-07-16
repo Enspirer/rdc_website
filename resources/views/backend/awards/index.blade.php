@@ -22,7 +22,8 @@
                             <tr>
                                 <th scope="col">#ID</th>
                                 <th scope="col">Awards Name</th>
-                                <th scope="col">Button Status</th>
+                                <!-- <th scope="col">Image</th> -->
+                                <!-- <th scope="col">Button Status</th> -->
                                 <th scope="col">Status</th>
                                 <th scope="col">Order</th>
                                 <th scope="col">Option</th>
@@ -53,26 +54,26 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input type="text" class="form-control" name="name" required>
-                        </div>
                         
-                        <label>Description</label>
-                        <textarea class="form-control" name="description"  rows="4" required></textarea>
+                        <label>Name</label>
+                        <textarea class="form-control" name="name"  rows="4" required></textarea>
                         <br>
+                        
+                        <!-- <label>Description</label>
+                        <textarea class="form-control" name="description"  rows="3" required></textarea>
+                        <br> -->
                         <div class="form-group">
                             <label>Image </label>
-                            <input type="file" class="form-control-file" name="image" required>
+                            <input type="file" class="form-control-file" name="image">
                         </div>
                         
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label>Button Status</label>
                             <select class="form-control" name="button_status" required>
                                 <option value="Enabled">Enable</option>   
                                 <option value="Disabled">Disable</option>                                
                             </select>
-                        </div>
+                        </div> -->
 
                         <div class="form-group">
                             <label>Status</label>
@@ -98,55 +99,6 @@
             </div>
         </div>
     </div>
-
-
-    <!-- Modal edit -->
-    <!-- <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-            <span id="form_result"></span>
-                <form action="" method="post">
-                   
-                    {{csrf_field()}}
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Edit</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input type="text" class="form-control" name="name" id="name" required>
-                        </div>
-                        
-                        <label>Description</label>
-                        <textarea class="form-control" name="description" id="description" rows="4" required></textarea>
-                        <br>
-                        <div class="form-group">
-                            <label>Status</label>
-                            <select class="form-control" name="status" id="status" required>
-                                <option value="Enabled">Enable</option>   
-                                <option value="Disabled">Disable</option>                                
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Order</label>
-                            <input type="text" class="form-control" name="order" id="order" required>
-                        </div>
-
-                    </div>
-                    <div class="modal-footer">
-                        <input type="hidden" name="hidden_id" id="hidden_id" />
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <input type="submit" class="btn btn-success" name="action_button" id="action_button" value="Update">
-                    </div>
-                </form>
-
-            </div>
-        </div>
-    </div> -->
 
      <!-- Modal delete -->
      <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="ModalDeleteLabel" aria-hidden="true">
@@ -188,55 +140,34 @@
                 columns: [
                     {data: 'id', name: 'id'},
                     {data: 'name', name: 'name'},
-                    {data: 'b_status', name: 'b_status'},
+                    // {data: 'image', name: 'image'},
+                    // {data: 'b_status', name: 'b_status'},
                     {data: 'status', name: 'status'},
                     {data: 'order', name: 'order'},
                     {data: 'action', name: 'action', orderable: false, searchable: false},
                 ]
+            }); 
+
+            var user_id;
+
+            $(document).on('click', '.delete', function(){
+            user_id = $(this).attr('id');
+            $('#confirmModal').modal('show');
             });
 
-            // $(document).on('click', '.edit', function(){
-
-            // var user_id;
-
-            // var user_id = $(this).attr('id');
-            // $('#form_result').html('');
-            // $.ajax({
-            // url :"category/edit/"+user_id,
-
-            // dataType:"json",
-            // success:function(data)
-            // {
-            //     $('#name').val(data.result.name);
-            //     $('#description').val(data.result.description);
-            //     $('#status').val(data.result.status);
-            //     $('#order').val(data.result.order);
-            //     $('#hidden_id').val(user_id);
-            //     $('#editModal').modal('show');
-            // }
-            // })
-            // });    
-
-            // var user_id;
-
-            // $(document).on('click', '.delete', function(){
-            // user_id = $(this).attr('id');
-            // $('#confirmModal').modal('show');
-            // });
-
-            // $('#ok_button').click(function(){
-            // $.ajax({
-            // url:"category/delete/"+user_id,
+            $('#ok_button').click(function(){
+            $.ajax({
+            url:"awards/delete/"+user_id,
             
-            // success:function(data)
-            // {
-            //     setTimeout(function(){
-            //     $('#confirmModal').modal('hide');
-            //     $('#villadatatable').DataTable().ajax.reload();
-            //     });
-            // }
-            // })
-            // });
+            success:function(data)
+            {
+                setTimeout(function(){
+                $('#confirmModal').modal('hide');
+                $('#villadatatable').DataTable().ajax.reload();
+                });
+            }
+            })
+            });
 
           
         });

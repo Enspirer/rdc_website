@@ -42,97 +42,52 @@
             <h2 data-aos="fade-right" data-aos-duration="500">Awards</h2>
 
             <h4 class="fw-bold mt-5" data-aos="fade-right" data-aos-duration="500" data-aos-delay="400">Awards won by principal architect</h4>
+            <br><br>
 
-            <div class="row mt-5 mb-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+            @foreach($awards as $key => $award)
+
+            @if($award->image == null)
+
+            <div class="row mb-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                 <div class="col-1">
                     <i class="fas fa-award fs-4" style="color: #B79079;"></i>
                 </div>
                 <div class="col-9 p-0">
-                    <p style="font-size: 0.9rem; line-height: 1.7rem;"><span class="fw-bold">"Young Architect of the year 2009",</span> by Sri Lanka Institute of Architects.</p>
+                    <p style="font-size: 0.9rem; line-height: 1.7rem;">{!!$award->name!!}</p>
                 </div>
             </div>
 
-            <div class="row mb-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-                <div class="col-1">
-                    <i class="fas fa-award fs-4" style="color: #B79079;"></i>
-                </div>
-                <div class="col-9 p-0">
-                    <p style="font-size: 0.9rem; line-height: 1.7rem;">Rotary International Wilf Wilkinsom Commemorative - RIBI Award by Great Britain & Ireland for Thambaddai GTM School @ Akkaraipattu in 2007.</p>
-                </div>
-            </div>
-
+            @else
+            
             <div class="row mb-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" >
                 <div class="col-1">
                     <i class="fas fa-award fs-4" style="color: #B79079;"></i>
                 </div>
                 <div class="col-9 p-0">
-                    <p style="font-size: 0.9rem; line-height: 1.7rem;"><span class="fw-bold">"Best Personalized House of the year in 2008"</span> for The "Garden House @ Habaraduwa, by Sri Lanka Institute of Architects.</p>
+                    <p style="font-size: 0.9rem; line-height: 1.7rem;">{!!$award->name!!}</p>
                 </div>
                 <div class="col-2">
-                    <button class="btn default mb-3 mb-md-0 award-click" data-bs-toggle="modal" data-bs-target="#exampleModal" data-arg="3" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400">CLICK HERE</button>
+                    <button class="btn default mb-3 mb-md-0 award-click" data-bs-toggle="modal" data-bs-target="#exampleModal{{$award->id}}" data-arg="3" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400">CLICK HERE</button>
                 </div>
             </div>
+            @endif
 
-            <div class="row mb-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
-                <div class="col-1">
-                    <i class="fas fa-award fs-4" style="color: #B79079;"></i>
-                </div>
-                <div class="col-9 p-0">
-                    <p style="font-size: 0.9rem; line-height: 1.7rem;"><span class="fw-bold">Best CSR Project 2018</span> in Sri Lanka by Japan Sri Lanka Technical & Cultural Association – JASTECA</p>
-                </div>
-                <div class="col-2">
-                    <button class="btn default mb-3 mb-md-0 award-click" data-bs-toggle="modal" data-bs-target="#exampleModal" data-arg="4" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400">CLICK HERE</button>
-                </div>
-            </div>
+            @endforeach
 
-            <div class="row mb-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
-                <div class="col-1">
-                    <i class="fas fa-award fs-4" style="color: #B79079;"></i>
-                </div>
-                <div class="col-9 p-0">
-                    <p style="font-size: 0.9rem; line-height: 1.7rem;"><span class="fw-bold">Best Sustainability Project 2018</span> by Japan Sri Lanka Technical & Cultural Association - JASTECA</p>
-                </div>
-                <div class="col-2">
-                    <button class="btn default mb-3 mb-md-0 award-click" data-bs-toggle="modal" data-bs-target="#exampleModal" data-arg="5" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400">CLICK HERE</button>
-                </div>
-            </div>
-
-            <div class="row mb-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
-                <div class="col-1">
-                    <i class="fas fa-award fs-4" style="color: #B79079;"></i>
-                </div>
-                <div class="col-9 p-0">
-                    <p style="font-size: 0.9rem; line-height: 1.7rem;"><span class="fw-bold">Merit Award 2018 for Office Building Category</span> – Jiffy Products (Pvt) Ltd office building @ Mirigama & was recognized as the <span class="fw-bold">Best Office Building in Sri Lanka for 2018</span></p>
-                </div>
-                <div class="col-2">
-                    <button class="btn default mb-3 mb-md-0 award-click" data-bs-toggle="modal" data-bs-target="#exampleModal" data-arg="6" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400">CLICK HERE</button>
-                </div>
-            </div>
-
-            <div class="row" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700">
-                <div class="col-1">
-                    <i class="fas fa-award fs-4" style="color: #B79079;"></i>
-                </div>
-                <div class="col-9 p-0">
-                    <p style="font-size: 0.9rem; line-height: 1.7rem;"><span class="fw-bold">"AIA, Honor" Award for Open International Architecture 2019</span> and Jury Special Award <span class="fw-bold">'AIA, Sustainable Future Award for Architecture 2019'</span> for Jiffy Products SL Office Building @ Mirigama by <span class="fw-bold">American Institute of Architects.</span></p>
-                </div>
-                <div class="col-2">
-                    <button class="btn default mb-3 mb-md-0 award-click" data-bs-toggle="modal" data-bs-target="#exampleModal" data-arg="7" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400">CLICK HERE</button>
-                </div>
-            </div>
+            <!-- <span class="fw-bold">"Best Personalized House of the year in 2008"</span> for The "Garden House @ Habaraduwa, by Sri Lanka Institute of Architects. -->
 
         </div>
     </section>
 
-
+    @foreach($awards as $key => $award)
     <!-- awards modal -->
-    <section id="awards-modal">
+    <section id="awards-modal{{$award->id}}">
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal{{$award->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <img src="" alt="" class="img-fluid">
+                        <img src="{{url('files/awards/',$award->image)}}" alt="" class="img-fluid">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -141,5 +96,8 @@
             </div>
         </div>
     </section>
+    @endforeach
+
+
 
 @endsection

@@ -46,11 +46,12 @@ jQuery(function(){
 
 
     // awards modal
-    $('.awards .award-click').on('click', function(){
-        var arg = $(this).attr('data-arg');
+    
+    // $('.awards .award-click').on('click', function(){
+    //     var arg = $(this).attr('data-arg');
         
-        $(".modal-body img").attr("src", "img/awards/" + arg + ".jpg");
-    });
+    //     $(".modal-body img").attr("src", "img/awards/" + arg + ".jpg");
+    // });
 
 
     // trip modal

@@ -47,8 +47,8 @@
                     </div>
                 </div>
                 <input type="hidden" name="hidden_id" value="{{ $projects->id }}"/>
-                <button type="submit" class="btn btn-success pull-right">Update Project</button>&nbsp;&nbsp;&nbsp;
-                <a href="{{route('admin.projects.index')}}" class="btn btn-primary pull-right ml-4">Back to Projects</a><br>
+                <a href="{{route('admin.projects.index')}}" class="btn btn-primary pull-right ml-4">Back</a>&nbsp;&nbsp;&nbsp;
+                <button type="submit" class="btn btn-success pull-right">Update Project</button><br>
             </div><br>
             
             

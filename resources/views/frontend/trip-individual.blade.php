@@ -12,57 +12,29 @@
       </div>
     </section>
 
-
-
+    
     <!-- trip -->
     <section id="trip">
         <div class="container trip" style="margin-top: 5rem; padding: 0 7rem;">
-            <h4 class="fw-bold" data-aos="fade-right" data-aos-duration="500">New Year Celebration at RDCA</h4>
+            <h4 class="fw-bold" data-aos="fade-right" data-aos-duration="500">{{ $lifeat->title }}</h4>
 
-            <p class="mt-3" style="font-size: 0.9rem; line-height: 1.7rem; text-align: justify;" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo placeat ex reprehenderit dolores labore aperiam ratione! Non natus nobis suscipit molestias vel maxime voluptate eum, consequuntur earum perspiciatis odit veritatis?</p>
+            <p class="mt-3" style="font-size: 0.9rem; line-height: 1.7rem; text-align: justify;" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">{{ $lifeat->description }}</p>
 
+            
 
             <div class="row mt-5 mb-4">
-                <div class="col-4">
-                    <img src="{{ asset('img/life-2.jpg') }}" alt="" class="img-fluid" data-bs-toggle="modal" data-bs-target="#tripModal">
-                </div>
 
-                <div class="col-4">
-                    <img src="{{ asset('img/life-3.jpg') }}" alt="" class="img-fluid" data-bs-toggle="modal" data-bs-target="#tripModal">
-                </div>
 
+                @foreach($datas as $key => $data)
                 <div class="col-4">
-                    <img src="{{ asset('img/life-1.jpg') }}" alt="" class="img-fluid" data-bs-toggle="modal" data-bs-target="#tripModal">
+                    <img src="{{url('files/life_at/',$data->image)}}" alt="" class="img-fluid mb-4" data-bs-toggle="modal" data-bs-target="#tripModal">
                 </div>
+                <br>
+
+                @endforeach
             </div>
+            
 
-            <div class="row mb-4">
-                <div class="col-4">
-                    <img src="{{ asset('img/life-image-2.jpg') }}" alt="" class="img-fluid" data-bs-toggle="modal" data-bs-target="#tripModal">
-                </div>
-
-                <div class="col-4">
-                    <img src="{{ asset('img/life-image-1.jpg') }}" alt="" class="img-fluid" data-bs-toggle="modal" data-bs-target="#tripModal">
-                </div>
-
-                <div class="col-4">
-                    <img src="{{ asset('img/life-1.jpg') }}" alt="" class="img-fluid" data-bs-toggle="modal" data-bs-target="#tripModal">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4">
-                    <img src="{{ asset('img/life-image-2.jpg') }}" alt="" class="img-fluid" data-bs-toggle="modal" data-bs-target="#tripModal">
-                </div>
-
-                <div class="col-4">
-                    <img src="{{ asset('img/life-3.jpg') }}" alt="" class="img-fluid" data-bs-toggle="modal" data-bs-target="#tripModal">
-                </div>
-
-                <div class="col-4">
-                    <img src="{{ asset('img/life-image-1.jpg') }}" alt="" class="img-fluid" data-bs-toggle="modal" data-bs-target="#tripModal">
-                </div>
-            </div>
         </div>
     </section>
 

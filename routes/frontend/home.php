@@ -95,7 +95,7 @@ Route::get('projects', [ProjectsController::class, 'index'])
 // })
 ;
 
-Route::get('trip-individual', [TripController::class, 'index'])
+Route::get('trip-individual/{id}', [TripController::class, 'index'])
 ->name('trip-individual')
 // ->breadcrumbs(function (Trail $trail) {
 //     $trail->push(__('Home'), route('frontend.index'));

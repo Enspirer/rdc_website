@@ -6,6 +6,7 @@ use App\Http\Controllers\Backend\ContactUsController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\ProjectsController;
 use App\Http\Controllers\Backend\AwardsController;
+use App\Http\Controllers\Backend\LifeAtController;
 
 // All route names are prefixed with 'admin.'.
 Route::redirect('/', '/admin/dashboard', 301);
@@ -69,3 +70,34 @@ Route::get('awards', [AwardsController::class, 'index'])->name('awards.index')
 });  
 Route::post('awards/store', [AwardsController::class, 'store'])->name('awards.store');
 Route::get('awards/getdetails', [AwardsController::class, 'GetTableDetails'])->name('awards.GetTableDetails');
+Route::get('awards/edit/{id}', [AwardsController::class, 'edit'])->name('awards.edit')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Edit Awards'), route('admin.awards.edit',1));
+}); 
+Route::post('awards/update', [AwardsController::class, 'update'])->name('awards.update');
+Route::get('awards/delete/{id}', [AwardsController::class, 'destroy'])->name('awards.destroy');
+
+// ***********************************************************************************************
+
+Route::get('lifeat', [LifeAtController::class, 'index'])->name('lifeat.index')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Life At RDCA'), route('admin.lifeat.index'));
+});   
+Route::get('lifeat/create', [LifeAtController::class, 'create'])->name('lifeat.create')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Create New'), route('admin.lifeat.create'));
+});    
+Route::post('lifeat/store', [LifeAtController::class, 'store'])->name('lifeat.store');
+Route::get('lifeat/getdetails', [LifeAtController::class, 'GetTableDetails'])->name('lifeat.GetTableDetails');
+Route::get('lifeat/edit/{id}', [LifeAtController::class, 'edit'])->name('lifeat.edit')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Edit Projects'), route('admin.lifeat.edit',1));
+});  
+Route::get('lifeat/editimage/{id}', [LifeAtController::class, 'editimage'])->name('lifeat.editimage')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Edit Images'), route('admin.lifeat.editimage',1));
+}); 
+Route::post('lifeat/update', [LifeAtController::class, 'update'])->name('lifeat.update');
+Route::post('lifeat/updateimage', [LifeAtController::class, 'updateimage'])->name('lifeat.updateimage');
+Route::get('lifeat/delete/{id}', [LifeAtController::class, 'destroy'])->name('lifeat.destroy');
+Route::get('lifeat/editimage/lifeatimages/delete/{id}', [LifeAtController::class, 'delete'])->name('lifeat.delete');

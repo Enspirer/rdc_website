@@ -121,7 +121,7 @@ class ProjectsController extends Controller
         $projects = Projects::where('id',$id)->first();
         $category = Category::all();
      
-        $multiple = ProjectImages::where('project_id',$id)->get(); 
+        $multiple = ProjectImages::where('project_id',$id)->orderBy('order', 'ASC')->get(); 
         // dd($multiple);              
 
         return view('backend.projects.edit_image',[

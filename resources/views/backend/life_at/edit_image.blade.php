@@ -3,7 +3,7 @@
 @section('title', __('Dashboard'))
 
 @section('content')
-    <form action="{{route('admin.projects.updateimage')}}" method="post" enctype="multipart/form-data">
+    <form action="{{route('admin.lifeat.updateimage')}}" method="post" enctype="multipart/form-data">
         {{csrf_field()}}
         <div class="row">
             <div class="col-md-12">
@@ -23,7 +23,7 @@
                                         <tfoot>
                                             @foreach($multiple as $key => $single_image)
                                                 <tr>
-                                                    <td><div class="form-row"><img class="p-1" src="{{url('files/projects/',$single_image->image)}}" style="width: 60%;" alt="" ></div></td>
+                                                    <td><img class="p-1" src="{{url('files/life_at/',$single_image->image)}}" style="width: 60%;" alt="" ></td>
                                                     <td><button type="button" name="delete" id="{{ $single_image->id }}" class="btn btn-danger delete"><i class="fas fa-trash-alt"></i></button></td>
                                                 </tr>
                                             @endforeach   
@@ -39,8 +39,8 @@
                     </div>
                 </div>
 
-                <input type="hidden" name="hidden_id" value="{{ $projects->id }}"/>
-                <a href="{{route('admin.projects.index')}}" class="btn btn-primary pull-right ml-4">Back</a>&nbsp;&nbsp;&nbsp;
+                <input type="hidden" name="hidden_id" value="{{ $lifeat->id }}"/>
+                <a href="{{route('admin.lifeat.index')}}" class="btn btn-primary pull-right ml-4">Back</a>&nbsp;&nbsp;&nbsp;
                 <button type="submit" class="btn btn-success pull-right">Add Images</button><br>
             </div><br>
             
@@ -64,7 +64,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <h5>Are you sure you want to remove this Project Image?</h5>
+                            <h5>Are you sure you want to remove this Image?</h5>
                         </div>                        
 
                     </div>
@@ -91,7 +91,7 @@ $(document).ready(function(){
     function dynamic_field(number)
     {
     html = '<tr>';
-            html += '<td width="90%"><input type="file" name="image[]" class="mb-2" required/><input type="text" class="form-control" name="image_order[]" placeholder="order number" required></td>';
+            html += '<td width="90%"><input type="file" name="image[]" class="mb-2" required/></td>';
         
             if(number > 1)
             {
@@ -134,7 +134,7 @@ $(document).ready(function(){
     $('#ok_button').click(function(){    
 
     $.ajax({
-    url:"projectsimage/delete/"+user_id,
+    url:"lifeatimages/delete/"+user_id,
             
     success:function(data)
     {

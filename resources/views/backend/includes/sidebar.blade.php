@@ -18,6 +18,24 @@
                 :text="__('Dashboard')" />
         </li>
 
+        <li class="c-sidebar-nav-item">
+            <x-utils.link
+                class="c-sidebar-nav-link"
+                :href="route('admin.awards.index')"
+                :active="activeClass(Route::is('admin.awards'), 'c-active')"
+                icon="c-sidebar-nav-icon fas fa-award"
+                :text="__('Awards')" />
+        </li>
+
+        <li class="c-sidebar-nav-item">
+            <x-utils.link
+                class="c-sidebar-nav-link"
+                :href="route('admin.lifeat.index')"
+                :active="activeClass(Route::is('admin.lifeat'), 'c-active')"
+                icon="c-sidebar-nav-icon fas fa-suitcase-rolling"
+                :text="__('Life At RDCA')" />
+        </li>
+
         <li class="c-sidebar-nav-dropdown ">
                 <x-utils.link
                     href="#"
@@ -52,14 +70,7 @@
                 :text="__('Contact Us')" />
         </li>
 
-        <li class="c-sidebar-nav-item">
-            <x-utils.link
-                class="c-sidebar-nav-link"
-                :href="route('admin.awards.index')"
-                :active="activeClass(Route::is('admin.awards'), 'c-active')"
-                icon="c-sidebar-nav-icon fas fa-award"
-                :text="__('Awards')" />
-        </li>
+        
 
         
 
