@@ -31,7 +31,8 @@ class ProjectsController extends Controller
         // dd($request);
 
         $request->validate([
-            'order' => 'numeric'            
+            'feature_image'  => 'mimes:jpeg,png,jpg|max:40000|dimensions:width=2308,height=2288',
+            'order' => 'numeric'           
         ]);      
         
         if($request->file('feature_image'))
@@ -136,7 +137,8 @@ class ProjectsController extends Controller
         // dd($request);
 
         $request->validate([
-            'order' => 'numeric'            
+            'feature_image'  => 'mimes:jpeg,png,jpg|max:40000|dimensions:width=2308,height=2288',
+            'order' => 'numeric'           
         ]);      
         
         if($request->file('feature_image'))

@@ -11,10 +11,14 @@
         <div class="container-fluid p-0">
             <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;" class="swiper-container mySwiper2">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="{{ asset('img/leisure-wilder/1.jpg') }}" class="img-fluid w-100"/>
-                    </div>
-                    <div class="swiper-slide">
+
+                    @foreach($projimages as $key=> $projima)
+                        <div class="swiper-slide">
+                            <img src="{{url('files/projects/',$projima->image)}}" class="img-fluid w-100"/>
+                        </div>
+                    @endforeach
+
+                    <!-- <div class="swiper-slide">
                         <img src="{{ asset('img/leisure-wilder/2.jpg') }}" class="img-fluid w-100"/>
                     </div>
                     <div class="swiper-slide">
@@ -40,17 +44,22 @@
                     </div>
                     <div class="swiper-slide">
                         <img src="{{ asset('img/leisure-wilder/10.jpg') }}" class="img-fluid w-100"/>
-                    </div>
+                    </div> -->
+
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
             <div thumbsSlider="" class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
+
+                @foreach($projimages as $key=> $projima)
                     <div class="swiper-slide">
-                        <img src="{{ asset('img/leisure-wilder/1.jpg') }}" class="img-fluid w-100"/>
+                        <img src="{{url('files/projects/',$projima->image)}}" class="img-fluid w-100"/>
                     </div>
-                    <div class="swiper-slide">
+                @endforeach
+
+                    <!-- <div class="swiper-slide">
                         <img src="{{ asset('img/leisure-wilder/2.jpg') }}" class="img-fluid w-100"/>
                     </div>
                     <div class="swiper-slide">
@@ -76,7 +85,8 @@
                     </div>
                     <div class="swiper-slide">
                         <img src="{{ asset('img/leisure-wilder/10.jpg') }}"/>
-                    </div>
+                    </div> -->
+
                 </div>
             </div>
         </div>
@@ -110,9 +120,9 @@
     <!--project details-->
     <section id="project-details">
         <div class="container project-details" style="margin-top: 4rem; padding: 0 7rem;">
-            <h6>LEISURE PROJECTS</h6>
-            <h2>The Wilder Nest Bangalow - Kumana Village</h2>
-            <p class="mt-4" style="font-size: 0.9rem; line-height: 1.7rem; text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia nobis error quidem commodi dolorum sint. Omnis numquam consequuntur inventore! Voluptatem iure sit reiciendis nulla modi minus fugiat, corporis, excepturi exercitationem porro iusto eum repellendus! Adipisci vel natus laudantium aliquid officiis totam unde in repellendus, velit fuga ut, quibusdam facilis odio consequuntur ea laboriosam nulla numquam excepturi eligendi necessitatibus libero? Voluptatem pariatur doloribus reprehenderit quasi qui, ipsum aliquid. Animi rerum, ab, reiciendis veritatis eveniet voluptate nobis id beatae quae a dignissimos. Labore, est totam eum voluptatum repellendus voluptatibus distinctio voluptate cum maxime nulla? Vel animi dolores repellendus tempore molestias, perferendis blanditiis!</p>
+            <h6 style="text-transform: uppercase">{{ $proj->category }} PROJECTS</h6>
+            <h2>{{ $proj->title }}</h2>
+            <p class="mt-4" style="font-size: 0.9rem; line-height: 1.7rem; text-align: justify;">{{ $proj->description }}</p>
         </div>
     </section>
 

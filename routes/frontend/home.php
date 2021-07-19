@@ -43,7 +43,7 @@ Route::get('awards', [AwardsController::class, 'index'])
 // })
 ;
 
-Route::get('individual', [IndividualController::class, 'index'])
+Route::get('individual/{id}', [IndividualController::class, 'index'])
 ->name('individual')
 // ->breadcrumbs(function (Trail $trail) {
 //     $trail->push(__('Home'), route('frontend.index'));

@@ -98,169 +98,51 @@
 
                 @foreach($category as $key => $cat)
                 <li class="nav-item project-item" role="presentation" style="border-bottom: 2px solid white;">
-                  <a class="nav-link" id="pills-leisure-tab" data-bs-toggle="pill" data-bs-target="#pills-leisure" type="button" role="tab" aria-controls="pills-leisure" aria-selected="false">{!!$cat->name!!}</a>
+                  <a class="nav-link" id="cat-id{{ $cat->id }}" data-bs-toggle="pill" data-bs-target="#cat{{ $cat->id }}" type="button" role="tab" aria-controls="cat-{{ $cat->id }}" aria-selected="false">{!!$cat->name!!}</a>
                 </li>
                 @endforeach 
-
-                <!-- <li class="nav-item project-item" role="presentation" style="border-bottom: 2px solid white;">
-                  <a class="nav-link" id="pills-leisure-tab" data-bs-toggle="pill" data-bs-target="#pills-leisure" type="button" role="tab" aria-controls="pills-leisure" aria-selected="false">Leisure</a>
-                </li>
-                <li class="nav-item project-item" role="presentation" style="border-bottom: 2px solid white;">
-                  <a class="nav-link" id="pills-interior-tab" data-bs-toggle="pill" data-bs-target="#pills-interior" type="button" role="tab" aria-controls="pills-interior" aria-selected="false">Interior</a>
-                </li>
-                <li class="nav-item project-item" role="presentation" style="border-bottom: 2px solid white;">
-                    <a class="nav-link" id="pills-office-tab" data-bs-toggle="pill" data-bs-target="#pills-office" type="button" role="tab" aria-controls="pills-office" aria-selected="false">Office Buildings</a>
-                </li>
-                <li class="nav-item project-item" role="presentation" style="border-bottom: 2px solid white;">
-                    <a class="nav-link" id="pills-residence-tab" data-bs-toggle="pill" data-bs-target="#pills-residence" type="button" role="tab" aria-controls="pills-residence" aria-selected="false">Personal Residence</a>
-                </li>
-                <li class="nav-item project-item" role="presentation" style="border-bottom: 2px solid white;">
-                    <a class="nav-link" id="pills-industrial-tab" data-bs-toggle="pill" data-bs-target="#pills-industrial" type="button" role="tab" aria-controls="pills-industrial" aria-selected="false">Industrial</a>
-                </li>
-                <li class="nav-item project-item" role="presentation" style="border-bottom: 2px solid white;">
-                    <a class="nav-link" id="pills-civic-tab" data-bs-toggle="pill" data-bs-target="#pills-civic" type="button" role="tab" aria-controls="pills-civic" aria-selected="false">Civic</a>
-                </li>
-                <li class="nav-item project-item" role="presentation" style="border-bottom: 2px solid white;">
-                    <a class="nav-link" id="pills-institutional-tab" data-bs-toggle="pill" data-bs-target="#pills-institutional" type="button" role="tab" aria-controls="pills-institutional" aria-selected="false">Institutional</a>
-                </li> -->
+    
             </ul>
 
             <div class="tab-content mt-5" id="pills-tabContent">
 
                 <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="tab">
                     <div class="row">
+                        
+                        @foreach($projects as $key => $pro)
+
                         <div class="col-sm-4 p-2 project">
-                            <a href="{{ url('individual') }}" class="text-decoration-none">
-                                <div style="background-image: url(img/leisure-wilder/wilder-profile.jpg); background-size: cover; height: 250px; border-radius:7px; background-position: center center">
-                                    <p class="project-details text-center">The Wilder Nest Bangalow @ Kumana Village</p>
+                            <a href="{{ url('individual',$pro->id) }}" class="text-decoration-none">
+                                <div style="background-image: url('{{url('files/projects',$pro->feature_image)}}'); background-size: cover; height: 250px; border-radius:7px; background-position: center center">
+                                    <p class="project-details text-center"> {{ $pro->title }} </p>
                                 </div>
                             </a>
                         </div>
 
-                        <div class="col-sm-4 p-2 project">
-                            <div style="background-image: url(img/leisure-flottants/flottants-profile.jpg); background-size: cover; height: 250px; border-radius:7px; background-position: center center">
-                                <p class="project-details text-center">The Flottants @ Bentota</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 p-2 project">
-                            <div style="background-image: url(img/leisure-point/point-profile.jpg); background-size: cover; height: 250px; border-radius:7px; background-position: center center">
-                                <p class="project-details text-center">Point De Southern Breeze @ Matara</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4 p-2 project">
-                            <div style="background-image: url(img/interior-cargills/cargills-profile.jpg); background-size: cover; height: 250px; border-radius:7px; background-position: center center">
-                                <p class="project-details text-center">Head office Interior for Cargills Ceylon PLC @ Premier Pacific Building</p>
-                            </div>
-                        </div>
-                        <!-- <div class="col-4 p-2">
-                            <div style="background-image: url(img/projects-industrial.png); background-size: cover; height: 250px; border-radius:7px; background-position: center center">
-                                <p class="project-details text-center">INDUSTRIAL WORLD</p>
-                            </div>
-                        </div>
-                        <div class="col-4 p-2">
-                            <div style="background-image: url(img/projects-civic.png); background-size: cover; height: 250px; border-radius:7px; background-position: center center">
-                                <p class="project-details text-center">CIVIC WORLD</p>
-                            </div>
-                        </div> -->
-                    </div>
-                    <!-- <div class="row">
-                        <div class="col-4 p-2">
-                            <div style="background-image: url(img/projects-institutional.png); background-size: cover; height: 250px; border-radius:7px; background-position: center center">
-                                <p class="project-details text-center">INSTITUIONAL WORLD</p>
-                            </div>
-                        </div>
-                    </div> -->
+                        @endforeach    
+                       
+                    </div>                    
                 </div>
 
-                <div class="tab-pane fade" id="pills-leisure" role="tabpanel" aria-labelledby="pills-leisure-tab">
+                @foreach($category as $key=> $cat)
+
+                <div class="tab-pane fade" id="cat{{ $cat->id }}" role="tabpanel" aria-labelledby="cat-{{ $cat->id }}">
                     <div class="row">
+                    @foreach(App\Models\Projects::where('category',$cat->name)->where('status', '=', 'Enabled')->get() as $data)
+
                         <div class="col-sm-4 p-2 project">
-                            <a href="{{ url('individual') }}" class="text-decoration-none">
-                                <div style="background-image: url(img/leisure-wilder/wilder-profile.jpg); background-size: cover; height: 250px; border-radius:7px; background-position: center center">
-                                    <p class="project-details text-center">The Wilder Nest Bangalow @ Kumana Village</p>
+                            <a href="{{ url('individual',$data->id) }}" class="text-decoration-none">
+                                <div style="background-image: url('{{url('files/projects',$data->feature_image)}}'); background-size: cover; height: 250px; border-radius:7px; background-position: center center">
+                                    <p class="project-details text-center">{{$data->title}}</p>
                                 </div>
                             </a>
                         </div>
+                    @endforeach    
 
-                        <div class="col-sm-4 p-2 project">
-                            <div style="background-image: url(img/leisure-flottants/flottants-profile.jpg); background-size: cover; height: 250px; border-radius:7px; background-position: center center">
-                                <p class="project-details text-center">The Flottants @ Bentota</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 p-2 project">
-                            <div style="background-image: url(img/leisure-point/point-profile.jpg); background-size: cover; height: 250px; border-radius:7px; background-position: center center">
-                                <p class="project-details text-center">Point De Southern Breeze @ Matara</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
-                <div class="tab-pane fade" id="pills-interior" role="tabpanel" aria-labelledby="pills-interior-tab">
-                    <div class="row">
-                        <div class="col-sm-4 p-2 project">
-                            <div style="background-image: url(img/interior-cargills/cargills-profile.jpg); background-size: cover; height: 250px; border-radius:7px; background-position: center center">
-                                <p class="project-details text-center">Head office Interior for Cargills Ceylon PLC @ Premier Pacific Building</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            <!--<div class="tab-pane fade" id="pills-office" role="tabpanel" aria-labelledby="pills-office-tab">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="images/projects-office.png" alt="" class="img-fluid rounded-3">
-                        <span class="project-details text-center">
-                            <p>OFFICE BUILDINGS WORLD</p>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-pane fade" id="pills-residence" role="tabpanel" aria-labelledby="pills-residence-tab">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="images/projects-residence.png" alt="" class="img-fluid rounded-3">
-                        <span class="project-details text-center">
-                            <p>PERSONAL RESIDENCE WORLD</p>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-pane fade" id="pills-industrial" role="tabpanel" aria-labelledby="pills-industrial-tab">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="images/projects-industrial.png" alt="" class="img-fluid rounded-3">
-                        <span class="project-details text-center">
-                            <p>INDUSTRIAL WORLD</p>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-pane fade" id="pills-civic" role="tabpanel" aria-labelledby="pills-civic-tab">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="images/projects-civic.png" alt="" class="img-fluid rounded-3">
-                        <span class="project-details text-center">
-                            <p>CIVIC WORLD</p>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-pane fade" id="pills-institutional" role="tabpanel" aria-labelledby="pills-institutional-tab">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="images/projects-institutional.png" alt="" class="img-fluid rounded-3">
-                        <span class="project-details text-center">
-                            <p>INSTITUIONAL WORLD</p>
-                        </span>
-                    </div>
-                </div>
-            </div> -->
+                @endforeach               
 
             </div>
 

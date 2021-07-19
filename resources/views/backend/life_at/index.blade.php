@@ -21,7 +21,7 @@
                         <thead>
                             <tr>
                                 <th scope="col">#ID</th>
-                                <th scope="col">Project Title</th>
+                                <th scope="col">Title</th>
                                 <th scope="col">Status</th>
                                 <th scope="col">Order</th>
                                 <th scope="col">Option</th>

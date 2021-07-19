@@ -38,7 +38,7 @@
                             <input type="text" class="form-control" name="order" value="{{ $awards->order }}" required>
                         </div>
                         <div class="form-group">
-                            <label>Image </label>
+                            <label>Image</label>
                             <input type="file" class="form-control-file" name="image">
                             <br>
                             <img src="{{url('files/awards/',$awards->image)}}" style="width: 30%;" alt="" >

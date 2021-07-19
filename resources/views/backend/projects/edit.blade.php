@@ -38,7 +38,7 @@
                             <input type="text" class="form-control" name="order" value="{{ $projects->order }}" required>
                         </div>
                         <div class="form-group">
-                            <label>Feature Image </label>
+                            <label>Feature Image ( dimensions = width: 2308px * height: 2288px )</label>
                             <input type="file" class="form-control-file" name="feature_image">
                             <br>
                             <img src="{{url('files/projects/',$projects->feature_image)}}" style="width: 40%;" alt="" >

@@ -63,7 +63,7 @@
                         <textarea class="form-control" name="description"  rows="3" required></textarea>
                         <br> -->
                         <div class="form-group">
-                            <label>Image </label>
+                            <label>Image</label>
                             <input type="file" class="form-control-file" name="image">
                         </div>
                         

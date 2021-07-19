@@ -26,8 +26,10 @@ class LifeAtController extends Controller
         // dd($request);
 
         $request->validate([
-            'order' => 'numeric'            
-        ]);      
+            'feature_image'  => 'mimes:jpeg,png,jpg|max:40000|dimensions:width=1920,height=1080',
+            // 'image'  => 'mimes:jpeg,png,jpg|max:40000|dimensions:width=1920,height=1080',
+            'order' => 'numeric'           
+        ]);     
         
         if($request->file('feature_image'))
         {
@@ -131,8 +133,9 @@ class LifeAtController extends Controller
         // dd($request);
 
         $request->validate([
-            'order' => 'numeric'            
-        ]);      
+            'feature_image'  => 'mimes:jpeg,png,jpg|max:40000|dimensions:width=1920,height=1080',
+            'order' => 'numeric'           
+        ]);     
         
         if($request->file('feature_image'))
         {
