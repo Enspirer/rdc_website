@@ -31,7 +31,7 @@ class ProjectsController extends Controller
         // dd($request);
 
         $request->validate([
-            'feature_image'  => 'mimes:jpeg,png,jpg|max:40000|dimensions:width=2308,height=2288',
+            'feature_image'  => 'mimes:jpeg,png,jpg|max:25000',
             'order' => 'numeric'           
         ]);      
         
@@ -92,7 +92,7 @@ class ProjectsController extends Controller
                     ->addColumn('action', function($data){
                         $button = '<a href="'.route('admin.projects.edit',$data->id).'" class="btn btn-secondary btn-sm" style="margin-right: 10px"><i class="fas fa-edit"></i> Edit</a>';
                         $button1 = '<a href="'.route('admin.projects.editimage',$data->id).'" class="btn btn-info btn-sm" style="margin-right: 10px"><i class="far fa-images"></i> Images</a>';
-                        $button2 = '&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" name="delete" id="'.$data->id.'" class="delete btn btn-danger btn-sm"><i class="fas fa-trash"></i> Delete</button>';
+                        $button2 = '<button type="button" name="delete" id="'.$data->id.'" class="delete btn btn-danger btn-sm"><i class="fas fa-trash"></i> Delete</button>';
                         return $button.$button1.$button2;
                     })
                     ->rawColumns(['action'])
@@ -137,7 +137,7 @@ class ProjectsController extends Controller
         // dd($request);
 
         $request->validate([
-            'feature_image'  => 'mimes:jpeg,png,jpg|max:40000|dimensions:width=2308,height=2288',
+            'feature_image'  => 'mimes:jpeg,png,jpg|max:25000',
             'order' => 'numeric'           
         ]);      
         

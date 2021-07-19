@@ -8,7 +8,7 @@
     <!--path-->
     <section id="path">
       <div class="container path" style="margin-top: 7rem">
-          <p data-aos="fade-down" data-aos-duration="500">Home &nbsp <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i> &nbsp Practice &nbsp <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i> &nbsp Life at RDCA &nbsp <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i> &nbsp New Year Celebration at RDCA</p>
+          <p data-aos="fade-down" data-aos-duration="500">Home &nbsp <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i> &nbsp Practice &nbsp <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i> &nbsp Life at RDCA &nbsp <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i> &nbsp {{ $lifeat->title }}</p>
       </div>
     </section>
 
@@ -27,7 +27,7 @@
 
                 @foreach($datas as $key => $data)
                 <div class="col-4">
-                    <img src="{{url('files/life_at/',$data->image)}}" alt="" class="img-fluid mb-4" data-bs-toggle="modal" data-bs-target="#tripModal">
+                    <img src="{{url('files/life_at/',$data->image)}}" alt="" class="img-fluid mb-4" data-bs-toggle="modal" data-bs-target="#tripModal" width="100%" style="height: 170px; object-fit: cover;">
                 </div>
                 <br>
 
@@ -47,7 +47,7 @@
         <div class="modal-content">
 
             <div class="modal-body">
-                <img src="" alt="" class="img-fluid">
+                <img src="" alt="" class="img-fluid" width="100%"> 
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

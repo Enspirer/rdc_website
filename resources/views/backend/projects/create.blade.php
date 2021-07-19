@@ -48,7 +48,7 @@
                     <div class="card-body">
                         <div class="" style="border-style: ridge;border-width: 3px;padding: 20px;">
                             <div class="form-group">
-                                <label>Feature Image ( dimensions = width: 2308px * height: 2288px )</label>
+                                <label>Feature Image</label>
                                 <input type="file" class="form-control-file" name="feature_image" required>
                             </div>
                             <br>

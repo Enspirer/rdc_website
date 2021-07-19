@@ -23,7 +23,7 @@
                                         <tfoot>
                                             @foreach($multiple as $key => $single_image)
                                                 <tr>
-                                                    <td><img class="p-1" src="{{url('files/life_at/',$single_image->image)}}" style="width: 60%;" alt="" ></td>
+                                                    <td><img class="p-1" src="{{url('files/life_at/',$single_image->image)}}" style="width: 50%;" alt="" ></td>
                                                     <td><button type="button" name="delete" id="{{ $single_image->id }}" class="btn btn-danger delete"><i class="fas fa-trash-alt"></i></button></td>
                                                 </tr>
                                             @endforeach   

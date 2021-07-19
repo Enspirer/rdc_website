@@ -20,7 +20,7 @@ class AwardsController extends Controller
         // dd($request);
 
         $request->validate([
-            'image'  => 'mimes:jpeg,png,jpg|max:40000',
+            'image'  => 'mimes:jpeg,png,jpg|max:25000',
             'order' => 'numeric'            
         ]); 
     
@@ -87,7 +87,7 @@ class AwardsController extends Controller
         // dd($request);
 
         $request->validate([
-            'image'  => 'mimes:jpeg,png,jpg|max:40000',
+            'image'  => 'mimes:jpeg,png,jpg|max:25000',
             'order' => 'numeric'            
         ]);      
         
