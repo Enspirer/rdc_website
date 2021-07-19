@@ -73,7 +73,8 @@
                         </div>
                         <div class="col-7" data-aos="fade-up" data-aos-duration="500">
                             <p style="font-size: 0.9rem;">R D C Architects (Pvt) Ltd, <br>
-                                No. 18/7, "Dandeniya Gardens", <br>
+                                No. 18/7, <br>
+                                Dandeniya Gardens, <br>
                                 Gangaboda Road, <br>
                                 Piliyandala, <br>
                                 Sri Lanka.</p>
@@ -123,7 +124,7 @@
                             <p style="font-size: 1.0rem; font-weight: 600;">Follow Us</p>
                         </div>
                         <div class="col-8" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
-                            <a href="#" class="border border-dark border-1 me-2" style="padding: 0.3rem 0.7rem;"><i class="fab fa-facebook-f text-body"></i></a>
+                            <a href="https://www.facebook.com/russelldandeniyacharteredarchitects" class="border border-dark border-1 me-2" style="padding: 0.3rem 0.7rem;"><i class="fab fa-facebook-f text-body"></i></a>
                             <a href="#" class="border border-dark border-1 me-2" style="padding: 0.3rem 0.7rem;"><i class="fab fa-instagram text-body"></i></a>
                             <a href="#" class="border border-dark border-1 me-2" style="padding: 0.3rem 0.7rem;"><i class="fab fa-linkedin-in text-body"></i></a>
                             <a href="#" class="border border-dark border-1 me-2" style="padding: 0.3rem 0.7rem;"><i class="fab fa-youtube text-body"></i></a>

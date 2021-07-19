@@ -8,7 +8,7 @@
 .slider-section .carousel-indicators {
     top: 80%;
 }
-.slider-section .carousel-control-next-icon, .carousel-control-prev-icon {
+.slider-section .carousel-control-next-icon, .slider-section .carousel-control-prev-icon {
     width: 35px!important;
     height: 35px!important;
 }
@@ -152,6 +152,21 @@
 
 
 /*testimentional*/
+.testimonial-section .testi-image {
+    filter: brightness(50%);
+}
+.testimonial-section .carousel-caption {
+    bottom: 7.5rem!important;
+}
+.testimonial-section .carousel-caption .h3 {
+    font-size: 58px!important;
+}
+.testimonial-section .carousel-caption h5 {
+    font-size: 45px;
+}
+.testimonial-section .carousel-caption p {
+    font-size: 25px;
+}
 .testimonial-section .carousel-indicators li {
     width: 15px;
     height: 15px;
@@ -176,17 +191,44 @@
     .testimonial-section .testi-image {
         height: 500px!important;
     }
+    .testimonial-section .carousel-caption {
+        bottom: 7.5rem!important;
+    }
 }
 
 @media (max-width: 1400px) {
     .testimonial-section .testi-image {
         height: 400px!important;
     }
+    .testimonial-section .carousel-caption {
+        bottom: 3rem!important;
+    }
+    .testimonial-section .carousel-caption .h3 {
+        font-size: 48px!important;
+    }
+    .testimonial-section .carousel-caption h5 {
+        font-size: 35px;
+    }
+    .testimonial-section .carousel-caption p {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 1200px) {
     .testimonial-section .testi-image {
         height: 300px!important;
+    }
+    .testimonial-section .carousel-caption {
+        bottom: 1.5rem!important;
+    }
+    .testimonial-section .carousel-caption .h3 {
+        font-size: 43px!important;
+    }
+    .testimonial-section .carousel-caption h5 {
+        font-size: 30px;
+    }
+    .testimonial-section .carousel-caption p {
+        font-size: 15px;
     }
 }
 
@@ -214,6 +256,18 @@
     .project-section .carousel-item .item5:hover .carousel-caption,
     .project-section .carousel-item .item6:hover .carousel-caption {
         bottom: 0px;
+    }
+    .testimonial-section .carousel-caption {
+        bottom: 1rem!important;
+    }
+    .testimonial-section .carousel-caption .h3 {
+        font-size: 30px!important;
+    }
+    .testimonial-section .carousel-caption h5 {
+        font-size: 20px;
+    }
+    .testimonial-section .carousel-caption p {
+        font-size: 15px;
     }
 }
 
@@ -245,9 +299,10 @@
     .about-section {
         margin-top: 4rem!important;
     }
-    .about-section button {
-        display: block;
-        margin: auto;
+    .about-section a {
+        margin: auto auto!important;
+        display: block!important;
+        width: 30%;
     }
     .about-section img{
         margin-top: 3rem!important;
@@ -270,8 +325,17 @@
     .testimonial-section .testi-image {
         height: 200px!important;
     }
-    .testimonial-section .carousel-item .carousel-caption {
-        bottom: 1rem;
+    .testimonial-section .carousel-caption {
+        bottom: 1rem!important;
+    }
+    .testimonial-section .carousel-caption .h3 {
+        font-size: 22px!important;
+    }
+    .testimonial-section .carousel-caption h5 {
+        font-size: 17px;
+    }
+    .testimonial-section .carousel-caption p {
+        font-size: 15px;
     }
     .contact-section {
         margin-top: 4rem!important;
@@ -291,6 +355,18 @@
     }
     .testimonial-section .testi-image {
         height: 200px!important;
+    }
+    .testimonial-section .carousel-caption {
+        bottom: 0.7rem!important;
+    }
+    .testimonial-section .carousel-caption .h3 {
+        font-size: 20px!important;
+    }
+    .testimonial-section .carousel-caption h5 {
+        font-size: 15px;
+    }
+    .testimonial-section .carousel-caption p {
+        font-size: 13px;
     }
 }
 
