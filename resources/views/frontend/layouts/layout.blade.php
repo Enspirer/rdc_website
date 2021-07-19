@@ -24,7 +24,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-0">
         <div class="container-fluid p-0">
           <a class="navbar-brand mt-3" href="{{url('/')}}" style="margin-left: 2.2rem;">
-            <h3 class="text-white">RDC ARCHITECTS <br> <p style="font-size: 1rem; letter-spacing: 0.09rem;">BY RUSSEL DANDENIYA</p></h3>
+            <h3 class="text-white">RDC ARCHITECTS <br> <p style="font-size: 1rem; letter-spacing: 0.05rem;">BY RUSSELL DANDENIYA</p></h3>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

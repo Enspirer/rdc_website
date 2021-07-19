@@ -62,11 +62,11 @@
     <!--vision & mission-->
     <section id="vision-mission">
       <div class="container vision-mission" style="margin-top: 7rem; padding: 0 7rem;">
-        <dir class="row p-0 justify-content-between">
-          <div class="col-md-5" data-aos="zoom-in" data-aos-duration="500">
+        <dir class="row p-0 justify-content-between align-items-center">
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-duration="500">
             <img src="{{ asset('img/about-vision-mission.svg') }}" alt="" class="img-fluid">
           </div>
-          <div class="col-md-6 details">
+          <div class="col-lg-6 details">
             <h3 class="fw-bold" data-aos="fade-down" data-aos-duration="500">Vision</h3>
             <p class="mt-4" style="font-size: 0.9rem; line-height: 1.7rem; text-align: justify;" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">To become most Client’ <span class="fw-bold">“Satisfied”</span> intentionally <span class="fw-bold">-Smallest </span> Architectural Firm Responsible from tiny bed space for larger scale remarkable few Developments in Sri Lanka/ Overseas who Designs minimum of 100 times of the office foot print-annually, where we operating the business; through sustainable, futuristic Architectural innovations.</p>
 
@@ -82,8 +82,8 @@
     <section id="our-goals">
       <div class="container our-goals" style="margin-top: 7rem; padding: 0 7rem;">
         <h3 class="fw-bold" data-aos="fade-down" data-aos-duration="500">Our Goals</h3>
-        <div class="row justify-content-between">
-          <div class="col-md-6">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-6">
             <ul class="list" style="text-align: justify;">
               <li class="mt-3 mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">To contribute to the built environment through less energy rated buildings by using modern materials and technology with traditional / sustainable concepts to achieve uniqueness and ultimate satisfaction of the clients.</li>
               <li class="mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">To address niche / specialized market share through renovation of historic buildings and addressing adoptive reuse, resilience and robust architecture and eco-sensitive designs.</li>
@@ -93,7 +93,7 @@
               <li class="mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">To explore avenues of serving mankind with professional knowledge gained by participating CSR work to contribute without any fee claims.</li>
             </ul>
           </div>
-          <div class="col-md-5 image" data-aos="zoom-in" data-aos-duration="500">
+          <div class="col-lg-5 image" data-aos="zoom-in" data-aos-duration="500">
             <img src="{{ asset('img/about-goals.svg') }}" alt="" class="img-fluid">
           </div>
         </div>

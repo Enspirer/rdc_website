@@ -47,12 +47,14 @@
                     <img src="{{ asset('img/ayubowan.svg') }}" alt="" height="60px" class="ayubowan-image">
                     <h3 class="card-title m-3 text-center">Welcome to RDC Architects</h3>
                     <div class="row text-center justify-content-center">
-                        <div class="col-7">
+                        <div class="col-7 p-0">
+                            <!-- <p class="card-text">
+                                <i class="fas fa-quote-left float-left pb-1"></i>
+                                 Inventive & Unique Architecture is perceiving effortlessly - it's so simple and quicker<i class="fas fa-quote-right float-right"></i>
+                            </p> -->
+
                             <p class="card-text">
-                                <i class="fas fa-quote-left float-left"></i>
-                                You will face many defeats in life, but never let yourself be defeated.
-                                You will face many defeats in life, but never let yourself be defeated.
-                                <i class="fas fa-quote-right float-right"></i>
+                                <i class="fas fa-quote-left position-relative" style="top:-0.5rem"></i> &nbsp;Inventive & Unique Architecture is perceiving effortlessly - it's so simple and quicker &nbsp;<i class="fas fa-quote-right position-relative" style="top:-0.5rem"></i>
                             </p>
                         </div>
                     </div>
@@ -148,7 +150,7 @@
 
     <!--about section-->
     <div class="container about-section mb-5" style="margin-top: 8rem;">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-md-6">
                 <h1 data-aos="fade-up" data-aos-duration="500">Who we are</h1>
                 <div class="content" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
@@ -176,7 +178,12 @@
         <div class="top-left text-white">
             <div class="container">
                 <h5>SERVICES</h5>
-                <h2>This is what we do.</h2>
+                <div class="row">
+                    <div class="col-12 mt-3">
+                        <h4><i class="fas fa-quote-left position-relative" style="top:-0.5rem"></i> &nbsp;Architecture is about making the world a little more like our Dreams&nbsp; <i class="fas fa-quote-right position-relative" style="top:-0.5rem"></i></h4>
+                        <h5 class="text-center">- Bjarke Ingels -</h5>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -189,7 +196,8 @@
                         <div class="container p-3 text-center">
                             <i class="fas fa-home fa-2x"></i> <br><br>
                             <h5><b>Architecture</b></h5> <br>
-                            <p class="pt-2 pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting</p> <br>
+                            <p class="pt-2 pb-2 mb-0 text-left">We are team of Chartered Architects, with great in house supporting staff to undertake design assignments/ projects from tiny bedspace up to resort hotel. Preparation of brief predesign, feasibility study or need analysis will be the start.</p>
+                            <p class="pt-2 pb-2 mb-0 text-center">We will cover Schematic Design, Conceptual Design, Design Development, Contract Documentation, Bidding & negotiations, Contract Administration under Basic Services.</p> <br>
                             <button class="btn default">READ <i class="fas fa-angle-double-right"></i></button>
                         </div>
                     </div>
@@ -199,7 +207,7 @@
                         <div class="container p-3 text-center">
                             <i class="fas fa-hotel fa-2x"></i><br><br>
                             <h5><b>Engineering Services</b></h5><br>
-                            <p class="pt-2 pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting</p><br>
+                            <p class="pt-2 pb-2 mb-0 text-left">We are synergystic allied team of expert professionals in Structural Engineering Mechanical Engineering, Electrical Engineering, Plumbing Engineering, Cost Consultation & Quantity Surveying proven 15 long years of collaborative practice.</p><br>
                             <button class="btn default">READ <i class="fas fa-angle-double-right"></i></button>
                         </div>
                     </div>
@@ -209,7 +217,7 @@
                         <div class="container p-3 text-center">
                             <i class="fas fa-edit fa-2x"></i><br><br>
                             <h5><b>Landscape</b></h5><br>
-                            <p class="pt-2 pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting</p><br>
+                            <p class="pt-2 pb-2 mb-0 text-left">We do undertake Interior + Landscape Designs. Our Architectural concepts are obviously developing with landscape and Interior Design with Inhouse professionals.</p><br>
                             <button class="btn default">READ <i class="fas fa-angle-double-right"></i></button>
                         </div>
                     </div>
@@ -224,7 +232,7 @@
         <div class="row">
             <div class="col-12">
                 <h4 data-aos="fade-up" data-aos-duration="500">DOWNLOAD</h4>
-                <h1 data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">Together to build our future</h1>
+                <h1 data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">Together we build our future</h1>
             </div>
         </div>
         <div class="row">
@@ -312,11 +320,11 @@
     <div class="container contact-section mb-5" style="margin-top: 6rem;">
         <div class="row">
             <div class="col-md-6">
-                <h1 data-aos="fade-up" data-aos-duration="500">Let's start a new project.</h1>
+                <h1 data-aos="fade-up" data-aos-duration="500">Meeting for your dreams</h1>
 
                 <div class="content" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and s crambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with t he release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publi shing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Before basic Architectural services begin we should formulate a clear brief. This phase called as “pre-design”, feasibility study or meeting our minds 😊. This is first & most important step before you start your design. Only Chartered Architects will competent to guide you through brief analysis to determine your goals, requirements, the constraints n opportunities of your site, according to the cost or budget available, time taken for realizing your dream. 
                     </p>
                 </div>
             </div>
