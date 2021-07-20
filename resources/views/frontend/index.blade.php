@@ -174,13 +174,13 @@
 
     <!--services section-->
     <div class="service-container container-fluid p-0 text-left position-relative" style="margin-top: 7rem;">
-        <img src="{{ asset('img/services-banner.jpg') }}" class="img-fluid w-100" style="height: 850px!important">
-        <div class="top-left text-white">
-            <div class="container">
-                <h5>SERVICES</h5>
+        <!-- <img src="{{ asset('img/services-banner.jpg') }}" class="img-fluid w-100" style="height: 850px!important"> -->
+        <div class="text-white service-banner">
+            <div class="container service-text" style="padding-top: 15rem;">
+                <h4>SERVICES</h4>
                 <div class="row">
                     <div class="col-12 mt-3">
-                        <h4><i class="fas fa-quote-left position-relative" style="top:-0.5rem"></i> &nbsp;Architecture is about making the world a little more like our Dreams&nbsp; <i class="fas fa-quote-right position-relative" style="top:-0.5rem"></i></h4>
+                        <h3><i class="fas fa-quote-left position-relative" style="top:-0.5rem"></i> &nbsp;Architecture is about making the world a little more like our Dreams&nbsp; <i class="fas fa-quote-right position-relative" style="top:-0.5rem"></i></h3>
                         <h5 class="text-center">- Bjarke Ingels -</h5>
                     </div>
                 </div>
