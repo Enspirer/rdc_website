@@ -32,7 +32,7 @@
     <!--path-->
     <section id="path">
       <div class="container mt-3 path">
-        <p data-aos="fade-down" data-aos-duration="500">Home &nbsp <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i> &nbsp People &nbsp <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i> &nbsp Life at RDCA</p>
+        <p data-aos="fade-down" data-aos-duration="500"><a href="{{url('/')}}" style="text-decoration: none; color: #212529;">Home</a> &nbsp <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i> &nbsp <a href="{{url('life')}}" style="text-decoration: none; color: #212529;">People</a> &nbsp <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i> &nbsp <a href="{{url('life')}}" style="text-decoration: none; color: #212529;">Life at RDCA</a></p>
       </div>
     </section>
 

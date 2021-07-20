@@ -32,7 +32,7 @@
     <!--path-->
     <section id="path">
       <div class="container mt-3 path">
-          <p data-aos="fade-down" data-aos-duration="500">Home &nbsp <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i> &nbsp Practice &nbsp <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i> &nbsp Organizational Structure</p>
+          <p data-aos="fade-down" data-aos-duration="500"><a href="{{url('/')}}" style="text-decoration: none; color: #212529;">Home</a> &nbsp <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i> &nbsp <a href="{{url('organizational')}}" style="text-decoration: none; color: #212529;">Practice</a> &nbsp <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i> &nbsp <a href="{{url('organizational')}}" style="text-decoration: none; color: #212529;">Organizational Structure</a></p>
       </div>
     </section>
 
