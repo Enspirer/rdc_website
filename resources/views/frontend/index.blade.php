@@ -155,13 +155,8 @@
                 <h1 data-aos="fade-up" data-aos-duration="500">Who we are</h1>
                 <div class="content" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                     <p>
-                        <b>RDC Architects (Pvt) Ltd  </b>
-                        is an intentionally small studio type well established practice providing designs for diversified
-                        many categories of Buildings. Energetic approach in handling of any scale projects and proven
-                        sensible capabilities to render total Architectural solutions while maintaining close Client
-                        Consultant relationship has been the success story of this active team lead by award winning
-                        Architect. Russell Dandeniya for their steadily growing immaculate project portfolio over the
-                        recent years.
+                        <b class="fw-bolder">RDC Architects (Pvt) Ltd  </b>
+                        is an intentionally small studio type well established practice providing designs for diversified many categories of Buildings. Energetic approach in handling of any scale projects and proven sensible capabilities to render total Architectural solutions while maintaining close Client Consultant relationship has been the success story of this <span class="fw-bold">active team</span> lead by award winning Architect. Russell Dandeniya for their steadily growing immaculate project portfolio over the recent years.
                     </p>
                 </div>
                 <a href="{{ url('about-us') }}" class="btn default mb-3 mb-md-0" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400">READ MORE <i class="fas fa-angle-double-right"></i></a>
@@ -180,7 +175,7 @@
                 <h4>SERVICES</h4>
                 <div class="row">
                     <div class="col-12 mt-3">
-                        <h3><i class="fas fa-quote-left position-relative" style="top:-0.5rem"></i> &nbsp;Architecture is about making the world a little more like our Dreams&nbsp; <i class="fas fa-quote-right position-relative" style="top:-0.5rem"></i></h3>
+                        <h2 style="font-size: 35px"><i class="fas fa-quote-left position-relative" style="top:-0.5rem"></i> &nbsp;Architecture <span style='font-size: 20px'>is about making the world a little more like our</span> Dreams&nbsp; <i class="fas fa-quote-right position-relative" style="top:-0.5rem"></i></h2>
                         <h5 class="text-center">- Bjarke Ingels -</h5>
                     </div>
                 </div>
@@ -196,9 +191,11 @@
                         <div class="container p-3 text-center">
                             <i class="fas fa-home fa-2x"></i> <br><br>
                             <h5><b>Architecture</b></h5> <br>
-                            <p class="pt-2 pb-2 mb-0 text-left">We are team of Chartered Architects, with great in house supporting staff to undertake design assignments/ projects from tiny bedspace up to resort hotel. Preparation of brief predesign, feasibility study or need analysis will be the start.</p>
-                            <p class="pt-2 pb-2 mb-0 text-center">We will cover Schematic Design, Conceptual Design, Design Development, Contract Documentation, Bidding & negotiations, Contract Administration under Basic Services.</p> <br>
-                            <button class="btn default">READ <i class="fas fa-angle-double-right"></i></button>
+                            <div class="collapse" id="collapseExample1" aria-expanded="false">
+                                <p class="pt-2 pb-2 mb-0 text-left">We are team of Chartered Architects, with great in house supporting staff to undertake design assignments/ projects from tiny bedspace up to resort hotel. Preparation of brief predesign, feasibility study or need analysis will be the start.<br> <br>
+                                We will cover Schematic Design, Conceptual Design, Design Development, Contract Documentation, Bidding & negotiations, Contract Administration under Basic Services.</p> <br>
+                            </div>
+                            <a class="btn default collapsed collapse-button" data-bs-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1"></a>
                         </div>
                     </div>
                 </div>
@@ -207,8 +204,11 @@
                         <div class="container p-3 text-center">
                             <i class="fas fa-hotel fa-2x"></i><br><br>
                             <h5><b>Engineering Services</b></h5><br>
-                            <p class="pt-2 pb-2 mb-0 text-left">We are synergystic allied team of expert professionals in Structural Engineering Mechanical Engineering, Electrical Engineering, Plumbing Engineering, Cost Consultation & Quantity Surveying proven 15 long years of collaborative practice.</p><br>
-                            <button class="btn default">READ <i class="fas fa-angle-double-right"></i></button>
+                            <div class="collapse" id="collapseExample2" aria-expanded="false">
+                                <p class="pt-2 pb-2 mb-0 text-left">We are synergystic allied team of expert professionals in Structural Engineering Mechanical Engineering, Electrical Engineering, Plumbing Engineering, Cost Consultation & Quantity Surveying proven 15 long years of collaborative practice.</p><br>
+                            </div>
+                            <a class="btn default collapsed collapse-button" data-bs-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2"></a> 
+                            <!-- <i class="fas fa-angle-double-right"></i> -->
                         </div>
                     </div>
                 </div>
@@ -217,8 +217,10 @@
                         <div class="container p-3 text-center">
                             <i class="fas fa-edit fa-2x"></i><br><br>
                             <h5><b>Landscape</b></h5><br>
-                            <p class="pt-2 pb-2 mb-0 text-left">We do undertake Interior + Landscape Designs. Our Architectural concepts are obviously developing with landscape and Interior Design with Inhouse professionals.</p><br>
-                            <button class="btn default">READ <i class="fas fa-angle-double-right"></i></button>
+                            <div class="collapse" id="collapseExample3" aria-expanded="false">
+                                <p class="pt-2 pb-2 mb-0 text-left">We do undertake Interior + Landscape Designs. Our Architectural concepts are obviously developing with landscape and Interior Design with Inhouse professionals.</p><br>
+                            </div>
+                            <a class="btn default collapsed collapse-button" data-bs-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3"></a> 
                         </div>
                     </div>
                 </div>
@@ -232,7 +234,7 @@
         <div class="row">
             <div class="col-12">
                 <h4 data-aos="fade-up" data-aos-duration="500">DOWNLOAD</h4>
-                <h1 data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">Together we build our future</h1>
+                <h1 data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">Together to build our future..!</h1>
             </div>
         </div>
         <div class="row">

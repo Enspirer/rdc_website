@@ -147,10 +147,34 @@
 .service-card-body {
     margin-top: -33%;
 }
-.top-left {
+/* .top-left {
     position: absolute;
     top: 50px;
     left: 50px;
+} */
+.service-card #collapseExample1.collapse:not(.show), 
+.service-card #collapseExample2.collapse:not(.show),
+.service-card #collapseExample3.collapse:not(.show) {
+    display: flex!important;
+    height: 6.5rem!important;
+    overflow: hidden!important;
+    transition: all 1s;
+}
+.service-card .collapse-button {
+    margin-top: 1rem!important;
+}
+.service-card #collapseExample1.collapsing, 
+.service-card #collapseExample2.collapsing,
+.service-card #collapseExample3.collapsing {
+    height: 6.5rem;
+}
+
+.service-card a.collapsed::after {
+    content: 'READ';
+}
+
+.service-card a:not(.collapsed)::after {
+    content: 'HIDE';
 }
 /* .service-container {
     position: relative;

@@ -52,7 +52,7 @@
                         <img src="{{ asset('img/people-principal.png') }}" alt="" class="img-fluid" >
                     </div>
                     <div class="col-md-6 details">
-                        <h2 class="fw-bold" data-aos="fade-up" data-aos-duration="500">Archt. Russell Dandeniya</h2>
+                        <h2 class="fw-bold" data-aos="fade-up" data-aos-duration="500">Archt. Russell Dandeniya. FIA(SL)</h2>
                         <small class="fs-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">BSc.(B.E.), P.G. Dip (PM), MSc. (Arch), RIBA , Int.Asso.AIA , FIA (SL)</small>
 
                         <p class="mt-3" style="font-size: 0.9rem; line-height: 1.7rem;" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
@@ -66,7 +66,7 @@
                             Past President – Rotary Club of Capital City-RCCC<br>
                             Principal Architect of Russell Dandeniya Chartered Architects-RDCA<br>
                             Director RDC Architects (Pvt) Ltd<br>
-                            </p>
+                        </p>
                     </div>
                 </div>
             </div>

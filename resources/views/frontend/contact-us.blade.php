@@ -72,9 +72,9 @@
                             <p style="font-size: 1.0rem; font-weight: 600;">Address</p>
                         </div>
                         <div class="col-7" data-aos="fade-up" data-aos-duration="500">
-                            <p style="font-size: 0.9rem;">R D C Architects (Pvt) Ltd, <br>
+                            <p style="font-size: 0.9rem;">RDC Architects (Pvt) Ltd, <br>
                                 No. 18/7, <br>
-                                Dandeniya Gardens, <br>
+                                “Dandeniya Gardens”, <br>
                                 Gangaboda Road, <br>
                                 Piliyandala, <br>
                                 Sri Lanka.</p>
@@ -90,7 +90,7 @@
                                     <p style="font-size: 0.9rem;"><i class="fas fa-phone-alt"></i></p>
                                 </div>
                                 <div class="col-10">
-                                    <p style="font-size: 0.9rem;">+94 112 609 977 &nbsp | &nbsp +94 112 617 799</p>
+                                    <p style="font-size: 0.9rem;">+9411-2609977 &nbsp | &nbsp +9411-2617799</p>
                                 </div>
                             </div>
                             <div class="row align-items-center">
@@ -98,7 +98,7 @@
                                     <p style="font-size: 0.9rem;"><i class="fas fa-mobile-alt"></i></p>
                                 </div>
                                 <div class="col-10">
-                                    <p style="font-size: 0.9rem;">+94 773 209 977</p>
+                                    <p style="font-size: 0.9rem;">+94773209977</p>
                                 </div>
                             </div>
                             <div class="row align-items-center">
@@ -106,7 +106,7 @@
                                     <p style="font-size: 0.9rem;"><i class="bi bi-printer-fill"></i></p>
                                 </div>
                                 <div class="col-10">
-                                    <p style="font-size: 0.9rem;">+94 112 617 070</p>
+                                    <p style="font-size: 0.9rem;">+9411-2617070</p>
                                 </div>
                             </div>
                         </div>
