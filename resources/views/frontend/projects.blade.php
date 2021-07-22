@@ -114,7 +114,7 @@
                         <div class="col-sm-4 p-2 project">
                             <a href="{{ url('individual',$pro->id) }}" class="text-decoration-none">
                                 <div style="background-image: url('{{url('files/projects',$pro->feature_image)}}'); background-size: cover; height: 250px; border-radius:7px; background-position: center center">
-                                    <p class="project-details text-center"> {{ $pro->title }} </p>
+                                    <p class="project-details text-center"> {{ $pro->title }} @ {{ $pro->location }} </p>
                                 </div>
                             </a>
                         </div>
@@ -133,7 +133,7 @@
                         <div class="col-sm-4 p-2 project">
                             <a href="{{ url('individual',$data->id) }}" class="text-decoration-none">
                                 <div style="background-image: url('{{url('files/projects',$data->feature_image)}}'); background-size: cover; height: 250px; border-radius:7px; background-position: center center">
-                                    <p class="project-details text-center">{{$data->title}}</p>
+                                    <p class="project-details text-center">{{$data->title}} @ {{ $data->location }}</p>
                                 </div>
                             </a>
                         </div>

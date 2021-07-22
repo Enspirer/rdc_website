@@ -51,9 +51,11 @@ class ProjectsController extends Controller
         $addproj = new Projects;
 
         $addproj->title=$request->title; 
+        $addproj->location=$request->location; 
         $addproj->category=$request->category;        
         $addproj->description=$request->description;
         $addproj->status=$request->status;
+        $addproj->other=$request->home_status;
         $addproj->order=$request->order;
         $addproj->feature_image=$image_url;
         $addproj->save();        
@@ -155,9 +157,11 @@ class ProjectsController extends Controller
         $updateproj = new Projects;
 
         $updateproj->title=$request->title; 
+        $updateproj->location=$request->location;
         $updateproj->category=$request->category;        
         $updateproj->description=$request->description;
         $updateproj->status=$request->status;
+        $updateproj->other=$request->home_status;
         $updateproj->order=$request->order;
         $updateproj->feature_image=$image_url;
 

@@ -85,73 +85,46 @@
         <div class="row mt-5 px-3">
             <div id="carousel-product" class="carousel slide p-0" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carousel-product" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-product" data-slide-to="1"></li>
+                @foreach($self as $key => $sel)
+                
+                    @if($key == 1)
+                    
+                        <li data-target="#carousel-product" data-slide-to="0" class="active"></li>
+                    @else
+                        <li data-target="#carousel-product" data-slide-to="{{ $key }}"></li>
+                    @endif
+                    
+                @endforeach  
+                    <!-- <li data-target="#carousel-product" data-slide-to="1"></li> -->
                 </ol>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    @foreach($self as $key => $sel) 
+                    
+                    @if($key == 1)
+                        <div class="carousel-item active">
+                    @else 
+                        <div class="carousel-item">
+                    @endif
+
                         <div class="row align-items-center bg-light">
+
+                        @foreach($sel as $key => $item)
+                        
                             <div class="col-sm-4 p-2 item1 item">
-                                <img src="{{ asset('img/index-project-image-1.jpg') }}" alt="..." class="img-fluid">
+                                <img src="{{url('files/projects',$item['feature_image'])}}" alt="..." class="img-fluid" >
                                 <div class="carousel-caption">
-                                    <h5 style="color: #B49977;">GARDEN HOUSE</h5>
-                                    <p style="font-size: 20px;">HABARADUWA</p>
+                                    <h5 style="color: #B49977;">{{ $item['title'] }}</h5>
+                                    <p style="font-size: 20px;">{{ $item['location'] }}</p>
                                     <div class="line"></div>
-                                    <a href="{{ url('individual') }}"><i class="fas fa-arrow-right"></i></a>
+                                    <a href="{{ url('individual',$item['id']) }}"><i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
-                            <div class="col-sm-4 p-2 item2">
-                                <img src="{{ asset('img/index-project-image-2.jpg') }}" alt="..." class="img-fluid">
-                                <div class="carousel-caption">
-                                    <h5 style="color: #B49977;">JIFFY OFFICE</h5>
-                                    <p style="font-size: 20px;">MIRIGAMA</p>
-                                    <div class="line"></div>
-                                    <a href="{{ url('individual') }}"><i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 p-2 item3">
-                                <img src="{{ asset('img/index-project-image-3.jpg') }}" alt="..." class="img-fluid">
-                                <div class="carousel-caption">
-                                    <h5 style="color: #B49977;">JUNGLE BEACH HOTEL</h5>
-                                    <p style="font-size: 20px;">YALA</p>
-                                    <div class="line"></div>
-                                    <a href="{{ url('individual') }}"><i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            
+                        @endforeach   
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row align-items-center bg-light">
-                            <div class="col-sm-4 p-2 item4">
-                                <img src="{{ asset('img/index-project-image-4.jpg') }}" alt="..." class="img-fluid">
-                                <div class="carousel-caption">
-                                    <h5 style="color: #B49977;">NWSDB TRAINING CENTER</h5>
-                                    <p style="font-size: 20px;">RATMALANA</p>
-                                    <div class="line"></div>
-                                    <a href="{{ url('individual') }}"><i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 p-2 item5">
-                                <img src="{{ asset('img/index-project-image-5.jpg') }}" alt="..." class="img-fluid">
-                                <div class="carousel-caption">
-                                    <h5 style="color: #B49977;">PANAROMIC SEA BREEZE HOTEL</h5>
-                                    <p style="font-size: 20px;">BROWNS HILL</p>
-                                    <div class="line"></div>
-                                    <a href="{{ url('individual') }}"><i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 p-2 item6">
-                                <img src="{{ asset('img/index-project-image-6.jpg') }}" alt="..." class="img-fluid">
-                                <div class="carousel-caption">
-                                    <h5 style="color: #B49977;">THE FAB</h5>
-                                    <p style="font-size: 20px;">RATMALANA</p>
-                                    <div class="line"></div>
-                                    <a href="{{ url('individual') }}"><i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+                    
+
                 </div>
             </div>
         </div>

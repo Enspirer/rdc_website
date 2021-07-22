@@ -1,6 +1,6 @@
 @extends('backend.layouts.app')
 
-@section('title', __('Dashboard'))
+@section('title', __('Edit'))
 
 @section('content')
     <form action="{{route('admin.projects.update')}}" method="post" enctype="multipart/form-data">
@@ -12,6 +12,10 @@
                         <div class="form-group">
                             <label>Title</label>
                             <input type="text" class="form-control" name="title" value="{{ $projects->title }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Location</label>
+                            <input type="text" class="form-control" name="location" value="{{ $projects->location }}" required>
                         </div>
                         <div class="form-group">
                                 <label>Category</label>
@@ -31,6 +35,13 @@
                             <select class="form-control" name="status" required>
                                 <option value="Enabled" {{ $projects->status == 'Enabled' ? "selected" : "" }}>Enable</option>   
                                 <option value="Disabled" {{ $projects->status == 'Disabled' ? "selected" : "" }}>Disable</option>                                
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Publish in Homepage</label>
+                            <select class="form-control" name="home_status" required>
+                                <option value="Enabled" {{ $projects->other == 'Enabled' ? "selected" : "" }}>Enable</option>   
+                                <option value="Disabled" {{ $projects->other == 'Disabled' ? "selected" : "" }}>Disable</option>                                
                             </select>
                         </div>
                         <div class="form-group">

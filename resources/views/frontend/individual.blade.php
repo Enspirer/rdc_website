@@ -65,7 +65,7 @@
     <section id="project-details">
         <div class="container project-details" style="margin-top: 4rem; padding: 0 7rem;">
             <h6 style="text-transform: uppercase">{{ $proj->category }} PROJECTS</h6>
-            <h2>{{ $proj->title }}</h2>
+            <h2>{{ $proj->title }} - {{ $proj->location }}</h2>
             <p class="mt-4" style="font-size: 0.9rem; line-height: 1.7rem; text-align: justify;">{{ $proj->description }}</p>
         </div>
     </section>

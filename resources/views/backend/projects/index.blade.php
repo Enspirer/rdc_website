@@ -24,6 +24,7 @@
                                 <th scope="col">Project Title</th>
                                 <th scope="col">Category</th>
                                 <th scope="col">Status</th>
+                                <th scope="col">Home</th>
                                 <th scope="col">Order</th>
                                 <th scope="col">Option</th>
                             </tr>
@@ -80,6 +81,7 @@
                     {data: 'title', name: 'title'},
                     {data: 'category', name: 'category'},
                     {data: 'status', name: 'status'},
+                    {data: 'other', name: 'other'},
                     {data: 'order', name: 'order'},
                     {data: 'action', name: 'action', orderable: false, searchable: false},
                 ]

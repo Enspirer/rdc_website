@@ -1,6 +1,6 @@
 @extends('backend.layouts.app')
 
-@section('title', __('Dashboard'))
+@section('title', __('Create'))
 
 @section('content')
     <form action="{{route('admin.projects.store')}}" method="post" enctype="multipart/form-data">
@@ -12,6 +12,10 @@
                         <div class="form-group">
                             <label>Title</label>
                             <input type="text" class="form-control" name="title" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Location</label>
+                            <input type="text" class="form-control" name="location" required>
                         </div>
                         <div class="form-group">
                                 <label>Category</label>
@@ -31,6 +35,13 @@
                             <select class="form-control" name="status" required>
                                 <option value="Enabled">Enable</option>   
                                 <option value="Disabled">Disable</option>                                
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Publish in Homepage</label>
+                            <select class="form-control" name="home_status" required>
+                                    <option value="Enabled">Enable</option>   
+                                    <option value="Disabled">Disable</option>                                
                             </select>
                         </div>
                         <div class="form-group">
