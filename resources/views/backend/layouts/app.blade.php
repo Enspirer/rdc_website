@@ -14,7 +14,7 @@
     @yield('meta')
 
     @stack('before-styles')
-    <link href="{{ mix('css/backend.css') }}" rel="stylesheet">
+    <link href="{{ url('css/backend.css') }}" rel="stylesheet">
     <livewire:styles />
     @stack('after-styles')
 </head>
@@ -42,9 +42,9 @@
     </div><!--c-wrapper-->
 
     @stack('before-scripts')
-    <script src="{{ mix('js/manifest.js') }}"></script>
-    <script src="{{ mix('js/vendor.js') }}"></script>
-    <script src="{{ mix('js/backend.js') }}"></script>
+    <script src="{{ url('js/manifest.js') }}"></script>
+    <script src="{{ url('js/vendor.js') }}"></script>
+    <script src="{{ url('js/backend.js') }}"></script>
     
     <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
