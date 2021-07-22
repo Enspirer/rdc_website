@@ -93,7 +93,7 @@
                         <h4 class="text-white mb-5 get-in">GET IN TOUCH</h4>
                         <p>0112 546 6756 <br>
                             0112 546 7889 <br>
-                            lorem@gmail.com <br>
+                            rdcarchitects@hotmail.com <br>
                             423435, Colombo, Sri Lanka</p>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                         <small>Powered by Enspirer © RDC Architects 2021</small>
                     </div>
                     <div class="col-md-6 text-end social">
-                        <i class="fab fa-facebook-square icon"></i>
+                        <a class="fab fa-facebook-square icon text-decoration-none text-light" href="https://www.facebook.com/russelldandeniyacharteredarchitects"></a>
                         <i class="fab fa-twitter-square icon"></i>
                         <i class="fab fa-linkedin icon"></i>
                         <i class="fab fa-instagram-square icon"></i>
