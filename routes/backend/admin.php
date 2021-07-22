@@ -7,6 +7,7 @@ use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\ProjectsController;
 use App\Http\Controllers\Backend\AwardsController;
 use App\Http\Controllers\Backend\LifeAtController;
+use App\Http\Controllers\Backend\PressReleaseController;
 
 // All route names are prefixed with 'admin.'.
 Route::redirect('/', '/admin/dashboard', 301);
@@ -101,3 +102,22 @@ Route::post('lifeat/update', [LifeAtController::class, 'update'])->name('lifeat.
 Route::post('lifeat/updateimage', [LifeAtController::class, 'updateimage'])->name('lifeat.updateimage');
 Route::get('lifeat/delete/{id}', [LifeAtController::class, 'destroy'])->name('lifeat.destroy');
 Route::get('lifeat/editimage/lifeatimages/delete/{id}', [LifeAtController::class, 'delete'])->name('lifeat.delete');
+
+// ***********************************************************************************************
+
+Route::get('press', [PressReleaseController::class, 'index'])->name('press.index')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Press Release'), route('admin.press.index'));
+}); 
+Route::get('press/create', [PressReleaseController::class, 'create'])->name('press.create')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Create New'), route('admin.press.create'));
+});    
+Route::post('press/store', [PressReleaseController::class, 'store'])->name('press.store');
+Route::get('press/getdetails', [PressReleaseController::class, 'GetDetails'])->name('press.GetDetails');
+Route::get('press/edit/{id}', [PressReleaseController::class, 'edit'])->name('press.edit')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Edit Press Release'), route('admin.press.edit',1));
+}); 
+Route::post('press/update', [PressReleaseController::class, 'update'])->name('press.update');
+Route::get('press/delete/{id}', [PressReleaseController::class, 'destroy'])->name('press.destroy');

@@ -89,18 +89,22 @@
             <h2 data-aos="fade-right" data-aos-duration="500">Articles</h2>
 
             <div class="row mt-5">
+
+              @foreach($pressrelease as $key => $press)
+
                 <div class="col-sm-6 col-lg-3 p-2">
                     <div class="card" data-aos="zoom-in" data-aos-duration="600">
-                        <img src="{{ asset('img/articles-1.svg') }}" class="card-img-top" alt="...">
+                        <img src="{{url('files/press',$press->image)}}" class="card-img-top" style="height: 314px; object-fit: cover;" alt="...">
+                        <!-- style="width: 262px;"  -->
                         <div class="card-body mt-4">
-                          <h3 class="card-title">Fab Foods</h3>
-                          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, est.</p>
-                          <a href="#" class="btn rounded-0 btn-outline-dark col-12" style="border: 1px solid #1F1504;">READ MORE</a>
+                          <h3 class="card-title">{{ $press->title }}</h3>
+                          <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">{{ $press->description }}</p>
+                          <a href="{{url('files/pdf',$press->pdf_upload)}}" class="btn rounded-0 btn-outline-dark col-12" style="border: 1px solid #1F1504;" target="_blank">READ MORE</a>
                         </div>
                       </div>
                 </div>
 
-                <div class="col-sm-6 col-lg-3 p-2">
+                <!-- <div class="col-sm-6 col-lg-3 p-2">
                     <div class="card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
                         <img src="{{ asset('img/articles-1.svg') }}" class="card-img-top" alt="...">
                         <div class="card-body mt-4">
@@ -131,7 +135,10 @@
                           <a href="#" class="btn rounded-0 btn-outline-dark col-12" style="border: 1px solid #1F1504;">READ MORE</a>
                         </div>
                       </div>
-                </div>
+                </div> -->
+
+            @endforeach
+                
             </div>
         </div>
     </section>

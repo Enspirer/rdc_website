@@ -61,6 +61,15 @@
                     </li>                   
             </ul>
         </li>
+
+        <li class="c-sidebar-nav-item">
+            <x-utils.link
+                class="c-sidebar-nav-link"
+                :href="route('admin.press.index')"
+                :active="activeClass(Route::is('admin.press'), 'c-active')"
+                icon="c-sidebar-nav-icon far fa-newspaper"
+                :text="__('Press Release')" />
+        </li>
         
         <li class="c-sidebar-nav-item">
             <x-utils.link
