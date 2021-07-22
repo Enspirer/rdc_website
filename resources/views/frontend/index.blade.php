@@ -89,7 +89,7 @@
                 
                     @if($key == 1)
                     
-                        <li data-target="#carousel-product" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-product" data-slide-to="{{ $key }}" class="active"></li>
                     @else
                         <li data-target="#carousel-product" data-slide-to="{{ $key }}"></li>
                     @endif
@@ -111,13 +111,16 @@
                         @foreach($sel as $key => $item)
                         
                             <div class="col-sm-4 p-2 item1 item">
-                                <img src="{{url('files/projects',$item['feature_image'])}}" alt="..." class="img-fluid" >
-                                <div class="carousel-caption">
-                                    <h5 style="color: #B49977;">{{ $item['title'] }}</h5>
-                                    <p style="font-size: 20px;">{{ $item['location'] }}</p>
-                                    <div class="line"></div>
-                                    <a href="{{ url('individual',$item['id']) }}"><i class="fas fa-arrow-right"></i></a>
+                                <div style="width: 363px; height:244px">
+                                    <img style="object-fit: cover;width: 363px; height:244px" src="{{url('files/projects',$item['feature_image'])}}" alt="..." class="img-fluid" >
+                                    <div class="carousel-caption">
+                                        <h5 style="color: #B49977;">{{ $item['title'] }}</h5>
+                                        <p style="font-size: 20px;">{{ $item['location'] }}</p>
+                                        <div class="line"></div>
+                                        <a href="{{ url('individual',$item['id']) }}"><i class="fas fa-arrow-right"></i></a>
+                                    </div>
                                 </div>
+
                             </div>
                         @endforeach   
                         </div>

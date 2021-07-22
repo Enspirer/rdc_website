@@ -36,7 +36,7 @@ class HomeController
         }
 
         $self = self::sectionArray($final_array,3);
-        dd($self);
+
 
         return view('frontend.index',[
             'self' => $self
@@ -46,13 +46,14 @@ class HomeController
     static function sectionArray($array, $step)
         {
             $sectioned = array();
-            $k = 0;
+            $k = -1;
 
             for ( $i=0;$i < count($array); $i++ ) {
+
                 if ( !($i % $step) ) {
                 $k++;
                 }
-                $sectioned[$i][] = $array[$i];
+                $sectioned[$k][] = $array[$i];
             }
             return $sectioned;
         }
