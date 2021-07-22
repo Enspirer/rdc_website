@@ -297,6 +297,9 @@ nav.black {
     .footer .social {
         text-align: right!important;
     }
+    .mouse_scroll {
+        top: -80px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -322,5 +325,8 @@ nav.black {
     .footer .social {
         text-align: center!important;
         margin-top: 0.5rem!important;
+    }
+    .mouse_scroll {
+        display: none;
     }
 }

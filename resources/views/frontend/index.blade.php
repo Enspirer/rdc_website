@@ -19,6 +19,15 @@
                 <div class="carousel-item">
                     <img class="d-block w-100" src="{{ asset('img/banner-3.jpg') }}" alt="Third slide">
                 </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{ asset('img/banner-4.jpg') }}" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{ asset('img/banner-5.jpg') }}" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{ asset('img/banner-6.jpg') }}" alt="Third slide">
+                </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>

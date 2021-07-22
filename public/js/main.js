@@ -60,4 +60,10 @@ jQuery(function(){
         
         $(".modal-body img").attr("src", arg);
     });
+
+
+    // scroll indicator
+    $('.mouse_scroll').on('click', function(){
+        $(window).scrollTop(500);
+    });
 });
