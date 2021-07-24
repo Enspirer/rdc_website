@@ -12,10 +12,8 @@ class HomeController
      */
     public function index()
     {
-        // $projects = DB::table('projects')->orderBy('order', 'ASC')->where('status', '=', 'Enabled')->where('other', '=', 'Enabled')->get();
-        // dd($projects);
-        // $projects = DB::table('projects')->select('title', DB::raw('count(*) as total'))->groupBy('title')->orderBy('order', 'ASC')->where('status', '=', 'Enabled')->where('other', '=', 'Enabled')->get();
-        // dd($projects);
+        $home_publish = DB::table('projects')->where('status', '=', 'Enabled')->where('other', '=', 'Enabled')->get();
+        // dd($home_publish);
 
         $projects = DB::table('projects')->orderBy('order', 'ASC')->where('status', '=', 'Enabled')->where('other', '=', 'Enabled')->get();
         // dd($projects);
@@ -39,7 +37,8 @@ class HomeController
 
 
         return view('frontend.index',[
-            'self' => $self
+            'self' => $self,
+            'home_publish' => $home_publish
         ]);
     }
 

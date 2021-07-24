@@ -76,6 +76,11 @@
     </div>
 
     <!--project section-->
+
+@if(count($home_publish) == 0)
+
+@else
+
     <div class="container mb-5 project-section" style="margin-top: 7rem;">
         <div class="container px-0">
             <div>
@@ -132,6 +137,9 @@
             </div>
         </div>
     </div>
+
+
+@endif    
 
     <!--about section-->
     <div class="container about-section mb-5" style="margin-top: 8rem;">
