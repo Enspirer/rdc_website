@@ -5,14 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
+    @stack('before-styles')
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ asset('css/common.css') }}">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    @stack('after-styles')
 
     <title>RDC</title>
 </head>
@@ -82,15 +87,12 @@
                     </div>
                     <div class="col-md-4 col-lg-6" data-aos="fade-up" data-aos-duration="1000">
                         <br><br>
-                        <p class="px-5 text" data-aos="fade-up" data-aos-duration="1000">
-                            Lorem Ipsum is simply dummy text
-                            of the printing and typesetting industry.
-                            To take a trivial example, which of ever
-                            undertakes laborious physical exercise.
-                        </p>
+                        <p class="px-5 text mb-2" data-aos="fade-up" data-aos-duration="1000">
+                          Architecture is an expression of values , a reality of ambitious sketches on papers meeting of great minds and just healthy few conversations ..!</p>
+                        <p class="px-5 text" data-aos="fade-up" data-aos-duration="1000">Archt. Russell Dandeniya</p>
                     </div>
                     <div class="col-md-4 col-lg-4 text-end contact" data-aos="fade-up" data-aos-duration="1000">
-                        <h4 class="text-white mb-5 get-in">GET IN TOUCH</h4>
+                        <h4 class="text-white mb-4 get-in">To Make it Simple But Significant</h4>
                         <p>0112 546 6756 <br>
                             0112 546 7889 <br>
                             rdcarchitects@hotmail.com <br>
@@ -117,10 +119,14 @@
 
 
     <!-- <script src="main.js"></script> -->
+    @stack('before-scripts')
+
     <script src="{{asset('/js/main.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
+
+    @stack('after-scripts')
       
 </body>
 </html>

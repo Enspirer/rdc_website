@@ -164,11 +164,11 @@
     <div class="service-container container-fluid p-0 text-left position-relative" style="margin-top: 7rem;">
         <!-- <img src="{{ asset('img/services-banner.jpg') }}" class="img-fluid w-100" style="height: 850px!important"> -->
         <div class="text-white service-banner">
-            <div class="container service-text" style="padding-top: 15rem;">
+            <div class="container service-text" style="padding-top: 15rem; -webkit-text-stroke: 0.3px black; color: white; text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
                 <h4>SERVICES</h4>
                 <div class="row">
                     <div class="col-12 mt-3">
-                        <h2 style="font-size: 35px"><i class="fas fa-quote-left position-relative" style="top:-0.5rem"></i> &nbsp;Architecture <span style='font-size: 20px'>is about making the world a little more like our</span> Dreams&nbsp; <i class="fas fa-quote-right position-relative" style="top:-0.5rem"></i></h2>
+                        <h2 style="font-size: 40px;"><i class="fas fa-quote-left position-relative" style="top:-0.5rem"></i> &nbsp;Architecture <span style='font-size: 28px'>is about making the world a little more like our</span> Dreams&nbsp; <i class="fas fa-quote-right position-relative" style="top:-0.5rem"></i></h2>
                         <h5 class="text-center">- Bjarke Ingels -</h5>
                     </div>
                 </div>
@@ -181,7 +181,7 @@
                 <div class="row">
                 <div class="col-md-4">
                     <div class="card shadow mt-3 mb-3 p-2 p-lg-3" data-aos="zoom-in" data-aos-duration="600">
-                        <div class="container p-3 text-center">
+                        <div class="container service-div p-3 text-center">
                             <i class="fas fa-home fa-2x"></i> <br><br>
                             <h5><b>Architecture</b></h5> <br>
                             <div class="collapse" id="collapseExample1" aria-expanded="false">
@@ -194,7 +194,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card shadow mt-3 mb-3 p-2 p-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
-                        <div class="container p-3 text-center">
+                        <div class="container service-div p-3 text-center">
                             <i class="fas fa-hotel fa-2x"></i><br><br>
                             <h5><b>Engineering Services</b></h5><br>
                             <div class="collapse" id="collapseExample2" aria-expanded="false">
@@ -207,7 +207,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card shadow mt-3 mb-3 p-2 p-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
-                        <div class="container p-3 text-center">
+                        <div class="container service-div p-3 text-center">
                             <i class="fas fa-edit fa-2x"></i><br><br>
                             <h5><b>Landscape</b></h5><br>
                             <div class="collapse" id="collapseExample3" aria-expanded="false">
@@ -276,14 +276,15 @@
                     <li data-target="#carousel-testimonial" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-testimonial" data-slide-to="1"></li>
                     <li data-target="#carousel-testimonial" data-slide-to="2"></li>
+                    <li data-target="#carousel-testimonial" data-slide-to="3"></li>
                 </ol>
                 <div class="carousel-inner">
                     <img class="d-block w-100 testi-image img-fluid" src="{{ asset('img/testimentional.jpg') }}" alt="First slide">
 
                     <div class="carousel-item active">
                         <div class="carousel-caption">
-                            <h5 class="text-white testimonial-text">I’ve said Goodbye to the <span class="h3">“over Worked notion”</span> that <br> Architecture has to save the world.</h5>
-                            <p class="lead text">- Peter Zumthor -</p>
+                            <h5 class="text-white testimonial-text">Modern Architecture is not a style it’s an attitude</h5>
+                            <p class="lead text">- Marcel Breur -</p>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -294,8 +295,14 @@
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-caption">
-                            <h5 class="text-white testimonial-text">I’ve said Goodbye to the <span class="h3">“over Worked notion”</span> that <br> Architecture has to save the world.</h5>
-                            <p class="lead text">- Peter Zumthor -</p>
+                            <h5 class="text-white testimonial-text">Each new situation requires a new Architecture</h5>
+                            <p class="lead text">- Jean Neuvel -</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <h5 class="text-white testimonial-text">I try to give people a different way of looking at their surroundings. That’s art to me.</h5>
+                            <p class="lead text">- Maya Lin -</p>
                         </div>
                     </div>
                 </div>
@@ -355,5 +362,25 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 @endsection
+
+@push('after-scripts')
+
+<script>
+
+$(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        var hieghtThreshold = $(".service-card-body").offset().top;
+
+        console.log('scroll : ' + scroll)
+        console.log('service : ' + hieghtThreshold);
+
+        if (scroll >= hieghtThreshold) {
+            $('.service-div').children('div').removeClass('show');
+            $('.service-div').children('a').addClass('collapsed');
+        }
+    });
+</script>
+
+@endpush
 
 
