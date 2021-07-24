@@ -26,8 +26,8 @@
 
 
                 @foreach($datas as $key => $data)
-                <div class="col-4">
-                    <img src="{{url('files/life_at/',$data->image)}}" alt="" class="img-fluid mb-4" data-bs-toggle="modal" data-bs-target="#tripModal" width="100%" style="height: 170px; object-fit: cover;">
+                <div class="col-sm-4">
+                    <img src="{{url('files/life_at/',$data->image)}}" alt="" class="img-fluid mb-4" data-bs-toggle="modal" data-bs-target="#tripModal" width="100%">
                 </div>
                 <br>
 
@@ -55,8 +55,5 @@
         </div>
     </div>
     </div>
-
-
-    
 
 @endsection

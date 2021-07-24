@@ -9,6 +9,19 @@
 
 
 /* media queries */
+/* @media screen and (max-width: 1200px) {
+    .awards .col-2 {
+        padding: 1px!important;
+    }
+} */
+
+@media screen and (max-width: 992px) {
+    .awards {
+        padding: 0 3rem!important;
+        margin-top: 3rem!important;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .awards {
         padding: 0 3rem!important;
@@ -19,5 +32,8 @@
 @media screen and (max-width: 576px) {
     .awards {
         padding: 0 0.75rem!important;
+    }
+    .awards .col-2 {
+        padding: 0!important;
     }
 }
