@@ -173,7 +173,7 @@
                 <div class="row">
                 <div class="col-md-4">
                     <div class="card shadow mt-3 mb-3 p-2 p-lg-3" data-aos="zoom-in" data-aos-duration="600">
-                        <div class="container p-3 text-center">
+                        <div class="container service-div p-3 text-center">
                             <i class="fas fa-home fa-2x"></i> <br><br>
                             <h5><b>Architecture</b></h5> <br>
                             <div class="collapse" id="collapseExample1" aria-expanded="false">
@@ -186,7 +186,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card shadow mt-3 mb-3 p-2 p-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
-                        <div class="container p-3 text-center">
+                        <div class="container service-div p-3 text-center">
                             <i class="fas fa-hotel fa-2x"></i><br><br>
                             <h5><b>Engineering Services</b></h5><br>
                             <div class="collapse" id="collapseExample2" aria-expanded="false">
@@ -199,7 +199,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card shadow mt-3 mb-3 p-2 p-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
-                        <div class="container p-3 text-center">
+                        <div class="container service-div p-3 text-center">
                             <i class="fas fa-edit fa-2x"></i><br><br>
                             <h5><b>Landscape</b></h5><br>
                             <div class="collapse" id="collapseExample3" aria-expanded="false">
@@ -354,5 +354,25 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 @endsection
+
+@push('after-scripts')
+
+<script>
+
+$(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        var hieghtThreshold = $(".service-card-body").offset().top;
+
+        console.log('scroll : ' + scroll)
+        console.log('service : ' + hieghtThreshold);
+
+        if (scroll >= hieghtThreshold) {
+            $('.service-div').children('div').removeClass('show');
+            $('.service-div').children('a').addClass('collapsed');
+        }
+    });
+</script>
+
+@endpush
 
 

@@ -158,7 +158,6 @@
     display: flex!important;
     height: 6.5rem!important;
     overflow: hidden!important;
-    transition: all 1s;
 }
 .service-card .collapse-button {
     margin-top: 1rem!important;
@@ -167,8 +166,8 @@
 .service-card #collapseExample2.collapsing,
 .service-card #collapseExample3.collapsing {
     height: 6.5rem;
+    transition: all 0.5s;
 }
-
 .service-card a.collapsed::before {
     content: 'MORE ';
 }
