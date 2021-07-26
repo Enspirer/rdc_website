@@ -9,6 +9,8 @@ use App\Http\Controllers\Backend\AwardsController;
 use App\Http\Controllers\Backend\LifeAtController;
 use App\Http\Controllers\Backend\PressReleaseController;
 use App\Http\Controllers\Backend\HomeController;
+use App\Http\Controllers\Backend\ProfessionalController;
+use App\Http\Controllers\Backend\OfficeController;
 
 // All route names are prefixed with 'admin.'.
 Route::redirect('/', '/admin/dashboard', 301);
@@ -138,3 +140,35 @@ Route::get('press/edit/{id}', [PressReleaseController::class, 'edit'])->name('pr
 }); 
 Route::post('press/update', [PressReleaseController::class, 'update'])->name('press.update');
 Route::get('press/delete/{id}', [PressReleaseController::class, 'destroy'])->name('press.destroy');
+
+// ***********************************************************************************************
+
+Route::get('professional', [ProfessionalController::class, 'index'])->name('professional.index')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Professional Team'), route('admin.professional.index'));
+});  
+Route::post('professional/store', [ProfessionalController::class, 'store'])->name('professional.store');
+Route::get('professional/getdetails', [ProfessionalController::class, 'GetTableDetails'])->name('professional.GetTableDetails');
+Route::get('professional/edit/{id}', [ProfessionalController::class, 'edit'])->name('professional.edit')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Edit Professional'), route('admin.professional.edit',1));
+}); 
+Route::post('professional/update', [ProfessionalController::class, 'update'])->name('professional.update');
+Route::get('professional/delete/{id}', [ProfessionalController::class, 'destroy'])->name('professional.destroy');
+
+// ***********************************************************************************************
+
+Route::get('office', [OfficeController::class, 'index'])->name('office.index')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Office Team'), route('admin.office.index'));
+});  
+Route::post('office/store', [OfficeController::class, 'store'])->name('office.store');
+Route::get('office/getdetails', [OfficeController::class, 'GetTableDetails'])->name('office.GetTableDetails');
+Route::get('office/edit/{id}', [OfficeController::class, 'edit'])->name('office.edit')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Edit Office'), route('admin.office.edit',1));
+}); 
+Route::post('office/update', [OfficeController::class, 'update'])->name('office.update');
+Route::get('office/delete/{id}', [OfficeController::class, 'destroy'])->name('office.destroy');
+
+
