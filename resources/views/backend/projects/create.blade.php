@@ -28,7 +28,7 @@
                             </div>
                         <div class="form-group">
                             <label>Description</label>
-                            <textarea type="text" class="form-control" name="description" rows="8" required></textarea>
+                            <textarea type="text" id="editor" class="form-control" name="description" rows="8" required> <br><br> </textarea>
                         </div>
                         <div class="form-group">
                             <label>Status</label>
@@ -101,7 +101,7 @@ $(document).ready(function(){
     function dynamic_field(number)
     {
     html = '<tr>';
-            html += '<td width="90%"><input type="file" name="image[]" class="mb-2" required/><input type="text" class="form-control" name="image_order[]" placeholder="order number" required></td>';
+            html += '<td width="90%"><input type="file" name="image[]" class="mb-2" required/></td>';
         
             if(number > 1)
             {
@@ -127,6 +127,20 @@ $(document).ready(function(){
 
 
 });
+</script>
+
+
+<script>
+	ClassicEditor
+		.create( document.querySelector( '#editor' ), {
+			// toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+		} )
+		.then( editor => {
+			window.editor = editor;
+		} )
+		.catch( err => {
+			console.error( err.stack );
+		} );
 </script>
 
 

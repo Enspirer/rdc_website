@@ -91,7 +91,7 @@ $(document).ready(function(){
     function dynamic_field(number)
     {
     html = '<tr>';
-            html += '<td width="90%"><input type="file" name="image[]" class="mb-2" required/><input type="text" class="form-control" name="image_order[]" placeholder="order number" required></td>';
+            html += '<td width="90%"><input type="file" name="image[]" class="mb-2" required/></td>';
         
             if(number > 1)
             {

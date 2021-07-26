@@ -55,7 +55,7 @@
                     </div>
                     <div class="modal-body">
                         
-                        <label>Name</label>
+                        <label>Name &nbsp;&nbsp; (use &lt;b&gt;&lt;/b&gt;  tags when text are bold. Ex:- &lt;b&gt;Example&lt;/b&gt;)</label> 
                         <textarea class="form-control" name="name"  rows="4" required></textarea>
                         <br>
                         
@@ -65,15 +65,7 @@
                         <div class="form-group">
                             <label>Image</label>
                             <input type="file" class="form-control-file" name="image">
-                        </div>
-                        
-                        <!-- <div class="form-group">
-                            <label>Button Status</label>
-                            <select class="form-control" name="button_status" required>
-                                <option value="Enabled">Enable</option>   
-                                <option value="Disabled">Disable</option>                                
-                            </select>
-                        </div> -->
+                        </div>  
 
                         <div class="form-group">
                             <label>Status</label>
