@@ -8,6 +8,7 @@ use App\Http\Controllers\Backend\ProjectsController;
 use App\Http\Controllers\Backend\AwardsController;
 use App\Http\Controllers\Backend\LifeAtController;
 use App\Http\Controllers\Backend\PressReleaseController;
+use App\Http\Controllers\Backend\HomeController;
 
 // All route names are prefixed with 'admin.'.
 Route::redirect('/', '/admin/dashboard', 301);
@@ -16,6 +17,22 @@ Route::get('dashboard', [DashboardController::class, 'index'])
     ->breadcrumbs(function (Trail $trail) {
         $trail->push(__('Home'), route('admin.dashboard'));
     });
+
+
+Route::get('home', [HomeController::class, 'index'])->name('home.index')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Home'), route('admin.home.index'));
+});  
+Route::post('home/store', [HomeController::class, 'store'])->name('home.store');
+Route::get('home/getdetails', [HomeController::class, 'GetTableDetails'])->name('home.GetTableDetails');
+Route::get('home/edit/{id}', [HomeController::class, 'edit'])->name('home.edit')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Edit Home'), route('admin.home.edit',1));
+}); 
+Route::post('home/update', [HomeController::class, 'update'])->name('home.update');
+Route::get('home/delete/{id}', [HomeController::class, 'destroy'])->name('home.destroy');
+
+// ***********************************************************************************************    
 
 Route::get('contactus', [ContactUsController::class, 'index'])->name('contactus.index')
 ->breadcrumbs(function (Trail $trail) {

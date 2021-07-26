@@ -12,6 +12,9 @@ class HomeController
      */
     public function index()
     {
+        $home_image = DB::table('homes')->orderBy('order', 'ASC')->get();
+        // dd($home_image);
+
         $home_publish = DB::table('projects')->where('status', '=', 'Enabled')->where('other', '=', 'Enabled')->get();
         // dd($home_publish);
 
@@ -38,7 +41,8 @@ class HomeController
 
         return view('frontend.index',[
             'self' => $self,
-            'home_publish' => $home_publish
+            'home_publish' => $home_publish,
+            'home_image' => $home_image
         ]);
     }
 

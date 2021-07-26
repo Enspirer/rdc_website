@@ -1,6 +1,6 @@
 @extends('backend.layouts.app')
 
-@section('title', __('Awards'))
+@section('title', __('Home'))
 
 @section('content')
     
@@ -10,7 +10,7 @@
 
             <div class="card">
                 <div class="card-header">
-                    <strong>Awards&nbsp;</strong>
+                    <strong>Home Page&nbsp;</strong>
 
                     <div class="btn btn-info pull-right ml-3" data-toggle="modal" data-target="#exampleModal">Add New</div>
                    
@@ -21,10 +21,7 @@
                         <thead>
                             <tr>
                                 <th scope="col">#ID</th>
-                                <th scope="col">Awards Name</th>
-                                <!-- <th scope="col">Image</th> -->
-                                <!-- <th scope="col">Button Status</th> -->
-                                <th scope="col">Status</th>
+                                <th scope="col">Image</th>
                                 <th scope="col">Order</th>
                                 <th scope="col">Option</th>
                             </tr>
@@ -44,7 +41,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
          
-                <form action="{{route('admin.awards.store')}}" method="post" enctype="multipart/form-data">
+                <form action="{{route('admin.home.store')}}" method="post" enctype="multipart/form-data">
                 
                     {{csrf_field()}}
                     <div class="modal-header">
@@ -53,27 +50,12 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body">                        
                         
-                        <label>Name &nbsp;&nbsp; (use &lt;b&gt;&lt;/b&gt;  tags when text are bold. Ex:- &lt;b&gt;Example&lt;/b&gt;)</label> 
-                        <textarea class="form-control" name="name"  rows="4" required></textarea>
-                        <br>
-                        
-                        <!-- <label>Description</label>
-                        <textarea class="form-control" name="description"  rows="3" required></textarea>
-                        <br> -->
                         <div class="form-group">
-                            <label>Image</label>
-                            <input type="file" class="form-control-file" name="image">
-                        </div>  
-
-                        <div class="form-group">
-                            <label>Status</label>
-                            <select class="form-control" name="status" required>
-                                <option value="Enabled">Enable</option>   
-                                <option value="Disabled">Disable</option>                                
-                            </select>
-                        </div>
+                            <label>Image ( dimensions = width: 1330px * height: 745px )</label>
+                            <input type="file" class="form-control-file" name="image" required>
+                        </div>                          
 
                         <div class="form-group">
                             <label>Order</label>
@@ -106,7 +88,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <h5>Are you sure you want to remove this Award?</h5>
+                            <h5>Are you sure you want to remove this Image?</h5>
                         </div>                        
 
                     </div>
@@ -126,15 +108,12 @@
         $(function () {
             var table = $('#villadatatable').DataTable({
                 processing: true,
-                ajax: "{{route('admin.awards.GetTableDetails')}}",
+                ajax: "{{route('admin.home.GetTableDetails')}}",
                 serverSide: true,
                 order: [[0, "desc"]],
                 columns: [
                     {data: 'id', name: 'id'},
-                    {data: 'name', name: 'name'},
-                    // {data: 'image', name: 'image'},
-                    // {data: 'b_status', name: 'b_status'},
-                    {data: 'status', name: 'status'},
+                    {data: 'image', name: 'image'},
                     {data: 'order', name: 'order'},
                     {data: 'action', name: 'action', orderable: false, searchable: false},
                 ]
@@ -149,7 +128,7 @@
 
             $('#ok_button').click(function(){
             $.ajax({
-            url:"awards/delete/"+user_id,
+            url:"home/delete/"+user_id,
             
             success:function(data)
             {

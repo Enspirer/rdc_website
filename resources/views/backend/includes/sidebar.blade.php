@@ -22,6 +22,15 @@
         <li class="c-sidebar-nav-item">
             <x-utils.link
                 class="c-sidebar-nav-link"
+                :href="route('admin.home.index')"
+                :active="activeClass(Route::is('admin.home'), 'c-active')"
+                icon="c-sidebar-nav-icon fas fa-house-user"
+                :text="__('Home Page')" />
+        </li>
+
+        <li class="c-sidebar-nav-item">
+            <x-utils.link
+                class="c-sidebar-nav-link"
                 :href="route('admin.awards.index')"
                 :active="activeClass(Route::is('admin.awards'), 'c-active')"
                 icon="c-sidebar-nav-icon fas fa-award"
