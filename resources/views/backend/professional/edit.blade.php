@@ -20,7 +20,7 @@
                             <input type="text" class="form-control" name="job_position" value="{{ $professional->job_position }}" required>
                         </div>
 
-                        <label>Qualifications &nbsp;&nbsp; (use "&lt;br&gt;"  tag for a new line.)</label> 
+                        <label>Qualifications &nbsp;&nbsp; (use "&lt;br&gt;"  tag for a new line)</label> 
                         <textarea class="form-control" name="qualifications"  rows="5" >{{ $professional->qualifications }}</textarea>
                         <br>
                         
@@ -36,7 +36,7 @@
                             <input type="text" class="form-control" name="order" value="{{ $professional->order }}" required>
                         </div>
                         <div class="form-group">
-                            <label>Image</label>
+                            <label>Image ( dimensions = width: 700px * height: 738px )</label>
                             <input type="file" class="form-control-file" name="image">
                             <br>
                             <img src="{{url('files/professional/',$professional->image)}}" style="width: 30%;" alt="" >

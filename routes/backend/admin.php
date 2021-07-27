@@ -11,6 +11,7 @@ use App\Http\Controllers\Backend\PressReleaseController;
 use App\Http\Controllers\Backend\HomeController;
 use App\Http\Controllers\Backend\ProfessionalController;
 use App\Http\Controllers\Backend\OfficeController;
+use App\Http\Controllers\Backend\ProjectBannerController;
 
 // All route names are prefixed with 'admin.'.
 Route::redirect('/', '/admin/dashboard', 301);
@@ -34,7 +35,22 @@ Route::get('home/edit/{id}', [HomeController::class, 'edit'])->name('home.edit')
 Route::post('home/update', [HomeController::class, 'update'])->name('home.update');
 Route::get('home/delete/{id}', [HomeController::class, 'destroy'])->name('home.destroy');
 
-// ***********************************************************************************************    
+// *********************************************************************************************** 
+
+Route::get('project_banner', [ProjectBannerController::class, 'index'])->name('project_banner.index')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Project Banner'), route('admin.project_banner.index'));
+});  
+Route::post('project_banner/store', [ProjectBannerController::class, 'store'])->name('project_banner.store');
+Route::get('project_banner/getdetails', [ProjectBannerController::class, 'GetTableDetails'])->name('project_banner.GetTableDetails');
+Route::get('project_banner/edit/{id}', [ProjectBannerController::class, 'edit'])->name('project_banner.edit')
+->breadcrumbs(function (Trail $trail) {
+    $trail->push(__('Edit'), route('admin.project_banner.edit',1));
+}); 
+Route::post('project_banner/update', [ProjectBannerController::class, 'update'])->name('project_banner.update');
+Route::get('project_banner/delete/{id}', [ProjectBannerController::class, 'destroy'])->name('project_banner.destroy');
+
+// *********************************************************************************************** 
 
 Route::get('contactus', [ContactUsController::class, 'index'])->name('contactus.index')
 ->breadcrumbs(function (Trail $trail) {
@@ -111,7 +127,7 @@ Route::post('lifeat/store', [LifeAtController::class, 'store'])->name('lifeat.st
 Route::get('lifeat/getdetails', [LifeAtController::class, 'GetTableDetails'])->name('lifeat.GetTableDetails');
 Route::get('lifeat/edit/{id}', [LifeAtController::class, 'edit'])->name('lifeat.edit')
 ->breadcrumbs(function (Trail $trail) {
-    $trail->push(__('Edit Projects'), route('admin.lifeat.edit',1));
+    $trail->push(__('Edit'), route('admin.lifeat.edit',1));
 });  
 Route::get('lifeat/editimage/{id}', [LifeAtController::class, 'editimage'])->name('lifeat.editimage')
 ->breadcrumbs(function (Trail $trail) {

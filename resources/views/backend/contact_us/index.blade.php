@@ -1,6 +1,6 @@
 @extends('backend.layouts.app')
 
-@section('title', __('Dashboard'))
+@section('title', __('Contact Us'))
 
 @section('content')
     
@@ -22,8 +22,8 @@
                                 <th scope="col">#ID</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Phone</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Message</th>
+                                <!-- <th scope="col">Email</th> -->
+                                <!-- <th scope="col">Message</th> -->
                                 <th scope="col">Status</th>
                                 <th scope="col">Option</th>
                             </tr>
@@ -80,8 +80,8 @@
                     {data: 'id', name: 'id'},
                     {data: 'name', name: 'name'},
                     {data: 'phone', name: 'phone'},
-                    {data: 'email', name: 'email'},
-                    {data: 'message', name: 'message'},
+                    // {data: 'email', name: 'email'},
+                    // {data: 'message', name: 'message'},
                     {data: 'status', name: 'status'},
                     {data: 'action', name: 'action', orderable: false, searchable: false},
                 ]

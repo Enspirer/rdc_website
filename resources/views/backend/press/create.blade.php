@@ -1,6 +1,6 @@
 @extends('backend.layouts.app')
 
-@section('title', __('Dashboard'))
+@section('title', __('Create'))
 
 @section('content')
     <form action="{{route('admin.press.store')}}" method="post" enctype="multipart/form-data">

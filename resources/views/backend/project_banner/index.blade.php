@@ -1,6 +1,6 @@
 @extends('backend.layouts.app')
 
-@section('title', __('Press Release'))
+@section('title', __('Project Banner'))
 
 @section('content')
     
@@ -10,9 +10,9 @@
 
             <div class="card">
                 <div class="card-header">
-                    <strong>Press Release&nbsp;</strong>
+                    <strong>Project Banner&nbsp;</strong>
 
-                    <a href="{{route('admin.press.create')}}" class="btn btn-primary pull-right ml-4">Create New</a>
+                    <div class="btn btn-info pull-right ml-3" data-toggle="modal" data-target="#exampleModal">Add New</div>
                    
                 </div><!--card-header-->
 
@@ -22,8 +22,6 @@
                             <tr>
                                 <th scope="col">#ID</th>
                                 <th scope="col">Image</th>
-                                <th scope="col">Title</th>
-                                <th scope="col">Status</th>
                                 <th scope="col">Order</th>
                                 <th scope="col">Option</th>
                             </tr>
@@ -36,7 +34,45 @@
             </div><!--card-->
         </div><!--col-->
     </div><!--row-->
-    
+
+
+    <!-- Modal insert -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+         
+                <form action="{{route('admin.project_banner.store')}}" method="post" enctype="multipart/form-data">
+                
+                    {{csrf_field()}}
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Add New</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">                        
+                        
+                        <div class="form-group">
+                            <label>Image ( dimensions = width: 1330px * height: 745px )</label>
+                            <input type="file" class="form-control-file" name="image" required>
+                        </div>                          
+
+                        <div class="form-group">
+                            <label>Order</label>
+                            <input type="text" class="form-control" name="order" required>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <input type="submit" class="btn btn-success" value="Add New">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
 
      <!-- Modal delete -->
      <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="ModalDeleteLabel" aria-hidden="true">
@@ -52,7 +88,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <h5>Are you sure you want to remove this?</h5>
+                            <h5>Are you sure you want to remove this Image?</h5>
                         </div>                        
 
                     </div>
@@ -72,19 +108,16 @@
         $(function () {
             var table = $('#villadatatable').DataTable({
                 processing: true,
-                ajax: "{{route('admin.press.GetDetails')}}",
+                ajax: "{{route('admin.project_banner.GetTableDetails')}}",
                 serverSide: true,
                 order: [[0, "desc"]],
                 columns: [
                     {data: 'id', name: 'id'},
                     {data: 'image', name: 'image'},
-                    {data: 'title', name: 'title'},
-                    {data: 'status', name: 'status'},
                     {data: 'order', name: 'order'},
                     {data: 'action', name: 'action', orderable: false, searchable: false},
                 ]
-            });
- 
+            }); 
 
             var user_id;
 
@@ -95,7 +128,7 @@
 
             $('#ok_button').click(function(){
             $.ajax({
-            url:"press/delete/"+user_id,
+            url:"project_banner/delete/"+user_id,
             
             success:function(data)
             {

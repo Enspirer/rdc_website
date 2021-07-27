@@ -9,44 +9,42 @@
     <section id="banner">
         <div class="container-fluid banner-section px-0">
             <div id="carousel-projects" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#carousel-projects" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carousel-projects" data-bs-slide-to="2"></li>
-                    <li data-bs-target="#carousel-projects" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carousel-projects" data-bs-slide-to="3"></li>
-                    <li data-bs-target="#carousel-projects" data-bs-slide-to="4"></li>
+                <ol class="carousel-indicators">                    
+                    
+                @foreach($banners as $key => $banner)
+                
+                    @if($key == 0)                    
+                        <li data-bs-target="#carousel-projects" data-bs-slide-to="{{ $key }}" class="active"></li>
+                    @else
+                        <li data-bs-target="#carousel-projects" data-bs-slide-to="{{ $key }}"></li>
+                    @endif
+                    
+                @endforeach 
+
                 </ol>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="{{ asset('img/projects-banner-1.jpg') }}" alt="First slide" class="img-fluid" style="width: 100%;">
-                        <div class="carousel-caption text-end">
-                            <a href="#"><img src="{{ asset('img/chat-icon.svg') }}" alt="" style="height: 1.5rem;"></a>
+
+                @foreach($banners as $key => $banner)
+
+                    @if($key == 0)
+                        <div class="carousel-item active">
+                            <img src="{{url('files/project_banner/',$banner->image)}}" alt="First slide" class="img-fluid" style="width: 100%;">
+                            <div class="carousel-caption text-end">
+                                <a href="#"><img src="{{ url('img/chat-icon.svg') }}" alt="" style="height: 1.5rem;"></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{ asset('img/projects-banner-2.jpg') }}" alt="Second slide" class="img-fluid" style="width: 100%;">
-                        <div class="carousel-caption text-end">
-                            <a href="#"><img src="{{ asset('img/chat-icon.svg') }}" alt="" style="height: 1.5rem;"></a>
+                    @else
+                        <div class="carousel-item">
+                            <img src="{{url('files/project_banner/',$banner->image)}}" alt="Second slide" class="img-fluid" style="width: 100%;">
+                            <div class="carousel-caption text-end">
+                                <a href="#"><img src="{{ url('img/chat-icon.svg') }}" alt="" style="height: 1.5rem;"></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{ asset('img/projects-banner-3.jpg') }}" alt="Third slide" class="img-fluid" style="width: 100%;">
-                        <div class="carousel-caption text-end">
-                            <a href="#"><img src="{{ asset('img/chat-icon.svg') }}" alt="" style="height: 1.5rem;"></a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{ asset('img/projects-banner-4.jpg') }}" alt="Third slide" class="img-fluid" style="width: 100%;">
-                        <div class="carousel-caption text-end">
-                            <a href="#"><img src="{{ asset('img/chat-icon.svg') }}" alt="" style="height: 1.5rem;"></a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{ asset('img/projects-banner-5.jpg') }}" alt="Third slide" class="img-fluid" style="width: 100%;">
-                        <div class="carousel-caption text-end">
-                            <a href="#"><img src="{{ asset('img/chat-icon.svg') }}" alt="" style="height: 1.5rem;"></a>
-                        </div>
-                    </div>
+                    @endif 
+                    
+                    
+                @endforeach
+                    
                 </div>
                 <a class="carousel-control-prev" href="#carousel-projects" role="button" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

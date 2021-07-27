@@ -21,7 +21,7 @@ class ProfessionalController extends Controller
         // dd($request);
 
         $request->validate([
-            'image'  => 'mimes:jpeg,png,jpg|max:20000',
+            'image'  => 'mimes:jpeg,png,jpg|max:20000|dimensions:width=700,height=738',
             'order' => 'numeric'            
         ]); 
     
@@ -88,7 +88,7 @@ class ProfessionalController extends Controller
         // dd($request);
 
         $request->validate([
-            'image'  => 'mimes:jpeg,png,jpg|max:20000',
+            'image'  => 'mimes:jpeg,png,jpg|max:20000|dimensions:width=700,height=738',
             'order' => 'numeric'            
         ]);      
         

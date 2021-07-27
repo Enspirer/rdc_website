@@ -27,7 +27,6 @@ class LifeAtController extends Controller
 
         $request->validate([
             'feature_image'  => 'mimes:jpeg,png,jpg|max:25000|dimensions:width=1920,height=1080',
-            // 'image'  => 'mimes:jpeg,png,jpg|max:40000|dimensions:width=1920,height=1080',
             'order' => 'numeric'           
         ]);     
         

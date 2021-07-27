@@ -78,7 +78,14 @@
                     class="c-sidebar-nav-dropdown-toggle"
                     :text="__('Projects')" />
 
-            <ul class="c-sidebar-nav-dropdown-items">                   
+            <ul class="c-sidebar-nav-dropdown-items">   
+                    <li class="c-sidebar-nav-item">
+                        <x-utils.link
+                            :href="route('admin.project_banner.index')"
+                            class="c-sidebar-nav-link"
+                            :text="__('Project Banner')"
+                            :active="activeClass(Route::is('admin.project_banner'), 'c-active')" />
+                    </li>                 
                     <li class="c-sidebar-nav-item">
                         <x-utils.link
                             :href="route('admin.category.index')"

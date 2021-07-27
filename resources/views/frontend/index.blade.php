@@ -1,6 +1,25 @@
 @extends('frontend.layouts.layout')
 
-@section('content')
+@section('content')    
+
+
+@if ( session()->has('message') )
+   
+   <body style="text-align:center; background-color: #C0C0C0">
+
+       <!-- <div style="text-align:center; background-color: grey"> -->
+
+       <h1 style="margin-top:150px;" class="display-3">Thank You!</h1><br>
+       <p class="lead"><h3>We appreciate you contacting us. One of our member will get back in touch with you soon!<br><br> Have a great day!</h3></p>
+       <hr><br>    
+       <p class="lead">
+           <a class="btn btn-success btn-md" href="{{url('/')}}" role="button">Go Back</a>
+       </p>
+       <!-- </div> -->
+       
+   </body>
+
+@else 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -328,26 +347,29 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <form>
+
+                <form action="{{route('frontend.contact.store')}}" method="post" enctype="multipart/form-data">
+                    {{csrf_field()}}
                     <div class="form-row">
                         <div class="form-group col-md-6" data-aos="fade-up" data-aos-duration="500">
-                            <input type="text" class="form-control" id="fname" placeholder="Name">
+                            <input type="text" class="form-control" name="name" placeholder="Name" required>
                         </div>
                         <div class="form-group col-md-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-                            <input type="tel" class="form-control" id="number" placeholder="Phone">
+                            <input type="text" class="form-control" name="phone" placeholder="Phone" required>
                         </div>
                     </div>
 
                     <div class="form-group" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
-                        <input type="email" class="form-control" id="mail" placeholder="Email">
+                        <input type="email" class="form-control" name="email" placeholder="Email" required>
                     </div>
 
                     <div class="form-group" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
-                        <textarea class="form-control" id="message" placeholder="Message" rows="3"></textarea>
+                        <textarea class="form-control" name="message" rows="3" placeholder="Message" required></textarea>
                     </div>
 
                     <button type="submit" class="btn default w-100" data-aos="flip-up" data-aos-duration="500" data-aos-delay="800">SEND</button>
                 </form>
+
             </div>
         </div>
     </div>
@@ -357,6 +379,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
 
 @endsection
 
@@ -380,4 +404,4 @@ $(window).scroll(function() {
 
 @endpush
 
-
+@endif 

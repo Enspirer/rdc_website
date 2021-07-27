@@ -23,7 +23,7 @@
                                 <th scope="col">#ID</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Job Position</th>
-                                <th scope="col">Status</th>
+                                <!-- <th scope="col">Status</th> -->
                                 <th scope="col">Order</th>
                                 <th scope="col">Option</th>
                             </tr>
@@ -63,12 +63,12 @@
                             <input type="text" class="form-control" name="job_position" required>
                         </div>
 
-                        <label>Qualifications &nbsp;&nbsp; (use "&lt;br&gt;"  tag for a new line.)</label> 
+                        <label>Qualifications &nbsp;&nbsp; (use "&lt;br&gt;"  tag for a new line)</label> 
                         <textarea class="form-control" name="qualifications"  rows="5" ></textarea>
                         <br>
                         
                         <div class="form-group">
-                            <label>Image</label>
+                            <label>Image ( dimensions = width: 700px * height: 738px )</label>
                             <input type="file" class="form-control-file" name="image" required>
                         </div>  
 
@@ -111,7 +111,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <h5>Are you sure you want to remove This?</h5>
+                            <h5>Are you sure you want to remove this?</h5>
                         </div>                        
 
                     </div>
@@ -138,7 +138,7 @@
                     {data: 'id', name: 'id'},
                     {data: 'name', name: 'name'},
                     {data: 'job_position', name: 'job_position'},
-                    {data: 'status', name: 'status'},
+                    // {data: 'status', name: 'status'},
                     {data: 'order', name: 'order'},
                     {data: 'action', name: 'action', orderable: false, searchable: false},
                 ]
