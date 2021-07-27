@@ -27,7 +27,7 @@
 
     <!--navbar-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-0">
-        <div class="container-fluid p-0">
+        <div class="container p-0">
           <a class="navbar-brand mt-3" href="{{url('/')}}" style="margin-left: 2.2rem;">
             <h3 class="text-white">RDC ARCHITECTS <br> <p style="font-size: 1rem; letter-spacing: 0.05rem;">BY RUSSELL DANDENIYA</p></h3>
           </a>
@@ -36,10 +36,10 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav"> 
-              <li class="nav-item p-2" style="margin-right: 3.2rem;" data-aos="fade-left" data-aos-duration="500">
+              <li class="nav-item p-2" data-aos="fade-left" data-aos-duration="500">
                 <a class="nav-link active text-white" aria-current="page" href="{{url('/')}}">HOME</a>
               </li>
-              <li class="nav-item p-2 dropdown" style="margin-right: 3.2rem;" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
+              <li class="nav-item p-2 dropdown" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
                 <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   PRACTICE
                 </a>
@@ -50,7 +50,7 @@
                   <li><a class="dropdown-item" href="{{url('awards')}}">AWARDS</a></li>
                 </ul>
               </li>
-              <li class="nav-item p-2 dropdown" style="margin-right: 3.2rem;" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
+              <li class="nav-item p-2 dropdown" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
                 <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   PEOPLE
                 </a>
@@ -59,13 +59,13 @@
                   <li><a class="dropdown-item" href="{{url('life')}}">LIFE AT RDCA</a></li>
                 </ul>
               </li>
-              <li class="nav-item p-2" style="margin-right: 3.2rem;" data-aos="fade-left" data-aos-duration="500" data-aos-delay="600">
+              <li class="nav-item p-2" data-aos="fade-left" data-aos-duration="500" data-aos-delay="600">
                 <a class="nav-link text-white" href="{{url('projects')}}">PROJECTS</a>
               </li>
-              <li class="nav-item p-2" style="margin-right: 3.2rem;" data-aos="fade-left" data-aos-duration="500" data-aos-delay="600">
+              <li class="nav-item p-2" data-aos="fade-left" data-aos-duration="500" data-aos-delay="600">
                 <a class="nav-link text-white" href="{{url('press')}}">PRESS</a>
               </li>
-              <li class="nav-item p-2" style="margin-right: 1rem;" data-aos="fade-left" data-aos-duration="500" data-aos-delay="800">
+              <li class="nav-item p-2" data-aos="fade-left" data-aos-duration="500" data-aos-delay="800">
                 <a class="nav-link text-white" href="{{url('contact-us')}}">CONTACT US</a>
               </li>
             </ul>
