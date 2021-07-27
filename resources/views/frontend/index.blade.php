@@ -135,8 +135,8 @@
                                 <div style="width: 363px; height:244px">
                                     <img style="object-fit: cover;width: 363px; height:244px" src="{{url('files/projects',$item['feature_image'])}}" alt="..." class="img-fluid" >
                                     <div class="carousel-caption">
-                                        <h5 style="color: #B49977;">{{ $item['title'] }}</h5>
-                                        <p style="font-size: 20px;">{{ $item['location'] }}</p>
+                                        <h5>{{ $item['title'] }}</h5>
+                                        <p style="font-size: 15px;">{{ $item['location'] }}</p>
                                         <div class="line"></div>
                                         <a href="{{ url('individual',$item['id']) }}"><i class="fas fa-arrow-right"></i></a>
                                     </div>
@@ -181,7 +181,6 @@
         <!-- <img src="{{ asset('img/services-banner.jpg') }}" class="img-fluid w-100" style="height: 850px!important"> -->
         <div class="text-white service-banner">
             <div class="container service-text" style="padding-top: 15rem;">
-                <h4>SERVICES</h4>
                 <div class="row">
                     <div class="col-12 mt-3">
 
@@ -297,7 +296,7 @@
                     <li data-target="#carousel-testimonial" data-slide-to="3"></li>
                 </ol>
                 <div class="carousel-inner" data-interval="4000">
-                    <img class="d-block w-100 testi-image img-fluid" src="{{ asset('img/testimentional.jpg') }}" alt="First slide">
+                    <img class="d-block testi-image img-fluid" src="{{ asset('img/testimentional1.jpg') }}" alt="First slide">
 
                     <div class="carousel-item active">
                         <div class="carousel-caption">
@@ -344,7 +343,7 @@
 
                 <div class="content" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                     <p>
-                    Before basic Architectural services begin we should formulate a clear brief. This phase called as “pre-design”, feasibility study or meeting our minds 😊. This is first & most important step before you start your design. Only Chartered Architects will competent to guide you through brief analysis to determine your goals, requirements, the constraints n opportunities of your site, according to the cost or budget available, time taken for realizing your dream. 
+                    Before basic Architectural services begin we should formulate a clear brief. This phase called as “pre-design”, feasibility study or meeting our minds. This is first & most important step before you start your design. Only Chartered Architects will competent to guide you through brief analysis to determine your goals, requirements, the constraints n opportunities of your site, according to the cost or budget available, time taken for realizing your dream. 
                     </p>
                 </div>
             </div>
