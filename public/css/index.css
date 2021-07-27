@@ -227,6 +227,11 @@
 .testimonial-section .carousel-indicators .active {
     background-color: black;
 }
+.testimonial-section .carousel-item {
+    transition: -webkit-transform 1s ease!important;
+    transition: transform 1s ease!important;
+    transition: transform 1s ease,-webkit-transform 1s ease!important;
+}
 /* .testimonial-section .carousel-item .carousel-caption {
     bottom: 5rem;
 } */
@@ -288,6 +293,11 @@
     }
     .service-banner {
         height: 650px!important;
+    }
+    .service-text-content {
+        font-size: 34px!important;
+        text-align: center;
+        line-height: 2.5rem;
     }
 }
 
@@ -411,6 +421,9 @@
     .service-text {
         padding-top: 7rem!important;
     }
+    .service-text-content {
+        font-size: 20px!important;
+    }
 }
 
 
@@ -438,6 +451,9 @@
     }
     .testimonial-section .carousel-caption p {
         font-size: 13px;
+    }
+    .service-text-content {
+        line-height: 2rem;
     }
 }
 

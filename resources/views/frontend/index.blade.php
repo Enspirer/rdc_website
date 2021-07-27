@@ -180,12 +180,14 @@
     <div class="service-container container-fluid p-0 text-left position-relative" style="margin-top: 7rem;">
         <!-- <img src="{{ asset('img/services-banner.jpg') }}" class="img-fluid w-100" style="height: 850px!important"> -->
         <div class="text-white service-banner">
-            <div class="container service-text" style="padding-top: 15rem; -webkit-text-stroke: 0.3px black; color: white; text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+            <div class="container service-text" style="padding-top: 15rem;">
                 <h4>SERVICES</h4>
                 <div class="row">
                     <div class="col-12 mt-3">
-                        <h2 style="font-size: 40px;"><i class="fas fa-quote-left position-relative" style="top:-0.5rem"></i> &nbsp;Architecture <span style='font-size: 28px'>is about making the world a little more like our</span> Dreams&nbsp; <i class="fas fa-quote-right position-relative" style="top:-0.5rem"></i></h2>
-                        <h5 class="text-center">- Bjarke Ingels -</h5>
+
+                        <h2 class="service-text-content" style="font-size: 40px; text-shadow: 2px 2px 3px black;"><i class="fas fa-quote-left position-relative" style="top:-0.5rem"></i> &nbsp;Architecture <span class="service-text-content-center" style='font-size: 28px;'>is about making the world a little more like our</span> Dreams&nbsp; <i class="fas fa-quote-right position-relative" style="top:-0.5rem"></i></h2>
+
+                        <h5 class="text-center" style="text-shadow: 2px 2px 3px black;">- Bjarke Ingels -</h5>
                     </div>
                 </div>
             </div>
@@ -294,7 +296,7 @@
                     <li data-target="#carousel-testimonial" data-slide-to="2"></li>
                     <li data-target="#carousel-testimonial" data-slide-to="3"></li>
                 </ol>
-                <div class="carousel-inner">
+                <div class="carousel-inner" data-interval="4000">
                     <img class="d-block w-100 testi-image img-fluid" src="{{ asset('img/testimentional.jpg') }}" alt="First slide">
 
                     <div class="carousel-item active">
