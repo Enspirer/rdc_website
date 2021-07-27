@@ -22,10 +22,44 @@
         <li class="c-sidebar-nav-item">
             <x-utils.link
                 class="c-sidebar-nav-link"
+                :href="route('admin.home.index')"
+                :active="activeClass(Route::is('admin.home'), 'c-active')"
+                icon="c-sidebar-nav-icon fas fa-house-user"
+                :text="__('Home Page')" />
+        </li>
+
+        <li class="c-sidebar-nav-item">
+            <x-utils.link
+                class="c-sidebar-nav-link"
                 :href="route('admin.awards.index')"
                 :active="activeClass(Route::is('admin.awards'), 'c-active')"
                 icon="c-sidebar-nav-icon fas fa-award"
                 :text="__('Awards')" />
+        </li>
+
+        <li class="c-sidebar-nav-dropdown ">
+                <x-utils.link
+                    href="#"
+                    icon="c-sidebar-nav-icon fas fa-users"
+                    class="c-sidebar-nav-dropdown-toggle"
+                    :text="__('People')" />
+
+            <ul class="c-sidebar-nav-dropdown-items">                   
+                    <li class="c-sidebar-nav-item">
+                        <x-utils.link
+                            :href="route('admin.professional.index')"
+                            class="c-sidebar-nav-link"
+                            :text="__('Professional Team')"
+                            :active="activeClass(Route::is('admin.professional'), 'c-active')" />
+                    </li>                    
+                    <li class="c-sidebar-nav-item">
+                        <x-utils.link
+                            :href="route('admin.office.index')"
+                            class="c-sidebar-nav-link"
+                            :text="__('Office Team')"
+                            :active="activeClass(Route::is('admin.office'), 'c-active')" />
+                    </li>                   
+            </ul>
         </li>
 
         <li class="c-sidebar-nav-item">
@@ -44,7 +78,14 @@
                     class="c-sidebar-nav-dropdown-toggle"
                     :text="__('Projects')" />
 
-            <ul class="c-sidebar-nav-dropdown-items">                   
+            <ul class="c-sidebar-nav-dropdown-items">   
+                    <li class="c-sidebar-nav-item">
+                        <x-utils.link
+                            :href="route('admin.project_banner.index')"
+                            class="c-sidebar-nav-link"
+                            :text="__('Project Banner')"
+                            :active="activeClass(Route::is('admin.project_banner'), 'c-active')" />
+                    </li>                 
                     <li class="c-sidebar-nav-item">
                         <x-utils.link
                             :href="route('admin.category.index')"

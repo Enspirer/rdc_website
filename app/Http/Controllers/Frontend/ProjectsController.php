@@ -17,6 +17,8 @@ class ProjectsController
      */
     public function index()
     {
+        $banners = DB::table('project_banners')->orderBy('order', 'ASC')->get();
+        // dd($banners);
         $category = DB::table('categories')->orderBy('order', 'ASC')->where('status', '=', 'Enabled')->get();
         // dd($category);
         $projects = DB::table('projects')->orderBy('order', 'ASC')->where('status', '=', 'Enabled')->get();
@@ -25,7 +27,8 @@ class ProjectsController
 
         return view('frontend.projects',[
             'category' => $category,
-            'projects' => $projects
+            'projects' => $projects,
+            'banners' => $banners
         ]);
     }
 }

@@ -20,11 +20,7 @@ class ContactController
 
     public function store(Request $request)
     {        
-        // dd($request);
-
-        // if($request->get('g-recaptcha-response') == null){
-        //     return back()->with('error', 'Error!.....Please fill reCAPTCHA!');
-        // }        
+        // dd($request);     
    
         $contactus = new ContactUs;
 
@@ -44,10 +40,8 @@ class ContactController
         ];
 
         \Mail::to('nihsaan.enspirer@gmail.com')->send(new ContactUsMail($details));
-
         
         session()->flash('message','Thanks!');
-
 
         return back();    
     }

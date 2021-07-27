@@ -45,7 +45,6 @@ class ProjectsController extends Controller
         } 
 
         $multiple_image = $request->file('image');
-        $multiple_order = $request->image_order;
         // dd($multiple_order);
         
         $addproj = new Projects;
@@ -74,8 +73,7 @@ class ProjectsController extends Controller
             
                 DB::table('project_images')->insert([
                     'project_id' => $addproj->id,
-                    'image' => $image_url2,
-                    'order' => $multiple_order[$key]
+                    'image' => $image_url2
                 ]);
             }           
         
@@ -177,7 +175,6 @@ class ProjectsController extends Controller
         // dd($request);
 
         $multiple_image = $request->file('image');
-        $multiple_order = $request->image_order;
         // dd($multiple_order);
         
     
@@ -195,8 +192,7 @@ class ProjectsController extends Controller
             
                 DB::table('project_images')->insert([
                     'project_id' => $request->hidden_id,
-                    'image' => $image_url2,
-                    'order' => $multiple_order[$key]
+                    'image' => $image_url2
                 ]);
             }    
         return back()->withFlashSuccess('Updated Successfully');  

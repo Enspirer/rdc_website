@@ -78,7 +78,7 @@
 
 
     <!--footer section-->
-    <div class="footer" style="margin-top: 7rem;">
+    <div class="footer" style="margin-top: 6rem;">
         <div class="footer-content">
             <div class="container">
                 <div class="row">

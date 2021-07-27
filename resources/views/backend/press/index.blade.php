@@ -1,6 +1,6 @@
 @extends('backend.layouts.app')
 
-@section('title', __('Press'))
+@section('title', __('Press Release'))
 
 @section('content')
     

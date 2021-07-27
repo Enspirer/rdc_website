@@ -28,7 +28,7 @@
                             </div>
                         <div class="form-group">
                             <label>Description</label>
-                            <textarea type="text" class="form-control" name="description" rows="8" required> {{ $projects->description }} </textarea>
+                            <textarea type="text" id="editor" class="form-control" name="description" rows="8" required> {{ $projects->description }} <br> </textarea>
                         </div>
                         <div class="form-group">
                             <label>Status</label>
@@ -70,4 +70,18 @@
 
 
 <br><br>
+
+<script>
+	ClassicEditor
+		.create( document.querySelector( '#editor' ), {
+			// toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+		} )
+		.then( editor => {
+			window.editor = editor;
+		} )
+		.catch( err => {
+			console.error( err.stack );
+		} );
+</script>
+
 @endsection

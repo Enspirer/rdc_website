@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use DataTables;
 use DB;
 use App\Models\Category;
+use App\Models\Projects;
 
 class CategoryController extends Controller
 {
@@ -21,18 +22,25 @@ class CategoryController extends Controller
 
         $request->validate([
             'order' => 'numeric'                
-        ]);        
-        
-        $addcat = new Category;
+        ]);   
 
-        $addcat->name=$request->name;        
-        $addcat->description=$request->description;
-        $addcat->status=$request->status;
-        $addcat->order=$request->order;
+        $data = Category::where('name',$request->name)->first(); 
+        // dd($data);
+        if( $data==null ){
 
-        $addcat->save();
+            $addcat = new Category;
 
-        return back()->withFlashSuccess('Added Successfully');                      
+            $addcat->name=$request->name;        
+            $addcat->description=$request->description;
+            $addcat->status=$request->status;
+            $addcat->order=$request->order;
+
+            $addcat->save();
+            return back()->withFlashSuccess('Added Successfully'); 
+        }else{
+            return back()->withErrors('You Already Added This Category');
+        }   
+                      
 
     }
 
@@ -59,15 +67,29 @@ class CategoryController extends Controller
             'order' => 'numeric'                
         ]); 
 
-        $updatecat = new Category;
-        $updatecat->name=$request->name;        
-        $updatecat->description=$request->description;
-        $updatecat->status=$request->status;
-        $updatecat->order=$request->order;
-   
-        Category::whereId($request->hidden_id)->update($updatecat->toArray());
+        $data = Category::where('name',$request->name)->first(); 
+        // dd($data);
+        if( $data==null ){
 
-        return back()->withFlashSuccess('Updated Successfully');                      
+            $updatecat = new Category;
+            $updatecat->name=$request->name;        
+            $updatecat->description=$request->description;
+            $updatecat->status=$request->status;
+            $updatecat->order=$request->order;  
+            
+            $category_details = Category::whereId($request->hidden_id)->first();
+
+            $projects = DB::table('projects')->where('category',$category_details->name)->update(array('category' => $request->name));
+    
+            Category::whereId($request->hidden_id)->update($updatecat->toArray());
+
+            
+
+            return back()->withFlashSuccess('Updated Successfully'); 
+        }else{
+            return back()->withErrors('You Already Added This Category');
+        }        
+                 
 
     }
 

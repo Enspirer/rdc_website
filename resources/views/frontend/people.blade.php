@@ -79,174 +79,43 @@
         <div class="container professional-team" style="margin-top: 6rem; padding: 0 7rem;">
             <h4 class="fw-bold mb-5">Professional Team</h4>
 
-            <div class="row justify-content-between text-center">
+            <div class="row content-between text-center">
 
-                <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600">
-                    <div class="mb-4 team">
-                        <img src="{{ asset('img/people-professional-1.png') }}" alt="" class="img-fluid">
-                    </div>
+                @foreach($professionals as $key => $pro)
 
-                    <div class="team-details">
-                        <h5>Eng. Dr.Udaya Dissanayaka</h5>
-                        <small class="fs-6">Consultant Structural Engineer</small>
+                    @if($pro->qualifications == null)
+                    <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600">
+                        <div class="mb-4 ">
+                            <img src="{{url('files/professional/',$pro->image)}}" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="team-details">
+                            <h5>{!! $pro->name !!}</h5>
+                            <small class="fs-6">{!! $pro->job_position !!}</small>
+                        </div>
+                        
                     </div>
+                    @else
+                    <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600">
+                        <div class="mb-4 team">
+                            <img src="{{url('files/professional/',$pro->image)}}" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="team-details">
+                            <h5>{!! $pro->name !!}</h5>
+                            <small class="fs-6">{!! $pro->job_position !!}</small>
+                        </div>
+                        
+                        <div class="slide">
+                            <p class="mb-0">{!! $pro->qualifications !!}</p>
+                        </div>
+                    </div>
+                    @endif
                     
-                    <div class="slide">
-                        <p class="mb-0">B.Sc. (Eng) - Civil,</p>
-                        <p class="mb-0">Ph.D. (Structural),</p>
-                        <p class="mb-0">C.Eng,</p>
-                        <p class="mb-0">MSSE (SL)</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
-                    <div class="mb-4 team" style="background-color: #E1E1E1;">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>Eng. K.V.G.G. Jayantha</h5>
-                        <small class="fs-6">Consultant  Structural Engineer</small>
-                    </div>
-                    
-                    <div class="slide">
-                        <p class="mb-0">B.Sc. (Eng) (Hons)</p>
-                        <p class="mb-0">C.Eng</p>
-                        <p class="mb-0">MIE (SL)</p>
-                        <p class="mb-0">M.Eng / P.G.Dip (Struct.Eng)</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
-                    <div class="mb-4 team">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>Eng. Priyantha Piyasena</h5>
-                        <small class="fs-6">Consultant  Structural Engineer</small>
-                    </div>
-                    
-                    <div class="slide">
-                        <p class="mb-0">B.Sc. Eng</p>
-                        <p class="mb-0">Pg. Dip (Const.Mgt)</p>
-                        <p class="mb-0">Pg. Dip (Struct.Mgt)</p>
-                        <p class="mb-0">Chartered Eng</p>
-                    </div>
-                </div>
+                @endforeach   
+                
             </div>
-
-            <div class="row justify-content-between text-center">
-
-                <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600">
-                    <div class="mb-4 team">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>Prof. Leelanandana Rajapaksha</h5>
-                        <small class="fs-6">Mechanical Engineering consultant</small>
-                    </div>
-                    
-                    <div class="slide">
-                        <p class="mb-0">B.Sc. Eng (Mechanical)</p>
-                        <p class="mb-0">First Class (Hons) 1993 University of Peradeniya</p>
-                        <p class="mb-0">M.Eng (Energy) 1998 Asian Institute of Technology</p>
-                        <p class="mb-0">Thailand PHD (Refrigerations) 2003 University of London, UK</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
-                    <div class="mb-4 team" style="background-color: #E1E1E1;">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>Eng. Palitha Abeywardena</h5>
-                        <small class="fs-6">Chartered MEP Engineer</small>
-                    </div>
-                    
-                    <div class="slide">
-                        <p class="mb-0">BSc. Engineering - University of Peradeniya SL (1994)</p>
-                        <p class="mb-0">MSc. on Building Services (M & E) – University of Moratuwa SL (2008)</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
-                    <div class="mb-4 team">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>Eng. Baratha Buddika Gamage</h5>
-                        <small class="fs-6">Chartered Services Engineer / Senior Plumbing Engineer</small>
-                    </div>
-                    
-                    <div class="slide" style="padding: 1.2rem;">
-                        <p class="mb-0">B.Sc Eng. (Hons) in Mechanical Engineering</p>
-                        <p class="mb-0">Post Graduate Diploma - Building Services Engineering</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-between text-center">
-
-                <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600">
-                    <div class="mb-4 team">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>Mr. Sunanda Gnanasiri </h5>
-                        <small class="fs-6">Chartered Quantity Surveyor</small>
-                    </div>
-                    
-                    <div class="slide">
-                        <p class="mb-0">B.Sc. (QS) Hons,</p>
-                        <p class="mb-0">PG Dip (Const Pro Mgt),</p>
-                        <p class="mb-0">AIQS (SL)</p>
-                        <p class="mb-0">MRICS</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
-                    <div class="mb-4 team" style="background-color: #E1E1E1;">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>Mr. D.S.K. Upali Jayalath</h5>
-                        <small class="fs-6">Chartered Quantity Surveyor</small>
-                    </div>
-                    
-                    <div class="slide">
-                        <p class="mb-0">B.Sc. Hon’s (Q.S),</p>
-                        <p class="mb-0">M.Sc (Project Management),</p>
-                        <p class="mb-0">AIQS (SL). MIPMSL,</p>
-                        <p class="mb-0">ACIArb</p>
-                        <p class="mb-0">ACIOB</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
-                    <div class="mb-4 team">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>Eng. Mangala Silva</h5>
-                        <small class="fs-6">Green Building Consultant</small>
-                    </div>
-                    
-                    <div class="slide" style="padding: 1.2rem;">
-                        <p class="mb-0">B.Sc. Eng (Hons),</p>
-                        <p class="mb-0">M. Eng. (St.Eng. Sesigns)</p>
-                        <p class="mb-0">C. Eng. MIE (SL)</p>
-                        <p class="mb-0">MSSE (SL)</p>
-                        <p class="mb-0">Green SL &#174Ap</p>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </section>
 
@@ -257,215 +126,43 @@
         <div class="container office-team" style="margin-top: 6rem; padding: 0 7rem;">
             <h4 class="fw-bold mb-5">Office Team</h4>
 
-            <div class="row justify-content-between text-center">
+            <div class="row content-between text-center">
 
-                <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600">
-                    <div class="mb-4">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>Archt. Bhagya Jayathilake</h5>
-                        <small class="fs-6">Assistant Architect</small>
-                    </div>
-                    
-                    <div class="slide">
-                        <p class="mb-0">B. Arch. (Hon’s) 2015 <br> (University of Moratuwa)</p>
-                        <p class="mb-0"> AIA (SL), 2018, Chartered Architect</p>
-                        <!-- <a href="#" class="fs-5 m-1" style="color: #AC9373;"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="fs-5 m-1" style="color: #AC9373;"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="fs-5 m-1" style="color: #AC9373;"><i class="fab fa-instagram"></i></a> -->
-                    </div>
-                </div>
-
-                <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
-                    <div class="mb-4" style="background-color: #E1E1E1;">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>Archt. Manisha Kariyawasam</h5>
-                        <small class="fs-6">Assistant Architect</small>
-                    </div>
-                    
-                    <div class="slide">
-                        <p class="mb-0">B. Arch. (Hon’s) 2016 <br> (University of Moratuwa)</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
-                    <div class="mb-4">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>Cherika Seneviwickrama</h5>
-                        <small class="fs-6">Operations Admin Executive</small>
-                    </div>
-                    
-                    <div class="slide">
-                        <p class="mb-0">B.Sc. (Phy. Sc.) 2008 <br> (University of Colombo)</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row justify-content-between text-center">
-
-                <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600">
-                    <div class="mb-4">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>Nuwan Karunathilaka</h5>
-                        <small class="fs-6">Assistant Architect</small>
-                    </div>
-                    
-                    <div class="slide">
-                        <p class="mb-0">B. Arch. (Hon’s) 2013 <br> (University of Moratuwa)</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
-                    <div class="mb-4" style="background-color: #E1E1E1;">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>Madura Gunasekara</h5>
-                        <small class="fs-6">Landscape Architect</small>
-                    </div>
-                    
-                    <div class="slide">
-                        <p class="mb-0">B.Land. Arch. (Hon’s) 2017 <br> (University of Moratuwa)</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
-                    <div class="mb-4">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>Maulie Anuththara Wijeratne</h5>
-                        <small class="fs-6">Assistant Architect</small>
-                    </div>
-                    
-                    <div class="slide">
-                        <p class="mb-0">B. Arch. (Hon’s) 2017 <br> (University of Moratuwa)</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-between text-center">
-
-                <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600">
-                    <div class="mb-4">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>W. K. Rumesh Lakmal</h5>
-                        <small class="fs-6">Assistant Architect</small>
-                    </div>
-                    
-                    <div class="slide">
-                        <p class="mb-0">B. Arch. (Hon’s) 2017 <br> (University of Moratuwa)</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
-                    <div class="mb-4" style="background-color: #E1E1E1;">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>Indumin Wickramasekara</h5>
-                        <small class="fs-6">Assistant Architect</small>
-                    </div>
-                    
-                    <div class="slide">
-                        <p class="mb-0">B. Arch. (Hon’s) 2018 <br> (University of Moratuwa)</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
-                    <div class="mb-4">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>Jeewantha Prabodinee Subasena</h5>
-                        <small class="fs-6">Assistant Architect</small>
-                    </div>
-                    
-                    <div class="slide">
-                        <p class="mb-0">B. Arch. (Hon’s) 2018 <br> (University of Moratuwa)</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-between text-center">
-
+            @foreach($offices as $key => $office)
+                
+                @if($office->qualifications == null)
                 <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
+                        <img src="{{url('files/office/',$office->image)}}" alt="" class="img-fluid">
                     </div>
 
                     <div class="team-details">
-                        <h5>H.F. Miskin</h5>
-                        <small class="fs-6">Accountant</small>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
-                    <div class="mb-4" style="background-color: #E1E1E1;">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>Dasun Sameera Munasignhe</h5>
-                        <small class="fs-6">Assistant Architect</small>
-                    </div>
-                    
-                    <div class="slide">
-                        <p class="mb-0">B. Arch. (Hon’s) 2019 <br> (University of Moratuwa)</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
-                    <div class="mb-4">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="team-details">
-                        <h5>H. W. Thilina Saranga</h5>
-                        <small class="fs-6">Assistant Architect</small>
-                    </div>
-                    
-                    <div class="slide">
-                        <p class="mb-0">B. Arch. (Hon’s) 2019 <br> (University of Moratuwa)</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-between text-center">
-
+                        <h5>{!! $office->name !!}</h5>
+                        <small class="fs-6">{!! $office->job_position !!}</small>
+                    </div>                        
+                </div>    
+                @else
                 <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
+                        <img src="{{url('files/office/',$office->image)}}" alt="" class="img-fluid">
                     </div>
 
                     <div class="team-details">
-                        <h5>Chandima Gawarammana</h5>
-                        <small class="fs-6">Assistant Architect</small>
+                        <h5>{!! $office->name !!}</h5>
+                        <small class="fs-6">{!! $office->job_position !!}</small>
                     </div>
                     
                     <div class="slide">
-                        <p class="mb-0">B. Arch. (Hon’s) 2019 <br> (University of Moratuwa)</p>
+                        <p class="mb-0">{!! $office->qualifications !!}</p>                      
                     </div>
-                </div>
+                </div>    
+                @endif
+                
+            @endforeach     
+
             </div>
+            
+            
         </div>
     </section>
 

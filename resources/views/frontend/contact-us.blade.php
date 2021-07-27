@@ -149,7 +149,7 @@
                             <input type="email" class="form-control" name="email" placeholder="Email" aria-describedby="email" required>
                         </div>
                         <div class="mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
-                          <textarea class="form-control" name="message" name="message" cols="60" rows="3" placeholder="Message" required></textarea>
+                          <textarea class="form-control" name="message" rows="3" placeholder="Message" required></textarea>
                         </div>
                         <input type="submit" value="SEND" class="btn rounded-0 fw-bold" style="border: 2px solid black; width:100%;" data-aos="flip-up" data-aos-duration="500" data-aos-delay="300">
                     </form>
