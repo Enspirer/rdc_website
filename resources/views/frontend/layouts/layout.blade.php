@@ -93,10 +93,10 @@
                     </div>
                     <div class="col-md-4 col-lg-4 text-end contact" data-aos="fade-up" data-aos-duration="1000">
                         <h4 class="text-white mb-4 get-in">To Make it Simple But Significant</h4>
-                        <p>0112609977, 2617799<br>
+                        <p class="mb-1">0112609977, 2617799<br>
                         0773209977 <br>
-                            rdcarchitects@hotmail.com <br>
-                            423435, Colombo, Sri Lanka</p>
+                            rdcarchitects@hotmail.com</p>
+                            <p>No. 18/7, Dandeniya Gardens, Gangaboda Road, Piliyandala, Sri Lanka.</p>
                     </div>
                 </div>
                 <hr class="footer-line">
