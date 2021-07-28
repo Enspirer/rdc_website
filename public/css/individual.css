@@ -1,6 +1,6 @@
-/* .swiper-wrapper {
-    height: 750px;
-} */
+nav {
+    background: #000!important;
+}
 
 .swiper-slide {
     display: -webkit-box;

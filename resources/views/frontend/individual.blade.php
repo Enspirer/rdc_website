@@ -7,7 +7,7 @@
 
 
     <!--banner section-->
-    <section id="banner">
+    <section id="banner" style="margin-top: 5.5rem">
         <div class="container">
             <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;" class="swiper-container mySwiper2">
                 <div class="swiper-wrapper">
