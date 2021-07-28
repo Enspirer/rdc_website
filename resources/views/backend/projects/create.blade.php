@@ -65,7 +65,7 @@
                             <br>
                             
                             <div class="form-group">
-                                <label>Add Image and Order</label>
+                                <label>Multiple Images</label>
                                 <div class="table-responsive">                                
                                     <table class="table table-bordered table-striped" id="user_table">
                                         

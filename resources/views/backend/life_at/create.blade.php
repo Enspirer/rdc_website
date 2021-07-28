@@ -46,7 +46,7 @@
                             <br>
                             
                             <div class="form-group">
-                                <label>Add Images</label>
+                                <label>Multiple Images</label>
                                 <div class="table-responsive">                                
                                     <table class="table table-bordered table-striped" id="user_table">
                                         
