@@ -87,6 +87,9 @@ nav.black {
     background: #000;
     transition-duration: 0.7s;
 }
+.disabled {
+    cursor: pointer!important;
+}
 
 
 /* scroll indicator */

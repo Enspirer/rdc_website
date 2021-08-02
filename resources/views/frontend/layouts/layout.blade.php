@@ -39,8 +39,8 @@
               <li class="nav-item p-2" style="margin-right: 0.7rem;" data-aos="fade-left" data-aos-duration="500">
                 <a class="nav-link active text-white" aria-current="page" href="{{url('/')}}">HOME</a>
               </li>
-              <li class="nav-item p-2 dropdown" style="margin-right: 0.7rem;" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
-                <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item p-2 dropdown disabled" style="margin-right: 0.7rem;" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
+                <a class="nav-link dropdown-toggle text-white disabled" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   PRACTICE
                 </a>
                 <ul class="dropdown-menu practice-drop" aria-labelledby="navbarDropdownMenuLink">
@@ -50,8 +50,8 @@
                   <li><a class="dropdown-item" href="{{url('awards')}}">AWARDS</a></li>
                 </ul>
               </li>
-              <li class="nav-item p-2 dropdown" style="margin-right: 0.7rem;" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
-                <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item p-2 dropdown disabled" style="margin-right: 0.7rem;" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
+                <a class="nav-link dropdown-toggle text-white disabled" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   PEOPLE
                 </a>
                 <ul class="dropdown-menu people-drop" aria-labelledby="navbarDropdownMenuLink">
