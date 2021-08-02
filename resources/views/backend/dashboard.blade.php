@@ -141,8 +141,86 @@
 
 
 
+<div class="modal fade" id="overlay">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+      <h4 class="modal-title pull-left">Instructions for Limitations</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        
+      </div>
+      <div class="modal-body">
+
+        <h5 class="mb-3">Home Page</h5>
+        <p>Image ( dimensions = width: 1330px * height: 745px )</p>
+        <p>Image ( Size = Maximum size should be 20MB )</p>
+        <p>Image ( Type = jpeg,png,jpg )</p>
+        <hr>
+        <h5 class="mb-3">Awards</h5>
+        <p>Image ( Size = Maximum size should be 20MB )</p>
+        <p>Image ( Type = jpeg,png,jpg )</p>
+        <hr>
+        <h5 class="mb-3">People->Professional team</h5>
+        <p>Image ( dimensions = width: 700px * height: 738px )</p>
+        <p>Image ( Size = Maximum size should be 20MB )</p>
+        <p>Image ( Type = jpeg,png,jpg )</p>
+        <hr>
+        <h5 class="mb-3">People->Office team</h5>
+        <p>Image ( dimensions = width: 700px * height: 738px )</p>
+        <p>Image ( Size = Maximum size should be 20MB )</p>
+        <p>Image ( Type = jpeg,png,jpg )</p>
+        <hr>
+        <h5 class="mb-3">Life At RDCA</h5>
+        <p>Feature Image ( dimensions = width: 1920px * height: 1080px )</p>
+        <p>Feature Image ( Size = Maximum size should be 20MB )</p>
+        <p>Feature Image ( Type = jpeg,png,jpg )</p>
+        <br>
+        <p>Multiple Images ( Size = Maximum size should be 20MB )</p>
+        <p>Multiple Images ( Type = jpeg,png,jpg )</p>
+        <hr>
+        <h5 class="mb-3">Projects->Project Banner</h5>
+        <p>Image ( dimensions = width: 1330px * height: 745px )</p>
+        <p>Image ( Size = Maximum size should be 20MB )</p>
+        <p>Image ( Type = jpeg,png,jpg )</p>
+        <hr>
+        <h5 class="mb-3">Projects->Project</h5>
+        <p>Feature Image ( Size = Maximum size should be 20MB )</p>
+        <p>Feature Image ( Type = jpeg,png,jpg )</p>
+        <br>
+        <p>Multiple Images ( Size = Maximum size should be 20MB )</p>
+        <p>Multiple Images ( Type = jpeg,png,jpg )</p>
+        <hr>
+        <h5 class="mb-3">Press Release</h5>
+        <p>Image ( Size = Maximum size should be 20MB )</p>
+        <p>Image ( Type = jpeg,png,jpg )</p>
+        <br>
+        <p>PDF ( Size = Maximum size should be 50MB )</p>
+        <p>PDF ( Type = pdf )</p>
+        <br>
+        <p>Title ( Length = Maximum Characters should be 13 )</p>
+          
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
+<script type="text/javascript">
+
+$(window).on('load', function() {
+        $('#overlay').modal('show');
+    });
+$("#close-btn").click(function () {
+       $('#overlay').modal('hide');
+});
+
+</script>  
 
 
 @endsection

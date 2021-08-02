@@ -21,7 +21,7 @@ class ProjectBannerController extends Controller
         // dd($request);
 
         $request->validate([
-            'image'  => 'mimes:jpeg,png,jpg|max:25000|dimensions:width=1330,height=745',
+            'image'  => 'mimes:jpeg,png,jpg|max:20000|dimensions:width=1330,height=745',
             'order' => 'numeric'            
         ]); 
     
@@ -84,7 +84,7 @@ class ProjectBannerController extends Controller
         // dd($request);
 
         $request->validate([
-            'image'  => 'mimes:jpeg,png,jpg|max:25000|dimensions:width=1330,height=745',
+            'image'  => 'mimes:jpeg,png,jpg|max:20000|dimensions:width=1330,height=745',
             'order' => 'numeric'            
         ]);      
         

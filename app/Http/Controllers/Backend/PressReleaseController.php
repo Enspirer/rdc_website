@@ -25,8 +25,8 @@ class PressReleaseController extends Controller
         // dd($request);
 
         $request->validate([
-            'image'  => 'mimes:jpeg,png,jpg|max:25000',
-            'pdf'  => 'mimes:pdf|max:40000',
+            'image'  => 'mimes:jpeg,png,jpg|max:20000',
+            'pdf'  => 'mimes:pdf|max:50000',
             'title' => 'max:13',
             'order' => 'numeric'            
         ]); 
@@ -99,8 +99,8 @@ class PressReleaseController extends Controller
         // dd($request);
 
         $request->validate([
-            'image'  => 'mimes:jpeg,png,jpg|max:25000',
-            'pdf'  => 'mimes:pdf|max:40000',
+            'image'  => 'mimes:jpeg,png,jpg|max:20000',
+            'pdf'  => 'mimes:pdf|max:50000',
             'title' => 'max:13',
             'order' => 'numeric'            
         ]);      
