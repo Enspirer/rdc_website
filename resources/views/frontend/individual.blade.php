@@ -14,7 +14,7 @@
 
                     @foreach($projimages as $key=> $projima)
                         <div class="swiper-slide">
-                            <img src="{{url('files/projects/',$projima->image)}}" class="img-fluid w-100"/>
+                            <img src="{{url('files/projects',$projima->image)}}" class="img-fluid w-100"/>
                         </div>
                     @endforeach                    
 
@@ -27,7 +27,7 @@
 
                 @foreach($projimages as $key=> $projima)
                     <div class="swiper-slide">
-                        <img src="{{url('files/projects/',$projima->image)}}" class="img-fluid w-100 small-img" style="height: 220px;"/>
+                        <img src="{{url('files/projects',$projima->image)}}" class="img-fluid w-100 small-img" style="height: 220px;"/>
                     </div>
                 @endforeach                    
 
