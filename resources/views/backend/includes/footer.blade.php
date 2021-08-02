@@ -1,8 +1,7 @@
 <footer class="c-footer">
     <div>
         <strong>
-            @lang('Copyright') &copy; {{ date('Y') }}
-            <x-utils.link href="" target="_blank" :text="__(appName())" />
+           RDC
         </strong>
 
         @lang('All Rights Reserved')
@@ -10,6 +9,5 @@
 
     <div class="mfs-auto">
        
-        <x-utils.link href="" target="_blank" :text="__(appName())" />
     </div>
 </footer>
