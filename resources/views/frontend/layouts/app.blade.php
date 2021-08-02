@@ -22,7 +22,8 @@
     @include('includes.partials.announcements')
 
     <div id="app">
-        @include('frontend.includes.nav')
+        <!-- Comment this code -->
+        {{-- @include('frontend.includes.nav') --}}
         @include('includes.partials.messages')
 
         <main>
