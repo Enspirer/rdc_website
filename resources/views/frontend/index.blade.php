@@ -269,8 +269,8 @@
             <div class="col-md-4 col-12">
                 <div class="card border-card mb-3 mb-md-0" data-aos="flip-up" data-aos-duration="600" data-aos-delay="300">
                     <div class="container p-3 text-center">
-                        <img src="{{ asset('img/pdf2.png') }}" class="img-fluid">
-                        <button class="btn default mt-3">DOWNLOAD PDF <i class="fas fa-download"></i></button>
+                        <img src="{{ asset('img/pdf2.jpg') }}" class="img-fluid">
+                        <a href="{{ url('pdf/Tn2.pdf') }}" download><button class="btn default mt-3">DOWNLOAD PDF <i class="fas fa-download"></i></button></a>
                     </div>
                 </div>
             </div>
