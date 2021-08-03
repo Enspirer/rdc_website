@@ -153,48 +153,48 @@
 
         <h5 class="mb-3">Home Page</h5>
         <p>Image ( dimensions = width: 1330px * height: 745px )</p>
-        <p>Image ( Size = Maximum size should be 2MB )</p>
+        <p>Image ( Size = Maximum size should be 20MB )</p>
         <p>Image ( Type = jpeg,png,jpg )</p>
         <hr>
         <h5 class="mb-3">Awards</h5>
-        <p>Image ( Size = Maximum size should be 2MB )</p>
+        <p>Image ( Size = Maximum size should be 20MB )</p>
         <p>Image ( Type = jpeg,png,jpg )</p>
         <hr>
         <h5 class="mb-3">People->Professional team</h5>
         <p>Image ( dimensions = width: 700px * height: 738px )</p>
-        <p>Image ( Size = Maximum size should be 2MB )</p>
+        <p>Image ( Size = Maximum size should be 20MB )</p>
         <p>Image ( Type = jpeg,png,jpg )</p>
         <hr>
         <h5 class="mb-3">People->Office team</h5>
         <p>Image ( dimensions = width: 700px * height: 738px )</p>
-        <p>Image ( Size = Maximum size should be 2MB )</p>
+        <p>Image ( Size = Maximum size should be 20MB )</p>
         <p>Image ( Type = jpeg,png,jpg )</p>
         <hr>
         <h5 class="mb-3">Life At RDCA</h5>
         <p>Feature Image ( dimensions = width: 1920px * height: 1080px )</p>
-        <p>Feature Image ( Size = Maximum size should be 2MB )</p>
+        <p>Feature Image ( Size = Maximum size should be 20MB )</p>
         <p>Feature Image ( Type = jpeg,png,jpg )</p>
         <br>
-        <p>Multiple Images ( Size = Maximum size should be 2MB )</p>
+        <p>Multiple Images ( Size = Maximum size should be 20MB )</p>
         <p>Multiple Images ( Type = jpeg,png,jpg )</p>
         <hr>
         <h5 class="mb-3">Projects->Project Banner</h5>
         <p>Image ( dimensions = width: 1330px * height: 745px )</p>
-        <p>Image ( Size = Maximum size should be 2MB )</p>
+        <p>Image ( Size = Maximum size should be 20MB )</p>
         <p>Image ( Type = jpeg,png,jpg )</p>
         <hr>
         <h5 class="mb-3">Projects->Project</h5>
-        <p>Feature Image ( Size = Maximum size should be 2MB )</p>
+        <p>Feature Image ( Size = Maximum size should be 20MB )</p>
         <p>Feature Image ( Type = jpeg,png,jpg )</p>
         <br>
-        <p>Multiple Images ( Size = Maximum size should be 2MB )</p>
+        <p>Multiple Images ( Size = Maximum size should be 20MB )</p>
         <p>Multiple Images ( Type = jpeg,png,jpg )</p>
         <hr>
         <h5 class="mb-3">Press Release</h5>
-        <p>Image ( Size = Maximum size should be 2MB )</p>
+        <p>Image ( Size = Maximum size should be 20MB )</p>
         <p>Image ( Type = jpeg,png,jpg )</p>
         <br>
-        <p>PDF ( Size = Maximum size should be 2MB )</p>
+        <p>PDF ( Size = Maximum size should be 50MB )</p>
         <p>PDF ( Type = pdf )</p>
         <br>
         <p>Title ( Length = Maximum Characters should be 13 )</p>
