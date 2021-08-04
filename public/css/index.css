@@ -434,6 +434,9 @@
     .project-section .carousel-item .carousel-caption {
         bottom: 0px;
     }
+    .about-button {
+        width: 70%!important;
+    }
     .download-section {
         margin-bottom: 2rem!important;
     }
