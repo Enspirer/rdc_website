@@ -190,7 +190,7 @@
                     </div>
 
                     <div class="team-details">
-                        <h5>Lasanth</h5>
+                        <h5>Lasanthi Chathurangani</h5>
                         <small class="fs-6">Assistant Accountant</small>
                     </div>
                     
@@ -210,7 +210,7 @@
             <div class="row content-between text-center">
                 <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/office_assistants/premachandra.jpeg') }}" alt="" class="img-fluid">
                     </div>
 
                     <div class="team-details">
@@ -220,11 +220,11 @@
 
                 <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/office_assistants/menike.jpeg') }}" alt="" class="img-fluid">
                     </div>
 
                     <div class="team-details">
-                        <h5>K.V Ranasinghe Menike</h5>
+                        <h5>K.V. Ranasinghe Menike</h5>
                     </div>
                     
                 </div>
