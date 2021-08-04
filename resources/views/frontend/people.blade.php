@@ -166,4 +166,72 @@
         </div>
     </section>
 
+
+    <!--finace department-->
+    <section id="finance-department">
+        <div class="container finance-department" style="margin-top: 6rem; padding: 0 7rem;">
+            <h4 class="fw-bold mb-5">Finance Department</h4>
+
+            <div class="row content-between text-center">
+                <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600">
+                    <div class="mb-4">
+                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="team-details">
+                        <h5>H.F. Miskin</h5>
+                        <small class="fs-6">Accountant</small>
+                    </div>                        
+                </div>    
+
+                <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600">
+                    <div class="mb-4">
+                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="team-details">
+                        <h5>Lasanthi Chathurangani</h5>
+                        <small class="fs-6">Assistant Accountant</small>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+
+    <!--office assistants-->
+    <section id="office-assistants">
+        <div class="container office-assistants" style="margin-top: 6rem; padding: 0 7rem;">
+            <h4 class="fw-bold mb-5">Office Assistants</h4>
+
+            <div class="row content-between text-center">
+                <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600">
+                    <div class="mb-4">
+                        <img src="{{ asset('img/office_assistants/premachandra.jpeg') }}" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="team-details">
+                        <h5>Kandegedara Premachandra</h5>
+                    </div>                        
+                </div>    
+
+                <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600">
+                    <div class="mb-4">
+                        <img src="{{ asset('img/office_assistants/menike.jpeg') }}" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="team-details">
+                        <h5>K.V. Ranasinghe Menike</h5>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
 @endsection
