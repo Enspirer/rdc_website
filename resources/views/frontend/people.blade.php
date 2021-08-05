@@ -42,7 +42,7 @@
         <div class="container people" style="margin-top: 5rem; padding: 0 7rem;">
             <h2 data-aos="fade-right" data-aos-duration="500">Meet our Team</h2>
 
-            <p class="mt-4" style="font-size: 0.9rem; line-height: 1.7rem; text-align: justify;" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, voluptas ea accusamus et quaerat adipisci recusandae impedit! Repellendus blanditiis quis earum! Doloremque id tempore facere!</p>
+            <p class="mt-4" style="font-size: 0.9rem; line-height: 1.7rem; text-align: justify;" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">RDCA is operating as a unique core of young energetic team of in-house Chartered Architects, Architects of special projects , post  graduate Architects and other externally connected expert allied professionals and in-house support staff with a technical staff on-sites.</p>
 
             <div class="principal" style="margin-top: 5.5rem;">
                 <h4 class="fw-bold mb-4" data-aos="fade-right" data-aos-duration="500">Principal Architect</h4>
