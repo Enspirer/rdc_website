@@ -186,7 +186,7 @@
 
                 <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="w-100 office" style="height: 490px">
+                        <img src="{{ asset('img/finance/lasanthi.jpg') }}" alt="" class="w-100 office" style="height: 490px">
                     </div>
 
                     <div class="team-details">
