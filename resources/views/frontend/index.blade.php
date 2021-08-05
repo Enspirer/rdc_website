@@ -85,7 +85,7 @@
                     </div>
                     
                     <br>
-                    <p class="classic float-right">Russell Dandeniya</p>
+                    <p class="classic float-right">Archt. Russell Dandeniya</p>
                 </div>
             </div>
         </div>
