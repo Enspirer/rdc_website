@@ -56,9 +56,9 @@
                         <small class="fs-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">BSc.(B.E.), P.G. Dip (PM), MSc. (Arch), RIBA , Int.Asso.AIA , FIA (SL)</small>
 
                         <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
-                            <p class="mt-3 mb-0" style="font-size: 0.9rem; line-height: 1rem;">International Associate member of American Institute of Architects, AIA</p>
+                            <p class="mb-0 mt-3" style="font-size: 0.9rem; line-height: 1rem;">Fellow member of Sri Lanka Institute of Architects, SLIA</p>
+                            <p class="mb-0 mt-2" style="font-size: 0.9rem; line-height: 1rem;">International Associate member of American Institute of Architects, AIA</p>
                             <p class="mb-0 mt-2" style="font-size: 0.9rem; line-height: 1rem;">International member of Royal Institute of British Architects, RIBA</p>
-                            <p class="mb-0 mt-2" style="font-size: 0.9rem; line-height: 1rem;">Fellow member of Sri Lanka Institute of Architects, SLIA</p>
                             <p class="mb-0 mt-2" style="font-size: 0.9rem; line-height: 1rem;">Chairman – City School of Architecture- CSA</p>
                             <p class="mb-0 mt-2" style="font-size: 0.9rem; line-height: 1rem;">Chairman ACSR-Architects Regional Council of Asia -ARCASIA</p>
                             <p class="mb-0 mt-2" style="font-size: 0.9rem; line-height: 1rem;">Board of Governor, National Arbitration Center - SLNAC</p>
