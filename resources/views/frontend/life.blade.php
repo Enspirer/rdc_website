@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <img src="{{url('files/life_at/',$life->feature_image)}}" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100" alt="" class="img-fluid">
+                    <img src="{{url('files/life_at',$life->feature_image)}}" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100" alt="" class="img-fluid">
                 </div>
             </div>
 
@@ -69,7 +69,7 @@
 
             <div class="row align-items-center justify-content-between" style="margin-top:5rem">
                 <div class="col-md-6 justify-content-end">
-                    <img src="{{url('files/life_at/',$life->feature_image)}}" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100" alt="" class="img-fluid center-image">
+                    <img src="{{url('files/life_at',$life->feature_image)}}" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100" alt="" class="img-fluid center-image">
                 </div>
 
                 <div class="col-md-5">

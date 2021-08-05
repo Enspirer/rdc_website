@@ -87,7 +87,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <img src="{{url('files/awards/',$award->image)}}" alt="" class="img-fluid">
+                        <img src="{{url('files/awards',$award->image)}}" alt="" class="img-fluid">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

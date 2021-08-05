@@ -28,14 +28,14 @@
 
                     @if($key == 0)
                         <div class="carousel-item active">
-                            <img src="{{url('files/project_banner/',$banner->image)}}" alt="First slide" class="img-fluid" style="width: 100%;">
+                            <img src="{{url('files/project_banner',$banner->image)}}" alt="First slide" class="img-fluid" style="width: 100%;">
                             <div class="carousel-caption text-end">
                                 <a href="#"><img src="{{ url('img/chat-icon.svg') }}" alt="" style="height: 1.5rem;"></a>
                             </div>
                         </div>
                     @else
                         <div class="carousel-item">
-                            <img src="{{url('files/project_banner/',$banner->image)}}" alt="Second slide" class="img-fluid" style="width: 100%;">
+                            <img src="{{url('files/project_banner',$banner->image)}}" alt="Second slide" class="img-fluid" style="width: 100%;">
                             <div class="carousel-caption text-end">
                                 <a href="#"><img src="{{ url('img/chat-icon.svg') }}" alt="" style="height: 1.5rem;"></a>
                             </div>
@@ -126,7 +126,7 @@
 
                 <div class="tab-pane fade" id="cat{{ $cat->id }}" role="tabpanel" aria-labelledby="cat-{{ $cat->id }}">
                     <div class="row">
-                    @foreach(App\Models\Projects::where('category',$cat->name)->where('status', '=', 'Enabled')->get() as $data)
+                    @foreach(App\Models\Projects::where('category',$cat->name)->orderBy('order', 'ASC')->where('status', '=', 'Enabled')->get() as $data)
 
                         <div class="col-sm-4 p-2 project">
                             <a href="{{ url('individual',$data->id) }}" class="text-decoration-none">

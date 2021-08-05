@@ -14,7 +14,7 @@
                         <label>Image ( dimensions = width: 1330px * height: 745px )</label>
                             <input type="file" class="form-control-file" name="image">
                             <br>
-                            <img src="{{url('files/home/',$home->image)}}" style="width: 30%;" alt="" >
+                            <img src="{{url('files/home',$home->image)}}" style="width: 30%;" alt="" >
                         </div>
 
                         <div class="form-group">

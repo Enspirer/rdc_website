@@ -133,7 +133,7 @@
                 @if($office->qualifications == null)
                 <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{url('files/office/',$office->image)}}" alt="" class="img-fluid">
+                        <img src="{{url('files/office',$office->image)}}" alt="" class="img-fluid">
                     </div>
 
                     <div class="team-details">
@@ -144,7 +144,7 @@
                 @else
                 <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{url('files/office/',$office->image)}}" alt="" class="img-fluid">
+                        <img src="{{url('files/office',$office->image)}}" alt="" class="img-fluid">
                     </div>
 
                     <div class="team-details">

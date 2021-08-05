@@ -33,7 +33,7 @@
                             <label>Feature Image </label>
                             <input type="file" class="form-control-file" name="feature_image">
                             <br>
-                            <img src="{{url('files/life_at/',$lifeat->feature_image)}}" style="width: 40%;" alt="" >
+                            <img src="{{url('files/life_at',$lifeat->feature_image)}}" style="width: 40%;" alt="" >
                         </div>
                         
                     </div>

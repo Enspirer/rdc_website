@@ -39,7 +39,7 @@
                             <label>Image ( dimensions = width: 700px * height: 738px )</label>
                             <input type="file" class="form-control-file" name="image">
                             <br>
-                            <img src="{{url('files/professional/',$professional->image)}}" style="width: 30%;" alt="" >
+                            <img src="{{url('files/professional',$professional->image)}}" style="width: 30%;" alt="" >
                         </div>
                         
                     </div>

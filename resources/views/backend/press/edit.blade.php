@@ -35,7 +35,7 @@
                             <label>Image </label>
                             <input type="file" class="form-control-file" name="image">
                             <br>
-                            <img src="{{url('files/press/',$press->image)}}" style="width: 20%;" alt="" >
+                            <img src="{{url('files/press',$press->image)}}" style="width: 20%;" alt="" >
                         </div><br>
                         <div class="form-group">
                             <label>PDF</label>

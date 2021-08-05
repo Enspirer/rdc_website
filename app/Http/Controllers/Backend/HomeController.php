@@ -58,7 +58,7 @@ class HomeController extends Controller
                         return $button;
                     })
                     ->addColumn('image', function($data){
-                        $img = '<img src="'.url('files/home/',$data->image).'" style="width: 100%">';
+                        $img = '<img src="'.url('files/home',$data->image).'" style="width: 100%">';
                      
                         return $img;
                     })

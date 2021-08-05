@@ -27,7 +27,7 @@
 
                 @foreach($datas as $key => $data)
                 <div class="col-sm-4">
-                    <img src="{{url('files/life_at/',$data->image)}}" alt="" class="img-fluid mb-4" data-bs-toggle="modal" data-bs-target="#tripModal" width="100%">
+                    <img src="{{url('files/life_at',$data->image)}}" alt="" class="img-fluid mb-4" data-bs-toggle="modal" data-bs-target="#tripModal" width="100%">
                 </div>
                 <br>
 

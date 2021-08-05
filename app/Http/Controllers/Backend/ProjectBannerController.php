@@ -58,7 +58,7 @@ class ProjectBannerController extends Controller
                         return $button;
                     })
                     ->addColumn('image', function($data){
-                        $img = '<img src="'.url('files/project_banner/',$data->image).'" style="width: 100%">';
+                        $img = '<img src="'.url('files/project_banner',$data->image).'" style="width: 100%">';
                      
                         return $img;
                     })

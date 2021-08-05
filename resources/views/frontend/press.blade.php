@@ -104,38 +104,7 @@
                       </div>
                 </div>
 
-                <!-- <div class="col-sm-6 col-lg-3 p-2">
-                    <div class="card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
-                        <img src="{{ asset('img/articles-1.svg') }}" class="card-img-top" alt="...">
-                        <div class="card-body mt-4">
-                          <h3 class="card-title">Eco House</h3>
-                          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, est.</p>
-                          <a href="#" class="btn rounded-0 btn-outline-dark col-12" style="border: 1px solid #1F1504;">READ MORE</a>
-                        </div>
-                      </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-3 p-2">
-                    <div class="card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
-                        <img src="{{ asset('img/articles-1.svg') }}" class="card-img-top" alt="...">
-                        <div class="card-body mt-4">
-                          <h3 class="card-title">Lorem Ipsum</h3>
-                          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, est.</p>
-                          <a href="#" class="btn rounded-0 btn-outline-dark col-12" style="border: 1px solid #1F1504;">READ MORE</a>
-                        </div>
-                      </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-3 p-2">
-                    <div class="card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
-                        <img src="{{ asset('img/articles-1.svg') }}" class="card-img-top" alt="...">
-                        <div class="card-body mt-4">
-                          <h3 class="card-title">Eco House</h3>
-                          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, est.</p>
-                          <a href="#" class="btn rounded-0 btn-outline-dark col-12" style="border: 1px solid #1F1504;">READ MORE</a>
-                        </div>
-                      </div>
-                </div> -->
+                
 
             @endforeach
                 

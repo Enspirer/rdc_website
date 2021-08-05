@@ -67,9 +67,8 @@ class CategoryController extends Controller
             'order' => 'numeric'                
         ]); 
 
-        $data = Category::where('name',$request->name)->first(); 
-        // dd($data);
-        if( $data==null ){
+        // $data = Category::where('name',$request->name)->first(); 
+        // if( $data==null ){
 
             $updatecat = new Category;
             $updatecat->name=$request->name;        
@@ -86,9 +85,9 @@ class CategoryController extends Controller
             
 
             return back()->withFlashSuccess('Updated Successfully'); 
-        }else{
-            return back()->withErrors('You Already Added This Category');
-        }        
+        // }else{
+        //     return back()->withErrors('You Already Added This Category');
+        // }        
                  
 
     }

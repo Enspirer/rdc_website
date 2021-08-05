@@ -35,7 +35,7 @@
                             <label>Image</label>
                             <input type="file" class="form-control-file" name="image">
                             <br>
-                            <img src="{{url('files/awards/',$awards->image)}}" style="width: 30%;" alt="" >
+                            <img src="{{url('files/awards',$awards->image)}}" style="width: 30%;" alt="" >
                         </div>
                         
                     </div>

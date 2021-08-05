@@ -75,7 +75,7 @@ class PressReleaseController extends Controller
                         return $button;
                     })
                     ->addColumn('image', function($data){
-                        $img = '<img src="'.url('files/press/',$data->image).'" style="width: 60%">';
+                        $img = '<img src="'.url('files/press',$data->image).'" style="width: 60%">';
                      
                         return $img;
                     })
