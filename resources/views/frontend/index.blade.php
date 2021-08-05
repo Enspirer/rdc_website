@@ -79,7 +79,7 @@
                             </p> -->
 
                             <p class="card-text">
-                                <i class="fas fa-quote-left position-relative" style="top:-0.5rem"></i> &nbsp;Inventive & Unique Architecture is perceiving effortlessly - it's so simple and quicker &nbsp;<i class="fas fa-quote-right position-relative" style="top:-0.5rem"></i>
+                                <i class="fas fa-quote-left position-relative" style="top:-0.5rem"></i> &nbsp;The elegance of creative architecture is always simple and cost effective. &nbsp;<i class="fas fa-quote-right position-relative" style="top:-0.5rem"></i>
                             </p>
                         </div>
                     </div>
