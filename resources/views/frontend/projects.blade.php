@@ -87,7 +87,7 @@
     <section id="our-projects">
         <div class="container our-projects" style="margin-top: 4rem; padding: 0 7rem;">
             <h2>Our Projects</h2>
-            <p class="mt-2" style="font-size: 0.9rem; line-height: 1.7rem; text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur deleniti ipsa atque sequi officia beatae sapiente quam quod magnam saepe obcaecati repellat animi officiis deserunt, at vero eaque ex repellendus fuga id quidem rem! Quos debitis nostrum reprehenderit consectetur omnis?</p>
+            <p class="mt-2" style="font-size: 0.9rem; line-height: 1.7rem; text-align: justify;">Are always contributing to the built environment through less energy rated buildings by using modern materials and technology with traditional / sustainable concepts to achieve uniqueness and ultimate satisfaction of vivid cross section of great clientele.</p>
 
             <ul class="nav mb-3 justify-content-center mt-5" id="projects-tab" role="tablist">
                 <li class="nav-item project-item" role="presentation" style="border-bottom: 2px solid white;">
