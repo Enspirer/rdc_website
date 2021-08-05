@@ -202,8 +202,8 @@
                             <i class="fas fa-home fa-2x"></i> <br><br>
                             <h5><b>Architecture</b></h5> <br>
                             <div class="collapse" id="collapseExample1" aria-expanded="false">
-                                <p class="pt-2 pb-2 mb-0 text-left">We are team of Chartered Architects, with great in house supporting staff to undertake design assignments/ projects from tiny bedspace up to resort hotel. Preparation of brief predesign, feasibility study or need analysis will be the start.<br> <br>
-                                We will cover Schematic Design, Conceptual Design, Design Development, Contract Documentation, Bidding & negotiations, Contract Administration under Basic Services.</p> <br>
+                                <p class="pt-2 pb-2 mb-0 text-left">We are a team of Chartered Architects, with a capable and experienced support staff, able to undertake design assignments ranging from tiny bedrooms and bed-sitters to large resort hotels.<br> <br>
+                                Preparation of a brief based on a feasibility study or need analysis will be the start of a project. We provide basic services in a dynamic and responsive manner ensuring projects are driven through the Schematic Design, Conceptual Design, Design Development, Contract Documentation, Bidding & negotiations and all the way through Contract Administration.</p> <br>
                             </div>
                             <a class="btn default collapsed collapse-button" data-bs-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1"></a>
                         </div>
@@ -215,7 +215,7 @@
                             <i class="fas fa-hotel fa-2x"></i><br><br>
                             <h5><b>Engineering Services</b></h5><br>
                             <div class="collapse" id="collapseExample2" aria-expanded="false">
-                                <p class="pt-2 pb-2 mb-0 text-left">We are synergystic allied team of expert professionals in Structural Engineering Mechanical Engineering, Electrical Engineering, Plumbing Engineering, Cost Consultation & Quantity Surveying proven 15 long years of collaborative practice.</p><br>
+                                <p class="pt-2 pb-2 mb-0 text-left">The synergy of a highly experienced allied team of expert professionals spanning over a 15 year period in the fields of Structural Engineering Mechanical Engineering, Electrical Engineering, Plumbing Engineering, Cost Consultation & Quantity Surveying stands testament to the collaborative, multifaceted outlook we provide.</p><br>
                             </div>
                             <a class="btn default collapsed collapse-button" data-bs-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2"></a> 
                             <!-- <i class="fas fa-angle-double-right"></i> -->
@@ -228,7 +228,7 @@
                             <i class="fas fa-edit fa-2x"></i><br><br>
                             <h5><b>Landscape</b></h5><br>
                             <div class="collapse" id="collapseExample3" aria-expanded="false">
-                                <p class="pt-2 pb-2 mb-0 text-left">We do undertake Interior + Landscape Designs. Our Architectural concepts are obviously developing with landscape and Interior Design with Inhouse professionals.</p><br>
+                                <p class="pt-2 pb-2 mb-0 text-left">Interior + Landscape Designs are part and parcel of the gamut of services we provide. Our Architectural solutions are always developed with landscape and Interior Designs carried out by our inhouse professionals.</p><br>
                             </div>
                             <a class="btn default collapsed collapse-button" data-bs-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3"></a> 
                         </div>
@@ -391,12 +391,13 @@
 
 $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        var hieghtThreshold = $(".service-card-body").offset().top;
+        // var heightThreshold = $(".service-card-body").offset().top;
+        var heightThreshold = 3000;
 
-        console.log('scroll : ' + scroll)
-        console.log('service : ' + hieghtThreshold);
+        // console.log('scroll : ' + scroll)
+        // console.log('service : ' + heightThreshold);
 
-        if (scroll >= hieghtThreshold) {
+        if (scroll >= heightThreshold) {
             $('.service-div').children('div').removeClass('show');
             $('.service-div').children('a').addClass('collapsed');
         }

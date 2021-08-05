@@ -133,7 +133,7 @@
                 @if($office->qualifications == null)
                 <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{url('files/office',$office->image)}}" alt="" class="img-fluid">
+                        <img src="{{url('files/office',$office->image)}}" alt="" class="w-100 office" style="height: 490px">
                     </div>
 
                     <div class="team-details">
@@ -144,7 +144,7 @@
                 @else
                 <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{url('files/office',$office->image)}}" alt="" class="img-fluid">
+                        <img src="{{url('files/office',$office->image)}}" alt="" class="w-100 office" style="height: 490px">
                     </div>
 
                     <div class="team-details">
@@ -175,18 +175,18 @@
             <div class="row content-between text-center">
                 <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/finance/miskin.jpg') }}" alt="" class="w-100 office" style="height: 490px">
                     </div>
 
                     <div class="team-details">
-                        <h5>H.F. Miskin</h5>
+                        <h5>T.M.J Miskin</h5>
                         <small class="fs-6">Accountant</small>
                     </div>                        
                 </div>    
 
                 <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="w-100 office" style="height: 490px">
                     </div>
 
                     <div class="team-details">
@@ -210,7 +210,7 @@
             <div class="row content-between text-center">
                 <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{ asset('img/office_assistants/premachandra.jpeg') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/office_assistants/premachandra.jpeg') }}" alt="" class="w-100" style="height: 400px">
                     </div>
 
                     <div class="team-details">
@@ -220,7 +220,7 @@
 
                 <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{ asset('img/office_assistants/menike.jpeg') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/office_assistants/menike.jpeg') }}" alt="" class="w-100" style="height: 400px">
                     </div>
 
                     <div class="team-details">
