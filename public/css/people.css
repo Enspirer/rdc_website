@@ -30,6 +30,15 @@
 
 
 /* media queries */
+@media screen and (max-width: 992px) {
+    .office-team img {
+        height: 250px!important;
+    }
+    .office-assistants img {
+        height: 200px!important;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .people {
         padding: 0 3rem!important;
@@ -47,6 +56,18 @@
     .office-team {
         padding: 0 3rem!important;
     }
+    .finance-department {
+        padding: 0 3rem!important;
+    }
+    .office-assistants {
+        padding: 0 3rem!important;
+    }
+    .office-team img {
+        height: 250px!important;
+    }
+    .office-assistants img {
+        height: 200px!important;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -60,5 +81,19 @@
     .office-team {
         padding: 0 0.75rem!important;
         margin-top: 1rem!important;
+    }
+    .finance-department {
+        padding: 0 0.75rem!important;
+        margin-top: 1rem!important;
+    }
+    .office-assistants {
+        padding: 0 0.75rem!important;
+        margin-top: 1rem!important;
+    }
+    .office-team img {
+        height: 490px!important;
+    }
+    .office-assistants img {
+        height: 400px!important;
     }
 }

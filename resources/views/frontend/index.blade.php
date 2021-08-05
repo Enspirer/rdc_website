@@ -79,13 +79,13 @@
                             </p> -->
 
                             <p class="card-text">
-                                <i class="fas fa-quote-left position-relative" style="top:-0.5rem"></i> &nbsp;Inventive & Unique Architecture is perceiving effortlessly - it's so simple and quicker &nbsp;<i class="fas fa-quote-right position-relative" style="top:-0.5rem"></i>
+                                <i class="fas fa-quote-left position-relative" style="top:-0.5rem"></i> &nbsp;The elegance of creative architecture is always simple and cost effective. &nbsp;<i class="fas fa-quote-right position-relative" style="top:-0.5rem"></i>
                             </p>
                         </div>
                     </div>
                     
                     <br>
-                    <p class="classic float-right">Russell Dandeniya</p>
+                    <p class="classic float-right">Archt. Russell Dandeniya</p>
                 </div>
             </div>
         </div>
@@ -168,7 +168,7 @@
                         is an intentionally small studio type well established practice providing designs for diversified many categories of Buildings. Energetic approach in handling of any scale projects and proven sensible capabilities to render total Architectural solutions while maintaining close Client Consultant relationship has been the success story of this <span class="fw-bold">active team</span> lead by award winning Architect. Russell Dandeniya for their steadily growing immaculate project portfolio over the recent years.
                     </p>
                 </div>
-                <a href="{{ url('about-us') }}" class="btn default mb-3 mb-md-0" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400">READ MORE <i class="fas fa-angle-double-right"></i></a>
+                <a href="{{ url('about-us') }}" class="btn default mb-3 mb-md-0 about-button" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400">READ MORE <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div class="col-md-6 about-image" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                 <img src="{{ asset('img/abouts.png') }}" class="img-fluid shadow">
