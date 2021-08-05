@@ -252,7 +252,7 @@
                 <div class="content">
                     <h4 data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">Download our 'How to built it better catalogue'</h4>
                     <p class="mt-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
-                        Simpler guide book shared the wisdom gained over 15 years as active practicing Architect in the field of Architecture to explain how to overcome basic issues from selection of the site, appoint of the design team, plan approvals, project financing, construction, materiality, value engineering, completion, maintenance, up to how simply calculate pay back periods and maintenance replacement costs to enhance public knowledge on Design & Constructions.
+                        A simple guide book to share the knowledge and wisdom gained over 15 years of practice in the field of architecture; touching on such aspects as site selection, appointment of a design team, the approval process, project financing, construction, materiality, value engineering, completion and handing over and simple calculations for payback period, maintenance and replacement costs.
                     </p>
                 </div>
             </div>
