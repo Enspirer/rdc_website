@@ -62,7 +62,7 @@ h1, h3, h4 {
 }
 .dropdown:hover .practice-drop {
     display: block;
-    left: -2.3rem;
+    left: -1.9rem;
     padding-top: 2rem;
     font-size: 0.8rem;
     background-color: rgb(248, 206, 143);
