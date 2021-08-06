@@ -42,7 +42,7 @@
         <div class="container people" style="margin-top: 5rem; padding: 0 7rem;">
             <h2 data-aos="fade-right" data-aos-duration="500">Meet our Team</h2>
 
-            <p class="mt-4" style="font-size: 0.9rem; line-height: 1.7rem; text-align: justify;" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, voluptas ea accusamus et quaerat adipisci recusandae impedit! Repellendus blanditiis quis earum! Doloremque id tempore facere!</p>
+            <p class="mt-4" style="font-size: 0.9rem; line-height: 1.7rem; text-align: justify;" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">RDCA is operating as a unique core of young energetic team of in-house Chartered Architects, Architects of special projects , post  graduate Architects and other externally connected expert allied professionals and in-house support staff with a technical staff on-sites.</p>
 
             <div class="principal" style="margin-top: 5.5rem;">
                 <h4 class="fw-bold mb-4" data-aos="fade-right" data-aos-duration="500">Principal Architect</h4>
@@ -56,9 +56,9 @@
                         <small class="fs-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">BSc.(B.E.), P.G. Dip (PM), MSc. (Arch), RIBA , Int.Asso.AIA , FIA (SL)</small>
 
                         <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
-                            <p class="mt-3 mb-0" style="font-size: 0.9rem; line-height: 1rem;">International Associate member of American Institute of Architects, AIA</p>
+                            <p class="mb-0 mt-3" style="font-size: 0.9rem; line-height: 1rem;">Fellow member of Sri Lanka Institute of Architects, SLIA</p>
+                            <p class="mb-0 mt-2" style="font-size: 0.9rem; line-height: 1rem;">International Associate member of American Institute of Architects, AIA</p>
                             <p class="mb-0 mt-2" style="font-size: 0.9rem; line-height: 1rem;">International member of Royal Institute of British Architects, RIBA</p>
-                            <p class="mb-0 mt-2" style="font-size: 0.9rem; line-height: 1rem;">Fellow member of Sri Lanka Institute of Architects, SLIA</p>
                             <p class="mb-0 mt-2" style="font-size: 0.9rem; line-height: 1rem;">Chairman – City School of Architecture- CSA</p>
                             <p class="mb-0 mt-2" style="font-size: 0.9rem; line-height: 1rem;">Chairman ACSR-Architects Regional Council of Asia -ARCASIA</p>
                             <p class="mb-0 mt-2" style="font-size: 0.9rem; line-height: 1rem;">Board of Governor, National Arbitration Center - SLNAC</p>
@@ -133,7 +133,7 @@
                 @if($office->qualifications == null)
                 <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{url('files/office',$office->image)}}" alt="" class="img-fluid">
+                        <img src="{{url('files/office',$office->image)}}" alt="" class="w-100 office" style="height: 490px">
                     </div>
 
                     <div class="team-details">
@@ -144,7 +144,7 @@
                 @else
                 <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{url('files/office',$office->image)}}" alt="" class="img-fluid">
+                        <img src="{{url('files/office',$office->image)}}" alt="" class="w-100 office" style="height: 490px">
                     </div>
 
                     <div class="team-details">
@@ -175,18 +175,18 @@
             <div class="row content-between text-center">
                 <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/finance/miskin.jpg') }}" alt="" class="w-100 office" style="height: 490px">
                     </div>
 
                     <div class="team-details">
-                        <h5>H.F. Miskin</h5>
+                        <h5>T.M.J Miskin</h5>
                         <small class="fs-6">Accountant</small>
                     </div>                        
                 </div>    
 
                 <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{ asset('img/person-avatar.jpg') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/finance/lasanthi.jpg') }}" alt="" class="w-100 office" style="height: 490px">
                     </div>
 
                     <div class="team-details">
@@ -210,7 +210,7 @@
             <div class="row content-between text-center">
                 <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{ asset('img/office_assistants/premachandra.jpeg') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/office_assistants/premachandra.jpeg') }}" alt="" class="w-100" style="height: 400px">
                     </div>
 
                     <div class="team-details">
@@ -220,7 +220,7 @@
 
                 <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{ asset('img/office_assistants/menike.jpeg') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/office_assistants/menike.jpeg') }}" alt="" class="w-100" style="height: 400px">
                     </div>
 
                     <div class="team-details">
