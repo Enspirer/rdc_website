@@ -81,7 +81,7 @@
 
 
     <!--our goals-->
-    <section id="our-goals">
+    <!-- <section id="our-goals">
       <div class="container our-goals" style="margin-top: 7rem; padding: 0 7rem;">
         <h3 class="fw-bold" data-aos="fade-down" data-aos-duration="500">Our Goals</h3>
         <div class="row justify-content-between align-items-center">
@@ -103,6 +103,6 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 @endsection

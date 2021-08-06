@@ -45,7 +45,7 @@
                 </a>
                 <ul class="dropdown-menu practice-drop" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="{{url('overview')}}">OVERVIEW</a></li>
-                  <li><a class="dropdown-item" href="{{url('organizational')}}">ORGANIZATIONAL STRUCTURE</a></li>
+                  <!-- <li><a class="dropdown-item" href="{{url('organizational')}}">ORGANIZATIONAL STRUCTURE</a></li> -->
                   <li><a class="dropdown-item" href="{{url('about-us')}}">ABOUT US</a></li>
                   <li><a class="dropdown-item" href="{{url('awards')}}">AWARDS</a></li>
                 </ul>
