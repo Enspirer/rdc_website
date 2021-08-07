@@ -339,11 +339,11 @@
     <div class="container contact-section mb-5" style="margin-top: 6rem;">
         <div class="row">
             <div class="col-md-6">
-                <h1 data-aos="fade-up" data-aos-duration="500">Meeting for your dreams</h1>
+                <h1 data-aos="fade-up" data-aos-duration="500">To make your world a little more like your dreams..</h1>
 
                 <div class="content" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                     <p>
-                    Before basic Architectural services begin we should formulate a clear brief. This phase called as “pre-design”, feasibility study or meeting our minds. This is first & most important step before you start your design. Only Chartered Architects will competent to guide you through brief analysis to determine your goals, requirements, the constraints n opportunities of your site, according to the cost or budget available, time taken for realizing your dream. 
+                    We should formulate a clear brief. This phase called as “pre-design”, feasibility study or meeting our minds. This is first & most important step before you start your design. Only Chartered Architects will competent to guide you through brief analysis to determine your goals, requirements, the constraints n opportunities of your site, according to the cost or budget available, time taken for realizing your dream. 
                     </p>
                 </div>
             </div>

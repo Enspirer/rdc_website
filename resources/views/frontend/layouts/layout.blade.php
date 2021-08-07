@@ -106,10 +106,10 @@
                     </div>
                     <div class="col-md-6 text-end social">
                         <a class="fab fa-facebook-square icon text-decoration-none text-light" href="https://www.facebook.com/russelldandeniyacharteredarchitects"></a>
-                        <i class="fab fa-twitter-square icon"></i>
-                        <i class="fab fa-linkedin icon"></i>
-                        <i class="fab fa-instagram-square icon"></i>
-                        <i class="fab fa-youtube-square icon"></i>
+                        <a class="fab fa-twitter-square icon text-decoration-none text-light" href="https://twitter.com/RussellDandeni2"></a>
+                        <a class="fab fa-linkedin icon text-decoration-none text-light" href="https://www.linkedin.com/in/russell-dandeniya-518669131/"></a>
+                        <a class="fab fa-instagram-square icon text-decoration-none text-light" href="https://www.instagram.com/rdcarchitects/"></a>
+                        <a class="fab fa-youtube-square icon text-decoration-none text-light"></a>
                     </div>
                 </div>
             </div>
