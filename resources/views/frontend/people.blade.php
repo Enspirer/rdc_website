@@ -208,9 +208,9 @@
             <h4 class="fw-bold mb-5">Office Assistants</h4>
 
             <div class="row content-between text-center">
-                <div class="col-sm-4" data-aos="zoom-in" data-aos-duration="600">
+                <div class="col-sm-4 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{ asset('img/office_assistants/premachandra.jpeg') }}" alt="" class="w-100" style="height: 400px">
+                        <img src="{{ asset('img/office_assistants/premachandra.jpeg') }}" alt="" class="w-100" style="height: 250px">
                     </div>
 
                     <div class="team-details">
@@ -218,9 +218,9 @@
                     </div>                        
                 </div>    
 
-                <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600">
+                <div class="col-sm-4 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{ asset('img/office_assistants/menike.jpeg') }}" alt="" class="w-100" style="height: 400px">
+                        <img src="{{ asset('img/office_assistants/menike.jpeg') }}" alt="" class="w-100" style="height: 250px">
                     </div>
 
                     <div class="team-details">
