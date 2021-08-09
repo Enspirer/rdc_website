@@ -333,3 +333,13 @@ nav.black {
         display: none;
     }
 }
+
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        text-align: center;
+    }
+    .dropdown:hover .dropdown-menu .dropdown-item {
+        text-align: center;
+    }
+}
