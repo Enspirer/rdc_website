@@ -143,7 +143,7 @@
                 </div>    
                 @else
                 <div class="col-sm-4 team" data-aos="zoom-in" data-aos-duration="600">
-                    <div class="mb-4">
+                    <div class="mb-4 align-items-bottom">
                         <img src="{{url('files/office',$office->image)}}" alt="" class="w-100 office" style="height: 490px">
                     </div>
 
