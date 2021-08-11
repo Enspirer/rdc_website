@@ -39,7 +39,7 @@ class ContactController
             'message' => $request->message
         ];
 
-        \Mail::to('nihsaan.enspirer@gmail.com')->send(new ContactUsMail($details));
+        \Mail::to('rdcarchitects@hotmail.com')->send(new ContactUsMail($details));
         
         session()->flash('message','Thanks!');
 
