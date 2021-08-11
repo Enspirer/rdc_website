@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ asset('css/common.css') }}">
     
+    
     @stack('after-styles')
 
     <title>RDC</title>
@@ -73,6 +74,31 @@
         </div>
     </nav>
 
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+    xfbml            : true,
+    version          : 'v11.0'
+  });
+};
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution="install_email"
+  attribution_version="biz_inbox"
+  page_id="112702636936289">
+</div>
+
 
     @yield('content')
 
@@ -98,18 +124,24 @@
                             rdcarchitects@hotmail.com</p>
                             <p>No. 18/7, Dandeniya Gardens, Gangaboda Road, Piliyandala, Sri Lanka.</p>
                     </div>
+
+                    <div class="row justify-content-end p-0">
+                        <div class="col-md-6 social text-end p-0">
+                          <a class="fab fa-facebook-square icon text-decoration-none text-light" href="https://www.facebook.com/russelldandeniyacharteredarchitects"></a>
+                          <a class="fab fa-twitter-square icon text-decoration-none text-light" href="https://twitter.com/RussellDandeni2"></a>
+                          <a class="fab fa-linkedin icon text-decoration-none text-light" href="https://www.linkedin.com/in/russell-dandeniya-518669131/"></a>
+                          <a class="fab fa-instagram-square icon text-decoration-none text-light" href="https://www.instagram.com/rdcarchitects/"></a>
+                          <a class="fab fa-youtube-square icon text-decoration-none text-light"></a>
+                        </div>
+                    </div>
                 </div>
                 <hr class="footer-line">
                 <div class="row pt-4 pb-4">
                     <div class="col-md-6 power">
-                        <small>Powered by Enspirer © RDC Architects 2021</small>
+                        <small>© All Rights Reserved | RDC Architects 2021</small>
                     </div>
                     <div class="col-md-6 text-end social">
-                        <a class="fab fa-facebook-square icon text-decoration-none text-light" href="https://www.facebook.com/russelldandeniyacharteredarchitects"></a>
-                        <a class="fab fa-twitter-square icon text-decoration-none text-light" href="https://twitter.com/RussellDandeni2"></a>
-                        <a class="fab fa-linkedin icon text-decoration-none text-light" href="https://www.linkedin.com/in/russell-dandeniya-518669131/"></a>
-                        <a class="fab fa-instagram-square icon text-decoration-none text-light" href="https://www.instagram.com/rdcarchitects/"></a>
-                        <a class="fab fa-youtube-square icon text-decoration-none text-light"></a>
+                        <small>Powered by <a href="https://www.enspirer.com/" class="text-success">Enspirer</a></small>
                     </div>
                 </div>
             </div>

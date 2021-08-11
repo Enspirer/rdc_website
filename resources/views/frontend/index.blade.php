@@ -85,7 +85,7 @@
                     </div>
                     
                     <br>
-                    <p class="classic float-right">Archt. Russell Dandeniya</p>
+                    <p class="classic float-right mb-0">Archt. Russell Dandeniya</p>
                 </div>
             </div>
         </div>
@@ -250,7 +250,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="content">
-                    <h4 data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">Download our 'How to built it better catalogue'</h4>
+                    <h4 data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">Download our 'How to build it better catalogue'</h4>
                     <p class="mt-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
                         A simple guide book to share the knowledge and wisdom gained over 15 years of practice in the field of architecture; touching on such aspects as site selection, appointment of a design team, the approval process, project financing, construction, materiality, value engineering, completion and handing over and simple calculations for payback period, maintenance and replacement costs.
                     </p>
