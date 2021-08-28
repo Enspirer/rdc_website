@@ -175,7 +175,7 @@
             <div class="row content-between text-center">
                 <div class="col-sm-4 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{ asset('img/finance/miskin.jpg') }}" alt="" class="w-100 office" style="height: 250px">
+                        <img src="{{ asset('img/finance/miskin.jpg') }}" alt="" class="w-100 office" style="height: 250px; object-fit:cover;">
                     </div>
 
                     <div class="team-details">
@@ -186,7 +186,7 @@
 
                 <div class="col-sm-4 col-md-4 col-lg-3 team" data-aos="zoom-in" data-aos-duration="600">
                     <div class="mb-4">
-                        <img src="{{ asset('img/finance/lasanthi.jpg') }}" alt="" class="w-100 office" style="height: 250px">
+                        <img src="{{ asset('img/finance/lasanthi.jpg') }}" alt="" class="w-100 office" style="height: 250px; object-fit:cover;">
                     </div>
 
                     <div class="team-details">
