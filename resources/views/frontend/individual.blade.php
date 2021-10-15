@@ -1,4 +1,8 @@
 @extends('frontend.layouts.layout')
+@section('title','Architects in Sri Lanka | Russell Dandeniya Chartered Architects | RDC Architects')
+@section('meta_description','RDC Architects recognized for award winning services in commercial projects, hotel projects in
+Srilanka, Architects for factory projects, hospitality sector. Training Center for NWSDB – Ratmalana
+Cargills Square Bandarawela, City Control Center for Ceylon electricity board Kandy.')
 
 @section('content')
 
