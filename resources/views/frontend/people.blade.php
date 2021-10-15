@@ -1,4 +1,9 @@
 @extends('frontend.layouts.layout')
+@section('title','Russell Dandeniya Chartered Architects | RDC Architects Sri Lanka')
+@section('meta_description','RDC Architects in Sri Lanka founded by Archt. Russell Dandeniya. FIA(SL), with a team of
+highly qualified professionals. The best Quantity surveyors, Associate consultants, Structural
+engineers, interior designing in Sri Lanka.')
+
 
 @section('content')
 

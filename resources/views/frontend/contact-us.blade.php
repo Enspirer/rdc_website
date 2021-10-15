@@ -1,4 +1,8 @@
 @extends('frontend.layouts.layout')
+@section('title','RDC Architects | Piliyandala Sri Lanka | +94773209977')
+@section('meta_description','Architectural Consultants for local and international clients, Principal architect Russell
+Dandeniya, Rasal Dandeniya, graduated from University of Moratuwa SriLanka, and Srilanka institute of
+architects, SLIA has won many awards for BEST HOUSE DESIGNS, best hotels, best estate bungalows.')
 
 @section('content')
 

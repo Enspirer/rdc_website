@@ -1,5 +1,10 @@
 @extends('frontend.layouts.layout')
 
+@section('title','Russell Dandeniya Chartered Architects | RDC Architects Sri Lanka')
+@section('meta_description','TArchitectural Consultants for local and international clients, Principal architect Russell
+Dandeniya, Rasal Dandeniya, graduated from University of Moratuwa SriLanka, and Srilanka institute of
+architects, SLIA has won many awards for BEST HOUSE DESIGNS, best hotels, best estate bungalows.')
+
 @section('content')
 
     <link rel="stylesheet" href="{{ asset('css/about-us.css') }}">

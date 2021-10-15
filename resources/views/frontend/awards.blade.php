@@ -1,5 +1,11 @@
 @extends('frontend.layouts.layout')
 
+@section('title','Award winning Architects in SriLanka | Interior designers | RDC Architects')
+@section('meta_description','Principal Architec Russell Dandeniya has won many awards ,
+Luxury Lifestyle Awards 2021 - Best Luxury Architecture, American Institute of
+Architects Sustainable Future Award, American Institute of Architects Honor Award for open
+international Architecture 2019')
+
 @section('content')
 
     <link rel="stylesheet" href="{{ asset('css/awards.css') }}">
