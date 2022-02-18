@@ -131,7 +131,7 @@ window.fbAsyncInit = function() {
                     <div class="col-md-4 col-lg-6" data-aos="fade-up" data-aos-duration="1000">
                         <br><br>
                         <p class="px-5 text mb-2" data-aos="fade-up" data-aos-duration="1000" style="font-size: 1.1rem">
-                        Architecture is an expression of values a reality of ambitious sketches on papers...</p>
+                            Architecture is an expression of your dreams n our ambitious sketches on papers..</p>
                         <p class="px-5 text" data-aos="fade-up" data-aos-duration="1000" style="font-size: 0.9rem">Archt. Russell Dandeniya</p>
                     </div>
                     <div class="col-md-4 col-lg-4 text-end contact" data-aos="fade-up" data-aos-duration="1000">
